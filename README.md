@@ -1,35 +1,10 @@
----
-rak_desc: Contains instructions and tutorials for installing and deploying your RAK3172. Instructions are written in a detailed and step-by-step manner for an easier experience in setting up your LoRaWAN Module.
-rak_img: /assets/images/wisduo/rak3172-module/overview/RAK3172_Module_home.png
-prev: ../Overview/
-next: ../AT-Command-Manual/
-tags:
-  - wisduo
-  - quickstart
-  - RAK3172
----
+# RAK3172_Canopus Module Quick Start Guide
 
-# RAK3172 Module Quick Start Guide
+#### Information RAK3172_Canopus board
 
-This guide covers the following topics:
-
-- [RAK3172 as a Stand-Alone Device Using RUI3](#rak3172-as-a-stand-alone-device-using-rui3)
-- [RAK3172 as a LoRa/LoRaWAN Modem via AT Command](#rak3172-as-a-lora-lorawan-modem-via-at-command)
-- [Connecting to The Things Network (TTN)](#connecting-to-the-things-network-ttn)
-- [Connecting with Chirpstack](#connecting-with-chirpstack)
-- [LoRa P2P Mode](#lora-p2p-mode)
-
-## Prerequisites
-
-### What Do You Need?
-
-Before going through the steps in the installation guide of the RAK3172 WisDuo LPWAN Module, make sure to prepare the necessary items listed below:
-
-#### Hardware
-
-- [RAK3172 WisDuo LPWAN Module](https://store.rakwireless.com/products/wisduo-lpwan-module-rak3172?utm_source=WisBlockRAK3172&utm_medium=Document&utm_campaign=BuyFromStore)
-- Computer
-- USB to UART TTL adapter
+- Schematic
+- Layout
+- Bom list and CPL
 
 #### Software
 
@@ -40,84 +15,21 @@ _**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-- Add [RAK3172 as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with the JSON URL below.
+- Add [RAK3172_Canopus as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with the JSON URL below.
 ```json
 https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
 ```
 After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
 
-- [RAK Serial Port Tool](https://downloads.rakwireless.com/en/LoRa/Tools)
-
-#### List of Acronyms
-
-| Acronym | Definition                                       |
-| ------- | ------------------------------------------------ |
-| DFU     | Device Firmware Upgrade                          |
-| JTAG    | Joint Test Action Group                          |
-| LoRa    | Long Range                                       |
-| OTAA    | Over-The-Air-Activation (OTAA)                   |
-| ABP     | Activation-By-Personalization (ABP)              |
-| TTN     | The Things Network                               |
-| DEVEUI  | Device EUI (Extended Unique Identification)      |
-| APPEUI  | Application EUI (Extended Unique Identification) |
-| APPKEY  | Application Key                                  |
-| DEVADDR | Device Address                                   |
-| NWKSKEY | Network Session Key                              |
-| APPSKEY | Application Session Key                          |
-| P2P     | Point-to-Point                                   |
-| MSB     | Most Significant Bit                             |
-| LNS     | LoRaWAN Network Service                          |
-
-## Product Configuration
-
-### RAK3172 as a Stand-Alone Device Using RUI3
-
 #### Hardware Setup
 
-The RAK3172 requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured, reset button, antenna, and USB connection.
-
-:::warning ⚠️ WARNING
-Firmware update is done via UART2 pins. If you will connect the module to an external device that will be interfacing with UART2, take extra precautions in your board design to ensure you can still perform FW update to it. There should be a way in your board design that can disconnect the external device to RAK3172 UART2 before connecting the module to the PC (via USB-UART converter) for the FW update process.
-
-An alternative option to update firmware aside from UART2 is to use SWD pins (SWCLK & SWDIO). This method will require you to use external tools like ST-LINK and RAKDAP1.
-:::
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_bare_minimum_schematic.png"
-  width="80%"
-  caption="RAK3172 Minimum Schematic"
-/>
-
-Ensure that the antenna is properly connected to have a good LoRa signal. Also, note that you can damage the RF section of the chip if you power the module without an antenna connected to the IPEX connector.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/wisblock_antenna.png"
-  width="30%"
-  caption="LoRa Antenna"
-/>
-
-RAK3172 has a module variant with an IPEX connector where you can connect the LoRa antenna, as shown in **Figure 3**. If the RAK3172 module you ordered is the variant with no IPEX connector, you need to ensure that there is an external antenna connected to the **RF pin** (Pin 12) of the module.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_module_antenna.png"
-  width="30%"
-  caption="IPEX Connector of RAK3172 for LoRa Antenna"
-/>
-
-
-:::tip 📝 NOTE
-Detailed information about the RAK3172 LoRa antenna can be found on the [antenna datasheet](https://downloads.rakwireless.com/LoRa/WisBlock/Accessories/).
-:::
-
-:::warning ⚠️ WARNING
-When using the LoRa transceiver, make sure that an antenna is always connected. Using this transceiver without an antenna can damage the module.
-:::
+The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
 #### Software Setup
 
-The default firmware of RAK3172 is based on RUI3, which allows you to develop your own custom firmware to connect sensors and other peripherals to it. To develop using your custom firmware using the Arduino IDE, you need to first add RAKwireless RUI STM32 boards to the Arduino board manager, which will be discussed in this guide. You can then use [RUI3 APIs] (https://docs.rakwireless.com/RUI3/Arduino-API/) for your intended application. You can upload the custom firmware via UART. The AT commands of RAK3172 are still available even if you compile custom firmware via RUI3. You can send AT commands via a UART2 connection.
+The default firmware of RAK3172_Canopus is based on RUI3, which allows you to develop your own custom firmware to connect sensors and other peripherals to it. To develop using your custom firmware using the Arduino IDE, you need to first add RAKwireless RUI STM32 boards to the Arduino board manager, which will be discussed in this guide. You can then use [RUI3 APIs] (https://docs.rakwireless.com/RUI3/Arduino-API/) for your intended application.
 
-##### RAK3172 RUI3 Board Support Package in Arduino IDE
+##### RAK3172_Canopus board Support Package in Arduino IDE
 
 If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#arduino-installation) of this document.
 
@@ -126,7 +38,7 @@ If you don't have an Arduino IDE yet, you can download it on the [Arduino offici
 If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-Once the Arduino IDE has been successfully installed, you can now configure the IDE to add the RAK3172 to its board selection by following these steps.
+Once the Arduino IDE has been successfully installed, you can now configure the IDE to add the RAK3172_Canopus to its board selection by following these steps.
 
 1. Open Arduino IDE and go to **File** > **Preferences**.
 
@@ -136,7 +48,7 @@ Once the Arduino IDE has been successfully installed, you can now configure the 
   caption="Arduino preferences"
 />
 
-2. To add the RAK3172 to your Arduino Boards list, edit the **Additional Board Manager URLs**. Click the icon, as shown in **Figure 5**.
+2. To add the RAK3172_Canopus to your Arduino Boards list, edit the **Additional Board Manager URLs**. Click the icon, as shown in **Figure 5**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/additional-boards.png"
@@ -176,7 +88,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
   caption="Installing RAKwireless RUI STM32 Boards"
 />
 
-##### Configure RAK3172 on Boards Manager
+##### Configure RAK3172_Canopus on Boards Manager
 
 8. Once the BSP is installed, select  **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3172 Evaluation Board**. The RAK3172 Evaluation board uses the RAK3172 WisDuo module.
 
@@ -188,7 +100,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 
 ##### RAK3172 COM Port on Device Manager
 
-Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
+Connect the RAK3172 via USB type C and check COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/rui-port.png"
@@ -198,7 +110,7 @@ Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device M
 
 ##### Compile an Example with Arduino LED Breathing
 
-1. After completing the steps on adding your RAK3172 to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add two LEDs to the bare minimum schematic of the RAK3172 module, as shown in **Figure 11**.
+1. After completing the steps on adding your RAK3172_Canopus to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add two LEDs to the bare minimum schematic of the RAK3172 module, as shown in **Figure 11**.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_bare_minimum_schematic_led.png"
@@ -208,7 +120,7 @@ Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device M
 
 2. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection. See [**Figure 9**](#configure-rak3172-on-boards-manager).
 
-3. Connect the RAK3172 via UART and check RAK3172 COM Port. See [**Figure 10**](#rak3172-com-port-on-device-manager).
+3. Connect the RAK3172_Canopus via USB type C. See [**Figure 10**](#rak3172-com-port-on-device-manager).
 
 4. Open the **Tools** Menu and select a COM port. **COM28** is currently used.
 <rk-img
@@ -224,21 +136,7 @@ Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device M
   caption="Open Arduino serial monitor"
 />
 
-6. If the connection is successful, you can send AT Commands to RAK3172. For example: To check the RUI version, type `AT+VER=?` on the text area, then click on the **Send** button, as shown in **Figure 14**.
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/at+ver.png"
-  width="100%"
-  caption="Send AT command"
-/>
-
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/arduino-console.png"
-  width="100%"
-  caption="Arduino serial monitor COM28"
-/>
-
-7. Open **Arduino_Led_Breathing** example code.
+6. Open **Arduino_Led_Breathing** example code.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/led-example.png"
@@ -246,7 +144,7 @@ Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device M
   caption="Arduino Led Breathing example"
 />
 
-8. Click on the **Verify** icon to check if you have successfully compiled the example code.
+7. Click on the **Verify** icon to check if you have successfully compiled the example code.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/verify-code.png"
@@ -254,7 +152,7 @@ Connect the RAK3172 via UART and check RAK3172 COM Port using Windows **Device M
   caption="Verify the example code"
 />
 
-9. Click the **Upload** icon to send the compiled firmware to your RAK3172 module.
+8. Click the **Upload** icon to send the compiled firmware to your RAK3172 module.
 
 :::tip 📝 NOTE:
 RAK3172 should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
@@ -268,7 +166,7 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
   caption="Upload the example code"
 />
 
-10. If the upload is successful, you will see the **Upgrade Complete** message.
+9. If the upload is successful, you will see the **Upgrade Complete** message.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/dev-prog.png"
@@ -276,7 +174,7 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
   caption="Device programmed successfully"
 />
 
-11. After the Device Programmed is completed, you will see that LEDs are blinking.
+10. After the Device Programmed is completed, you will see that LEDs are blinking.
 
 ##### RAK3172 I/O Pins and Peripherals
 

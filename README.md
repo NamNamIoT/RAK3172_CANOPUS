@@ -20,6 +20,9 @@ If you need modify or any request for design hardware, development product IoT p
 
 ![Rak](https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg)
 ![333804518_559518592823403_3097202962608479760_n](https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg)
+#### Hardware Setup
+
+The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
 #### Software
 
@@ -35,10 +38,6 @@ Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, inst
 https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
 ```
 After that, you can then add **RAKwireless RUI STM32 Boards** via Arduino board manager.
-
-#### Hardware Setup
-
-The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
 #### Software Setup
 
@@ -86,8 +85,17 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 ##### Configure RAK3172_Canopus on Boards Manager
 
 8. Once the BSP is installed, select  **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3172 Evaluation Board**. The RAK3172 Evaluation board uses the RAK3172 WisDuo module.
-
 ![rui-stm32](https://user-images.githubusercontent.com/49629370/224521144-d1ec1a5f-5c67-46f1-8f99-5da1b4b57a23.png)
+
+9. Install RAK3172_Canopus library
+Both RAK Wisblock Examples and RAK3172_Canopus support for RAK3172_Canopus board
+
+Download https://github.com/NamNamIoT/RAK3172_CANOPUS and Extract to Arduino\libraries
+![Extra](https://user-images.githubusercontent.com/49629370/224536933-6abbdef3-832f-401c-98c7-cdeeca470cff.PNG)
+
+Find RAK3172_Canopus library:
+
+![Canopus_example](https://user-images.githubusercontent.com/49629370/224537325-ce897674-e104-43c6-900c-542c1bdc90f9.PNG)
 
 ##### RAK3172 COM Port on Device Manager
 

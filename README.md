@@ -10,10 +10,9 @@
 - input x3 port
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
-
-warning ⚠️ WARNING
+## 👋 Welcome!
 If you need modify or any request for design hardware, development product IoT please contact me:
-- Facebook https://www.facebook.com/kuem0912/
+- Facebook https://www.facebook.com/kuem0912/ 
 - Email: thanhnamLT5@gmail.com
 - Number phone: +84932912789
 - Whatsapp: +84969809444

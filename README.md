@@ -338,7 +338,7 @@ void loop()
 }
 ```
 
-The Arduino Serial Monitor shows the I2C device found.
+The Arduino Serial Monitor shows the value of register:
 
 ```c
 Example read modbus RTU for RAK3172_Canopus board

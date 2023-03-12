@@ -11,7 +11,7 @@
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
 
-:::warning ⚠️ WARNING
+warning ⚠️ WARNING
 If you need modify or any request for design hardware, development product IoT please contact me:
 - Facebook https://www.facebook.com/kuem0912/
 - Email: thanhnamLT5@gmail.com
@@ -28,7 +28,7 @@ The RAK3172_Canopus requires a few hardware connections before you can make it w
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
-:::warning ⚠️ WARNING
+warning ⚠️ WARNING
 _**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
@@ -84,16 +84,21 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 
 ##### Configure RAK3172_Canopus on Boards Manager
 
-8. Once the BSP is installed, select  **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3172 Evaluation Board**. The RAK3172 Evaluation board uses the RAK3172 WisDuo module.
+8. Once the BSP is installed, select  **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3172 Evaluation Board**. 
+
+The RAK3172_Canopus board uses the RAK3172 WisDuo module.
 ![rui-stm32](https://user-images.githubusercontent.com/49629370/224521144-d1ec1a5f-5c67-46f1-8f99-5da1b4b57a23.png)
 
 9. Install RAK3172_Canopus library
-Both RAK Wisblock Examples and RAK3172_Canopus support for RAK3172_Canopus board
+warning ⚠️ WARNING
+Both RAK Wisblock Examples and RAK3172_Canopus Examples support for RAK3172_Canopus board
 
 Download https://github.com/NamNamIoT/RAK3172_CANOPUS and Extract to Arduino\libraries
 ![Extra](https://user-images.githubusercontent.com/49629370/224536933-6abbdef3-832f-401c-98c7-cdeeca470cff.PNG)
 
+
 Find RAK3172_Canopus library:
+
 
 ![Canopus_example](https://user-images.githubusercontent.com/49629370/224537325-ce897674-e104-43c6-900c-542c1bdc90f9.PNG)
 

@@ -2182,19 +2182,11 @@ The frequency band used in the demonstration is EU868. Use a high-frequency vers
 
 2. Go to the Application section, as shown in **Figure 206**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/24.chirpstack.png"
-  width="100%"
-  caption="Application Section"
-/>
+![24 chirpstack](https://user-images.githubusercontent.com/49629370/224524821-5c92ccb3-5e9f-4d0c-b4cc-ef3730331e84.png)
 
 3. By default, you should create a new application, although you can reuse existing ones. For this setup, create a new Application by clicking on the **CREATE** button and filling in the required parameters, as shown in **Figure 207** and **Figure 208**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/25.new-application.png"
-  width="100%"
-  caption="Creating a New Application"
-/>
+![25 new-application](https://user-images.githubusercontent.com/49629370/224524815-8e403432-1528-4f67-ab2f-dc023c4d5bd9.png)
 
 
 * For this setup, create an Application named **rak_node_test**.
@@ -2204,11 +2196,7 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 * **Service profile**: Field is to select the system profile.
 * **Payload codec**: It is the parsing method for selecting load data, such as parsing LPP format data.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/26.filling-parameters.png"
-  width="100%"
-  caption="Filling Parameters of an Application"
-/>
+![26 filling-parameters](https://user-images.githubusercontent.com/49629370/224524811-897286de-6d6d-4c3c-955a-50be13d290cf.png)
 
 <b>Register a New Device</b>
 
@@ -2216,32 +2204,16 @@ ChirpStack LoraServer supports multiple system configurations, with only one by 
 
 2. Once done, click the "**+ CREATE**" button.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/27.application-available.png"
-  width="100%"
-  caption="List of Applications Created"
-/>
+![27 application-available](https://user-images.githubusercontent.com/49629370/224524804-16a378d0-7356-4c5a-b875-3434c23b6423.png)
 
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/28.application-page.png"
-  width="100%"
-  caption="Device Tab of an Application"
-/>
+![28 application-page](https://user-images.githubusercontent.com/49629370/224524800-f93775aa-b832-45e5-9a24-b9d4fba3ed37.png)
 
 3. Once inside the **DEVICES** tab, create a new device (LoRaWAN node) by clicking on the "**+ CREATE**" button.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/29.adding-node.png"
-  width="100%"
-  caption="Add a New Device"
-/>
+![29 adding-node](https://user-images.githubusercontent.com/49629370/224524792-ff98d592-b3fa-484b-83e0-24853e3a37c2.png)
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/30.new-device-registration.png"
-  width="100%"
-  caption="Chirpstack Adding Node into the RAK3172 Module"
-/>
+![30 new-device-registration](https://user-images.githubusercontent.com/49629370/224524780-8ffb71fc-5d44-4600-a6d5-3ed03de9ceb8.png)
 
 6. Once the node is created, fill in the necessary data. You can generate a Device EUI automatically by clicking the following icon, or you can write a correct Device EUI in the edit box.
 
@@ -2261,49 +2233,29 @@ Device profiles **DeviceProfile_OTAA** and **DeviceProfile_ABP** are only availa
 If you have your own Chirpstack installation, you can set up the device profile with `LoRaWAN MAC version 1.0.3` and `LoRaWAN Regional Parameters revision B` to make it compatible with RAK3172.
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/31.adding-parameters.png"
-  width="100%"
-  caption="Generate a New Device EUI "
-/>
+![31 adding-parameters](https://user-images.githubusercontent.com/49629370/224524771-8e4b2375-3695-439d-90c3-d102eff2696c.png)
 
 
 ##### Chirpstack OTAA Device Registration
 
 1. If you have selected **DeviceProfile_OTAA**, as shown in **Figure 214**, then after the device is created, an Application Key must be also created for this device.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/32.otaa.png"
-  width="100%"
-  caption="Chirpstack OTAA Activation"
-/>
+![32 otaa](https://user-images.githubusercontent.com/49629370/224524767-b09791ba-3ffa-4c5e-ab7f-1fc2ce588137.png)
 
 2. A previously created Application Key can be entered here, or a new one can be generated automatically by clicking the icon highlighted in red in **Figure 215**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/33.otaa-set-device-keys.png"
-  width="100%"
-  caption="Chirpstack OTAA Set Application Keys"
-/>
+![33 otaa-set-device-keys](https://user-images.githubusercontent.com/49629370/224524761-75639bf2-d922-4dc3-b2fd-bc0ed6441a0e.png)
 
 3. Once the Application Key is added to the form, the process can be finalized by clicking on the **SET DEVICE-KEYS** button.
 
 * As shown in **Figure 216**, a new device should be listed in the **DEVICES** tab. The most important parameters, such as the **Device EUI**, are shown in the summary.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/34.set-device-eui.png"
-  width="100%"
-  caption="Chirpstack OTAA List of Device in the Device Tab"
-/>
+![34 set-device-eui](https://user-images.githubusercontent.com/49629370/224524754-21ff172e-713c-42e0-be2d-c65250dbf7e7.png)
 
 4. To end the process, it is a good practice to review that the Application Key is properly associated with this device. The Application Key can be verified in the **KEYS (OTAA)** tab, as shown in **Figure 217**.
 
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/35.application-key.png"
-  width="100%"
-  caption="Application Key Associated with the New Device"
-/>
+![35 application-key](https://user-images.githubusercontent.com/49629370/224524749-ef78d2de-8e03-4150-9c82-9af53b09b72e.png)
 
 :::tip 📝 NOTE:
 
@@ -2336,11 +2288,7 @@ You will receive `OK` when you input the two commands. After setting `ATE`, you 
 If there is no `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 115200. Also, you can check if the device is powered correctly. If you are getting power from a USB port, ensure that you have a good USB cable.
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
-  width="90%"
-  caption="at+version command response"
-/>
+<img width="460" alt="atstart" src="https://user-images.githubusercontent.com/49629370/224524747-a61c6cf1-4028-4cb3-9efd-78102cc8adcb.png">
 
 2. The next step is to configure the OTAA LoRaWAN parameters in RAK3172:
 
@@ -2401,11 +2349,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/otaaconfig.png"
-  width="90%"
-  caption="Configuring LoRa Parameters"
-/>
+<img width="460" alt="otaaconfig" src="https://user-images.githubusercontent.com/49629370/224524741-b802c028-2a57-48f2-92ca-a747dc38d3e4.png">
 
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the DevEUI and AppKey. You need the use the values from the Chirpstack device console.
 
@@ -2435,11 +2379,7 @@ Set the Application Key.
 AT+APPKEY=F921D50CD7D02EE3C5E6142154F274B2
 ```
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_otaa_eui.png"
-  width="90%"
-  caption="Configuring LoRa Parameters"
-/>
+![chirp_otaa_eui](https://user-images.githubusercontent.com/49629370/224524729-d9c1afab-07ea-411c-9cee-a9598890a24d.png)
 
 4. After EUI and key configuration, the device can now join the network and send some payload.
 
@@ -2478,11 +2418,7 @@ AT+SEND=2:12345678
 
 Send command format: **`AT+SEND=<port>:<payload>`**
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_otaa_send.png"
-  width="90%"
-  caption="OTAA Test Sample Data Sent via RAK Serial Port Tool"
-/>
+![41 message-received](https://user-images.githubusercontent.com/49629370/224524677-85e83d6f-8fd0-4138-91b6-39368053261f.png)
 
 On the ChirpStack platform, you should see the join and uplink messages in the **LORAWAN FRAMES** tab, as shown in **Figure 222**. By convention, messages sent from nodes to gateways are considered as **Uplinks** while messages sent by gateways to nodes are considered as **Downlinks**.
 
@@ -2505,11 +2441,7 @@ Tick the checkbox **Disable counting frame verification**. During the test, when
 :::
 
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/42.configuring-device-abp.png"
-  width="100%"
-  caption="ChirpStack Console, Configuring a Device"
-/>
+![42 configuring-device-abp](https://user-images.githubusercontent.com/49629370/224524665-9a05076f-669f-4fd8-a9ad-5aa9a2959302.png)
 
 2. After selecting the ABP mode, the following parameters appear in the **ACTIVATION** tab:
 
@@ -2519,11 +2451,7 @@ Then, you can see that there are some parameters for ABP in the **ACTIVATION** i
   * **Network Session Key**
   * **Application Session Key**
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/43.abp-activation-parameters.png"
-  width="100%"
-  caption="Chirpstack ABP Activation Parameters Needed"
-/>
+![43 abp-activation-parameters](https://user-images.githubusercontent.com/49629370/224524661-ecdc62b3-aac4-444a-8895-586e01ae3071.png)
 
 3. The parameters can be generated as random numbers by the platform or can be set with user values. Once these parameters are filled in properly, the process is completed by clicking on the **ACTIVATE DEVICE** button.
 
@@ -2551,11 +2479,7 @@ You will receive `OK` when you input the two commands. After setting `ATE`, you 
 If there is no `OK` or any reply, you need to check if the wiring of your UART lines is correct and if the baud is correctly configured to 115200. Also, you can check if the device is powered correctly. If you are getting power from a USB port, ensure that you have a good USB cable.
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/atstart.png"
-  width="90%"
-  caption="at+version command response"
-/>
+<img width="460" alt="atstart" src="https://user-images.githubusercontent.com/49629370/224524650-00faec78-8ba4-4053-bf64-61a717d2aabf.png">
 
 2. The next step is to configure the ABP LoRaWAN parameters in RAK3172:
 
@@ -2616,11 +2540,7 @@ To illustrate, you can use sub-band 2 by sending the command `AT+MASK=0002`.
 
 
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/abpconfig.png"
-  width="90%"
-  caption="Configuring LoRa Parameters"
-/>
+<img width="460" alt="abpconfig" src="https://user-images.githubusercontent.com/49629370/224524640-fc7b77ad-5f62-4189-a5fb-99a62dc916e4.png">
 
 3. After the configuration of the LoRaWAN parameters, the next step is to set up the device address and session keys. You need the use the values from the TTN device console.
 
@@ -2646,11 +2566,7 @@ Set the Network Session Key.
 AT+NWKSKEY=C280CB8D1DF688BC18601A97025C5488
 ```
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_abp_key.png"
-  width="90%"
-  caption="Configuring LoRa Parameters"
-/>
+![chirp_abp_key](https://user-images.githubusercontent.com/49629370/224524630-4c1c7007-5bcd-408a-ba86-aaa7ee73ebc3.png)
 
 After EUI and keys configuration, the device can now join the network and send some payload.
 
@@ -2681,11 +2597,7 @@ AT+SEND=2:12341234
 ```
 Send command format: **`AT+SEND=<port>:<payload>`**
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/chirp_abp_send.png"
-  width="90%"
-  caption="ABP Test Sample Data Sent via RAK Serial Port Tool"
-/>
+![chirp_abp_send](https://user-images.githubusercontent.com/49629370/224524623-5662f060-9426-4ae0-9a27-7461ca28b893.png)
 
 
 #### LoRa P2P Mode
@@ -2709,11 +2621,7 @@ You will receive `OK` when you input the two commands. After setting `ATE`, you 
 Try again `AT` and you should see it on the terminal followed by `OK`.
 
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-1.png"
-  width="90%"
-  caption="at+version command response"
-/>
+![p2p-1](https://user-images.githubusercontent.com/49629370/224524615-d20e0a21-361c-40a8-80a4-3d8cef0deaca.png)
 
 1. In setting up the RAK3172 to work in LoRa P2P mode, you need to change the LoRa network work mode command on both RAK3172 modules.
 
@@ -2722,11 +2630,7 @@ AT+NWM=0
 ```
 `AT+NWM` parameter mode can be either 0=LoRa P2P or 1=LoRaWAN.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-2.png"
-  width="90%"
-  caption="P2P Mode"
-/>
+![p2p-2](https://user-images.githubusercontent.com/49629370/224524610-91c6307a-f24b-4c43-8982-68f66167c7ab.png)
 
 :::tip 📝 NOTE:
 - The device will start automatically if you change modes from LoRaWAN to LoRa P2P and vice-versa.
@@ -2752,11 +2656,7 @@ For this P2P setup, the LoRa parameters are the following:
 Refer to the P2P Mode section of the [AT command documentation](/Product-Categories/WisDuo/RAK3172-Module/AT-Command-Manual/) to learn more about the definition of the parameters used and the individual commands if you want specific parameters changed.
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-3.png"
-  width="90%"
-  caption="Configuring P2P in both RAK3172 Module"
-/>
+![p2p-3](https://user-images.githubusercontent.com/49629370/224524597-f169952d-3d5b-4b55-98e8-68aea2b88236.png)
 
 3. To set one module as the receiver (RX), you need to set the value of the P2P receive command.
 
@@ -2798,11 +2698,7 @@ AT+PSEND= <payload>
 - `<payload>`: 2~500 digit length, must be an even number of digits and character 0-9, a-f, A-F only, representing 1~256 hexadecimal numbers. For example, if the payload is like ` 0x03, 0xAA, 0x32`, then the AT command should be `AT+PSEND = 03AA32`.
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/p2p-4.png"
-  width="90%"
-  caption="Configuring P2P in both RAK3172 Module"
-/>
+![p2p-4](https://user-images.githubusercontent.com/49629370/224524586-c2448080-6a90-4dd9-97e0-b2adf4c41690.png)
 
 ## Miscellaneous
 
@@ -2859,33 +2755,17 @@ If your firmware upload always fails, check your current baud rate setting using
 
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/1.png"
-  width="80%"
-  caption="Device Firmware Upgrade Tool"
-/>
+![1](https://user-images.githubusercontent.com/49629370/224524567-a45a7e23-a80d-45f5-ba74-84f862ed1d4a.png)
 
 5.  Select the application firmware file of the module with the suffix **.bin**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/2.png"
-  width="80%"
-  caption="Select firmware"
-/>
+![2](https://user-images.githubusercontent.com/49629370/224524563-aaa9748e-8ebf-4c80-ab10-403f0507bdd0.png)
 
 6.  Click the **Upgrade** button to upgrade the device. After the upgrade is complete, the RAK3172 will be ready to work with the new firmware.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/3.png"
-  width="80%"
-  caption="Firmware upgrading"
-/>
+![3](https://user-images.githubusercontent.com/49629370/224524561-18bab9a4-22bc-40cb-8a23-c0587039b1ec.png)
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/4.png"
-  width="80%"
-  caption="Upgrade successful"
-/>
+![4](https://user-images.githubusercontent.com/49629370/224524551-138f31e3-ddfb-4a64-bcff-ade6563b016b.png)
 
 ### Arduino Installation
 

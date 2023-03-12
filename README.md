@@ -181,19 +181,19 @@ The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and 
 :::
 
 
-**Example code**
+**Example code blink led yellow on RAK3172_Canopus board**
 
 ```c
 void setup()
 {
-  pinMode(PA0, OUTPUT); //Change the P0_04 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
+  pinMode(PA8, OUTPUT); //Change the PA8 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
 }
 
 void loop()
 {
-  digitalWrite(PA0,HIGH); //Change the PA0 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  digitalWrite(PA8,HIGH); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
   delay(1000); // delay for 1 second
-  digitalWrite(PA0,LOW); //Change the PA0 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  digitalWrite(PA8,LOW); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
   delay(1000); // delay for 1 second
 }
 ```
@@ -266,6 +266,71 @@ void loop()
 
 ```
 
+**Modbus RTU**
+
+Modbus RTU use Serial1 on RAK3172_Canopus board
+
+| **Serial Port**   | **Serial Instance Assignment** | **Default Mode** |
+| ----------------- | ------------------------------ | ---------------- |
+| UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
+
+![RAKmodbus](https://user-images.githubusercontent.com/49629370/224534542-f279d2f3-cd5c-4dbe-8af6-d8c383c315a0.PNG)
+
+
+**Example Code**
+
+Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canopus board:
+
+```c
+#include "Canopus_Modbus.h"
+ModbusMaster node;
+#define LED_YELLOW PA8
+uint8_t result;
+void setup()
+{
+  pinMode(LED_YELLOW, OUTPUT);
+  Serial.begin(115200);
+  Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
+  Serial_Canopus.begin(9600, SERIAL_8N1);
+
+}
+void loop()
+{
+  //***************READ node 1**************************
+  node.begin(1, Serial_Canopus); //slave ID node
+  Serial.printf("");
+  Serial.printf("\r\n\n\nExample read modbus RTU for RAK3172_Canopus board");
+
+  result = node.readHoldingRegisters(0, 10);//Read 40000 to 40009
+  delay(10);
+  if (result == node.ku8MBSuccess) //Read success
+  {
+    for (uint8_t i = 0; i < 10; i ++ )
+    {
+      Serial.printf("\r\nValue 4000%d: %d", i, node.getResponseBuffer(i));
+    }
+  }
+  else Serial.print("Read Fail node 1"); //read fail
+  digitalWrite(LED_YELLOW, !digitalRead(PA8)); //blink led yellow
+  delay(500);
+}
+```
+
+The Arduino Serial Monitor shows the I2C device found.
+
+```c
+Example read modbus RTU for RAK3172_Canopus board
+Value 40000: 1
+Value 40001: 2
+Value 40002: 3
+Value 40003: 4
+Value 40004: 5
+Value 40005: 6
+Value 40006: 7
+Value 40007: 8
+Value 40008: 9
+Value 40009: 10
+```
 **I2C**
 
 There is one I2C peripheral available on RAK3172.

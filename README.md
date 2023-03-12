@@ -44,11 +44,11 @@ Once the Arduino IDE has been successfully installed, you can now configure the 
 
 ![preferences](https://user-images.githubusercontent.com/49629370/224521061-7ff3624f-7f93-479d-98b3-5c6e0dc08208.png)
 
-2. To add the RAK3172_Canopus to your Arduino Boards list, edit the **Additional Board Manager URLs**. Click the icon, as shown in **Figure 5**.
+2. To add the RAK3172_Canopus to your Arduino Boards list, edit the **Additional Board Manager URLs**.
 
 ![additional-boards](https://user-images.githubusercontent.com/49629370/224521079-1eee507e-22ed-4f4e-b52d-965619bf090e.png)
 
-3. Copy the URL below and paste it on the field, as shown in **Figure 6**. If there are other URLs already there, just add them on the next line. After adding the URL, click **OK**.
+3. Copy the URL below and paste it on the field. If there are other URLs already there, just add them on the next line. After adding the URL, click **OK**.
 
 ```json
 https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
@@ -62,7 +62,7 @@ https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main
 
 ![boards-manager](https://user-images.githubusercontent.com/49629370/224521119-0c5ceeaf-b944-413b-9f04-d7f7e5b9ca50.png)
 
-6. Write `RAK` in the search bar, as shown in **Figure 8**. This will show the available RAKwireless module boards that you can add to your Arduino Board list.
+6. Write `RAK` in the search bar. This will show the available RAKwireless module boards that you can add to your Arduino Board list.
 
 7. Click on the area highlighted in blue to select **RAKwireless RUI STM32 Boards**. Install the latest version of the  **RAKwireless RUI STM32 Boards** by clicking on **Install** button.
 
@@ -82,7 +82,7 @@ Connect the RAK3172 via USB type C and check COM Port using Windows **Device Man
 
 ##### Compile an Example with Arduino LED Breathing
 
-1. After completing the steps on adding your RAK3172_Canopus to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add two LEDs to the bare minimum schematic of the RAK3172 module, as shown in **Figure 11**.
+1. After completing the steps on adding your RAK3172_Canopus to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add two LEDs to the bare minimum schematic of the RAK3172 module.
 
 <rk-img
   src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_bare_minimum_schematic_led.png"
@@ -144,7 +144,8 @@ You can use any of the pins below as Digital Pin.
 | PA6          | SPI                       |
 | PA7          | SPI                       |
 | PA8          | LED_YELLOW                |
-| PA9          | LED_BLUE                  |
+| PA9          | I2C_SCL                   |
+| PA10         | I2C_SDA                   |
 | PA15         |                           |
 | PB2          |                           |
 | PB3          | ADC1                      |
@@ -204,11 +205,7 @@ You can use any of the pins below as Analog Input.
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-adc-pins.png"
-  width="90%"
-  caption="Available Analog pins in RAK3172"
-/>
+![rak3172-adc-pins](https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png)
 
 
 **Example code**
@@ -243,11 +240,7 @@ There are two UART peripherals available on the RAK3172 module. There are also d
 | UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
 | UART2 (pins 1, 2) | Serial                         | AT Command       |
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-uart-pins.png"
-  width="90%"
-  caption="Available UART pins in RAK3172"
-/>
+![rak3172-uart-pins](https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png)
 
 **Example Code**
 
@@ -281,11 +274,7 @@ There is one I2C peripheral available on RAK3172.
 - Use Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) library to communicate with I2C devices.
 
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-i2c-pins.png"
-  width="90%"
-  caption="Available I2C pins in RAK3172"
-/>
+![rak3172-i2c-pins](https://user-images.githubusercontent.com/49629370/224522611-246efbcf-a1fb-4503-9ea5-41dc0b514656.png)
 
 **Example Code**
 
@@ -399,27 +388,15 @@ After configuring your gateway, you need to register it in TTNv3:
 
 2. Navigate to the **Console** page and click on **gateway** icon, as shown in **Figure 25**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ttnv3-initial.png"
-  width="100%"
-  caption="TTNv3 gateway registration and configuration"
-/>
+![ttnv3-initial](https://user-images.githubusercontent.com/49629370/224522665-860970ca-7272-4955-9953-532928a196cd.png)
 
 3. On **General Settings**, enter the **Gateway ID**, **Gateway EUI**, and **Gateway Name**. This information is available in your LoRaWAN gateway configuration. Select the **Gateway Server address** according to the region where the LoRaWAN gateway will be installed.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ttnv3-gwconfig.png"
-  width="100%"
-  caption="TTNv3 gateway registration and configuration"
-/>
+![ttnv3-gwconfig](https://user-images.githubusercontent.com/49629370/224522671-602e8d99-a976-4767-a6a2-efc0f3e8b52e.png)
 
 4. Select the **Frequency plan** for your region (with used by TTN), then click on the **Create gateway** button. This will add a new gateway to TTNv3.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ttnv3-add.png"
-  width="100%"
-  caption="TTNv3 add new Gateway"
-/>
+![ttnv3-add](https://user-images.githubusercontent.com/49629370/224522677-b88c5a16-9be7-4a4d-8c36-32aa5136c4d1.png)
 
 ###### Register the Device on TTNv3
 
@@ -435,11 +412,7 @@ After a successful registration of the RAK3172 device on the LNS, you can now pr
 
 3. Open the example code under **RAK WisBlock RUI examples**: **File** -> **Examples** -> **RAK WisBlock RUI examples** -> **Example** -> **LoRaWan_OTAA**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/otaa-rak3172.png"
-  width="100%"
-  caption="OTAA LoRaWAN application example"
-/>
+![otaa-rak3172](https://user-images.githubusercontent.com/49629370/224522686-55cd5692-a755-47cd-9f46-097ff5fc2154.png)
 
 4. In the example code, you need to modify the device EUI **OTAA_DEVEUI**, the application EUI **OTAA_APPEUI**, and the application key **OTAA_APPKEY**.
 
@@ -463,11 +436,7 @@ After a successful registration of the RAK3172 device on the LNS, you can now pr
 #define OTAA_APPKEY   {0xB4, 0x85, 0x7E, 0xFE, 0x1C, 0xB5, 0x15, 0xEB, 0x44, 0x61, 0x0D, 0x9B, 0x20, 0x6A, 0xF3, 0x3A}
 ```
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/lorawan_otaa_parameter.png"
-  width="190%"
-  caption="Configuring DEVEUI, APPEUI and APPKEY"
-/>
+![lorawan_otaa_parameter](https://user-images.githubusercontent.com/49629370/224522694-c9c069bf-c3a9-4030-af6b-071d917ff565.png)
 
 3. Depending on the Regional Band you selected, you might need to configure the sub-band of your RAK module to match the gateway and LoRaWAN network server. This is especially important for Regional Bands like US915, AU915, and CN470.
 
@@ -503,11 +472,7 @@ RAK3172 supports the following regions:
 * RAK_REGION_AS923-4 = 11
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/otaa-band.png"
-  width="100%"
-  caption="Updating to US915 and setting up channel mask"
-/>
+![otaa-band](https://user-images.githubusercontent.com/49629370/224522713-bee3c241-aac0-4a87-a305-2df3b9ec5faa.png)
 
 
 :::tip 📝 NOTE:
@@ -519,34 +484,18 @@ RAK3172 supports the following regions:
 :::
 
 4. Open the **Tools** Menu and select a COM port. **COM28** is currently used.
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/select-port.png"
-  width="100%"
-  caption="Select COM port"
-/>
+![select-port](https://user-images.githubusercontent.com/49629370/224522719-e3b13b50-e84d-4d48-9710-83a4e0893356.png)
 
 5. The last step is to upload the code by clicking the **Upload** icon on Arduino IDE. Take note that you should select the right board and COM port.
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/otaa-upload.png"
-  width="100%"
-  caption="Uploading the code"
-/>
+![otaa-upload](https://user-images.githubusercontent.com/49629370/224522725-7bd9acd6-efb5-4b5c-a8f9-21b88db19ba1.png)
 
 6. You should now be able to see the console logs using the serial monitor of Arduino IDE. Sometimes COM port will be disconnected, so you won't be able to see the terminal output immediately. You can reconnect the module or try to push the reset button to see the terminal output.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/serial-console.png"
-  width="90%"
-  caption="Arduino serial monitor logs"
-/>
+![serial-console](https://user-images.githubusercontent.com/49629370/224522736-16703c2e-8764-4117-8bab-1e05e0a0fac8.png)
 
 7. Check on the LoRaWAN network TTN console logs if your device has been successfully joined with the `join-request` and `join-accept` messages.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/ttn-log.png"
-  width="90%"
-  caption="TTN console log"
-/>
+![ttn-log](https://user-images.githubusercontent.com/49629370/224522740-a3101151-ad78-406d-9213-debf502d70d2.png)
 
 The modified `LoRaWAN_OTAA` project is available below.
 

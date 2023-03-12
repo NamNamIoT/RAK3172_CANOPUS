@@ -1,3 +1,4 @@
+
 # RAK3172_Canopus Module Quick Start Guide
 
 #### Information RAK3172_Canopus board
@@ -7,7 +8,16 @@
 - RS485 auto DERE x1 port
 - I2C x1 port
 - input x3 port
-- Layout
+- Layout size 90x60mm, hole to hole 80mm, hole size M3.
+
+
+:::warning ⚠️ WARNING
+If you need modify or any request for design hardware, development product IoT please contact me:
+- Facebook https://www.facebook.com/kuem0912/
+- Email: thanhnamLT5@gmail.com
+- Number phone: +84932912789
+- Whatsapp: +84969809444
+
 ![Rak](https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg)
 ![333804518_559518592823403_3097202962608479760_n](https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg)
 

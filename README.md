@@ -7,7 +7,7 @@
 - Battery backup 18650 x1 cell
 - RS485 auto DERE x1 port
 - I2C x1 port
-- input x3 port
+- IO port, led, button.
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
 ## 👋 Welcome!

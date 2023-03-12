@@ -2,9 +2,14 @@
 
 #### Information RAK3172_Canopus board
 
-- Schematic
+- Power: 5-24V, support solar charge.
+- Battery backup 18650 x1 cell
+- RS485 auto DERE x1 port
+- I2C x1 port
+- input x3 port
 - Layout
-- Bom list and CPL
+![Rak](https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg)
+![333804518_559518592823403_3097202962608479760_n](https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg)
 
 #### Software
 

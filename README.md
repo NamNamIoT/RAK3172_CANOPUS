@@ -15,7 +15,7 @@ _**If you are using Windows 10**_.
 Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::
 
-- Add [RAK3172_Canopus as a supported board in Arduino IDE](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#-board-support-package-in-arduino-ide) by updating Board Manager URLs in **Preferences** settings of Arduino IDE with the JSON URL below.
+- Add RAK3172_Canopus as a supported board in Arduino IDE by updating Board Manager URLs in **Preferences** settings of Arduino IDE with the JSON URL below.
 ```json
 https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
 ```
@@ -42,19 +42,11 @@ Once the Arduino IDE has been successfully installed, you can now configure the 
 
 1. Open Arduino IDE and go to **File** > **Preferences**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/preferences.png"
-  width="100%"
-  caption="Arduino preferences"
-/>
+![preferences](https://user-images.githubusercontent.com/49629370/224521061-7ff3624f-7f93-479d-98b3-5c6e0dc08208.png)
 
 2. To add the RAK3172_Canopus to your Arduino Boards list, edit the **Additional Board Manager URLs**. Click the icon, as shown in **Figure 5**.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/additional-boards.png"
-  width="80%"
-  caption="Modifying Additional Board Manager URLs"
-/>
+![additional-boards](https://user-images.githubusercontent.com/49629370/224521079-1eee507e-22ed-4f4e-b52d-965619bf090e.png)
 
 3. Copy the URL below and paste it on the field, as shown in **Figure 6**. If there are other URLs already there, just add them on the next line. After adding the URL, click **OK**.
 
@@ -62,51 +54,31 @@ Once the Arduino IDE has been successfully installed, you can now configure the 
 https://raw.githubusercontent.com/RAKWireless/RAKwireless-Arduino-BSP-Index/main/package_rakwireless.com_rui_index.json
 ```
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/preferences-url.png"
-  width="100%"
-  caption="Add additional board manager URLs"
-/>
+![preferences-url](https://user-images.githubusercontent.com/49629370/224521108-5f18b3a2-7775-48fd-b8c5-f71ffb2e427c.png)
 
 4. Restart the Arduino IDE.
 
 5. Open the Boards Manager from the Tools Menu.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/boards-manager.png"
-  width="100%"
-  caption="Opening Arduino boards manager"
-/>
+![boards-manager](https://user-images.githubusercontent.com/49629370/224521119-0c5ceeaf-b944-413b-9f04-d7f7e5b9ca50.png)
 
 6. Write `RAK` in the search bar, as shown in **Figure 8**. This will show the available RAKwireless module boards that you can add to your Arduino Board list.
 
 7. Click on the area highlighted in blue to select **RAKwireless RUI STM32 Boards**. Install the latest version of the  **RAKwireless RUI STM32 Boards** by clicking on **Install** button.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rui3-stm32.png"
-  width="80%"
-  caption="Installing RAKwireless RUI STM32 Boards"
-/>
+![rui3-stm32](https://user-images.githubusercontent.com/49629370/224521130-6419c6b9-d8fc-41d8-ac7e-e9a03db0fd59.png)
 
 ##### Configure RAK3172_Canopus on Boards Manager
 
 8. Once the BSP is installed, select  **Tools** > **Boards Manager** > **RAKWireless RUI STM32 Modules** > **WisDuo RAK3172 Evaluation Board**. The RAK3172 Evaluation board uses the RAK3172 WisDuo module.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rui-stm32.png"
-  width="100%"
-  caption="Selecting RAK3172 Module"
-/>
+![rui-stm32](https://user-images.githubusercontent.com/49629370/224521144-d1ec1a5f-5c67-46f1-8f99-5da1b4b57a23.png)
 
 ##### RAK3172 COM Port on Device Manager
 
 Connect the RAK3172 via USB type C and check COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rui-port.png"
-  width="70%"
-  caption="Device manager ports (COM & LPT)"
-/>
+![rui-port](https://user-images.githubusercontent.com/49629370/224521157-ca08067c-cce1-434d-bd27-10ac67277c7b.png)
 
 ##### Compile an Example with Arduino LED Breathing
 
@@ -118,61 +90,37 @@ Connect the RAK3172 via USB type C and check COM Port using Windows **Device Man
   caption="RAK3172 with two LEDs"
 />
 
-2. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection. See [**Figure 9**](#configure-rak3172-on-boards-manager).
+2. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection.
 
-3. Connect the RAK3172_Canopus via USB type C. See [**Figure 10**](#rak3172-com-port-on-device-manager).
+3. Connect the RAK3172_Canopus via USB type C.
 
 4. Open the **Tools** Menu and select a COM port. **COM28** is currently used.
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/select-port.png"
-  width="100%"
-  caption="Select COM port"
-/>
+![select-port](https://user-images.githubusercontent.com/49629370/224521257-10db6f5c-5e77-4e4c-b020-58a330de9ba4.png)
 
 5. You can see the serial monitor icon and click it to connect the COM port.
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/serial-mon.png"
-  width="100%"
-  caption="Open Arduino serial monitor"
-/>
+![serial-mon](https://user-images.githubusercontent.com/49629370/224521270-9a2f7282-18f3-4334-a568-788f2e5a7bf0.png)
 
 6. Open **Arduino_Led_Breathing** example code.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/led-example.png"
-  width="100%"
-  caption="Arduino Led Breathing example"
-/>
+![led-example](https://user-images.githubusercontent.com/49629370/224521281-3bb48679-7d97-43c2-a011-3373e572af73.png)
 
 7. Click on the **Verify** icon to check if you have successfully compiled the example code.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/verify-code.png"
-  width="100%"
-  caption="Verify the example code"
-/>
+![verify-code](https://user-images.githubusercontent.com/49629370/224521295-0991bbb8-ab1a-44a7-b6fd-228f8f26dc27.png)
 
 8. Click the **Upload** icon to send the compiled firmware to your RAK3172 module.
 
 :::tip 📝 NOTE:
-RAK3172 should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
+RAK3172_Canopus should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
 
 If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
 :::
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/upload-code.png"
-  width="100%"
-  caption="Upload the example code"
-/>
+![upload-code](https://user-images.githubusercontent.com/49629370/224521302-282b1a09-dc2c-43ae-a24a-9be1c7050a3d.png)
 
 9. If the upload is successful, you will see the **Upgrade Complete** message.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/dev-prog.png"
-  width="100%"
-  caption="Device programmed successfully"
-/>
+![dev-prog](https://user-images.githubusercontent.com/49629370/224521311-344542b3-d8ec-4008-a721-58e47bf241ce.png)
 
 10. After the Device Programmed is completed, you will see that LEDs are blinking.
 
@@ -180,11 +128,7 @@ If BOOT mode is not initiated, pull to ground the RESET pin twice (or double cli
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-pins.png"
-  width="90%"
-  caption="Available Peripherals and Digital I/O pins in RAK3172 module"
-/>
+![rak3172-pins](https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png)
 
 ###### How to Use Digital I/O
 
@@ -199,21 +143,17 @@ You can use any of the pins below as Digital Pin.
 | PA5          | SPI                       |
 | PA6          | SPI                       |
 | PA7          | SPI                       |
-| PA8          |                           |
-| PA9          | I2C_SCL                   |
+| PA8          | LED_YELLOW                |
+| PA9          | LED_BLUE                  |
 | PA15         |                           |
 | PB2          |                           |
 | PB3          | ADC1                      |
 | PB4          | ADC2                      |
 | PB5          |                           |
-| PB6          | UART1_TX                  |
-| PB7          | UART1_RX                  |
+| PB6          | UART1_TX  RS485 MODBUSRTU |
+| PB7          | UART1_RX  RS485 MODBUSRTU |
 
-<rk-img
-  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172-io-pins.png"
-  width="100%"
-  caption="Available Digital I/O pins in RAK3172 module"
-/>
+![rak3172-io-pins](https://user-images.githubusercontent.com/49629370/224521420-2f575c71-559b-45e6-a3ad-e7ac7075fcd9.png)
 
 The pins listed below must not be used.
 

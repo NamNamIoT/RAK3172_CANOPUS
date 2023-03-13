@@ -478,7 +478,7 @@ After configuring your gateway, you need to register it in TTNv3:
 - [North America](https://nam1.cloud.thethings.network/)
 - [Australia](https://au1.cloud.thethings.network/)
 
-2. Navigate to the **Console** page and click on **gateway** icon, as shown in **Figure 25**.
+2. Navigate to the **Console** page and click on **gateway** icon.
 
 ![ttnv3-initial](https://user-images.githubusercontent.com/49629370/224522665-860970ca-7272-4955-9953-532928a196cd.png)
 
@@ -498,9 +498,9 @@ The next step is to follow the procedure described in the section [TTN OTAA Devi
 
 After a successful registration of the RAK3172 device on the LNS, you can now proceed with running the LoRaWAN OTAA demo application example.
 
-1. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection. See [**Figure 9**](#configure-rak3172-on-boards-manager).
+1. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection.
 
-2. Connect the RAK3172 via UART and check RAK3172 COM Port. See [**Figure 10**](#rak3172-com-port-on-device-manager).
+2. Connect the RAK3172 via UART and check RAK3172 COM Port.
 
 3. Open the example code under **RAK WisBlock RUI examples**: **File** -> **Examples** -> **RAK WisBlock RUI examples** -> **Example** -> **LoRaWan_OTAA**.
 

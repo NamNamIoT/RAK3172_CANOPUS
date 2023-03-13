@@ -1,53 +1,32 @@
 #include "Canopus_Modbus.h"
 ModbusMaster node;
+#define LED_YELLOW PA8
 uint8_t result;
 void setup()
 {
-  pinMode(PA8, OUTPUT);
-  pinMode(PA9, OUTPUT);
+  pinMode(LED_YELLOW, OUTPUT);
   Serial.begin(115200);
-  Serial.print("\r\n*****************KIT DEV ESP32*******************");
-  Serial_Canopus.begin(9600, SERIAL_8N1); 
-  
+  Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
+  Serial_Canopus.begin(9600, SERIAL_8N1);
+
 }
 void loop()
-{ 
+{
   //***************READ node 1**************************
-  node.begin(1, Serial_Canopus); //ID node 1
-  Serial.println("");
-  Serial.println("Wait Read node 1");
+  node.begin(1, Serial_Canopus); //slave ID node
+  Serial.printf("");
+  Serial.printf("\r\n\n\nExample read modbus RTU for RAK3172_Canopus board");
 
-  result = node.readHoldingRegisters(1, 4);//Read 40001, 40002, 40003
+  result = node.readHoldingRegisters(0, 10);//Read 40000 to 40009
   delay(10);
-  if (result == node.ku8MBSuccess) //Read ok
+  if (result == node.ku8MBSuccess) //Read success
   {
-    uint16_t data[3];
-    data[0]=node.getResponseBuffer(0);
-    data[1]=node.getResponseBuffer(1);
-    data[2]=node.getResponseBuffer(2);
-    Serial.printf("\r\nValue 40001: %d",data[0]);
-    Serial.printf("\r\nValue 40002: %d",data[1]);
-    Serial.printf("\r\nValue 40003: %d",data[2]);
+    for (uint8_t i = 0; i < 10; i ++ )
+    {
+      Serial.printf("\r\nValue 4000%d: %d", i, node.getResponseBuffer(i));
+    }
   }
-  else Serial.print("Read Fail node 1");
-  
-// //***************READ node 2**************************
-//  node.begin(2, Serial_Canopus); //ID node 2
-//  Serial.println("");
-//  Serial.println("Wait Read node 2");
-//  result = node.readHoldingRegisters(1, 4);//Read 40001, 40002, 40003
-//  delay(10);
-//  if (result == node.ku8MBSuccess) //Read ok
-//  {
-//    uint16_t data[3];
-//    data[0]=node.getResponseBuffer(0);
-//    data[1]=node.getResponseBuffer(1);
-//    data[2]=node.getResponseBuffer(2);
-//    Serial.printf("\r\nValue 40001: %d",data[0]);
-//    Serial.printf("\r\nValue 40002: %d",data[1]);
-//    Serial.printf("\r\nValue 40003: %d",data[2]);
-//  }
-//  else Serial.print("Read Fail node 2");
-  digitalWrite(PA8, !digitalRead(PA8));
-  delay(500); 
+  else Serial.print("Read Fail node 1"); //read fail
+  digitalWrite(LED_YELLOW, !digitalRead(PA8)); //blink led yellow
+  delay(500);
 }

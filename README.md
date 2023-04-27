@@ -13,7 +13,7 @@
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
 ## ✌️✌️✌️ Welcome! ✌️✌️✌️
-If you need modify or any request for design hardware, development of product IoT please contact me:
+If you need modify or any request for design hardware, development of product IoT please contact me 🕴🏼:
 - 👊🏻Facebook https://www.facebook.com/kuem0912/ 
 - 👊🏻Email: thanhnamLT5@gmail.com
 - 👊🏻Number phone: +84932912789
@@ -29,11 +29,11 @@ If you need modify or any request for design hardware, development of product Io
 ![Rak](https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg)
 
 ![333804518_559518592823403_3097202962608479760_n](https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg)
-#### Hardware Setup
+#### 🧑🏻‍🔧 Hardware Setup 
 
 The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
-#### Software
+#### 🧑🏼‍💻 Software
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 

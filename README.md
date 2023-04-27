@@ -8,7 +8,7 @@
 - RS485 auto DERE x1 port
 - I2C x1 port
 - One-wire
-- Analog in (4-20, 0-10V)
+- Analog in (4-20mA, 0-10V)
 - IO port, led, button.
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 

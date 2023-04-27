@@ -177,10 +177,10 @@ You can use any of the pins below as Digital Pin.
 | ------------ | ------------------------- |
 | PA0          |                           |
 | PA1          |                           |
-| PA4          | SPI                       |
-| PA5          | SPI                       |
-| PA6          | SPI                       |
-| PA7          | SPI                       |
+| PA4          |                           |
+| PA5          |                           |
+| PA6          |                           |
+| PA7          |                           |
 | PA8          | LED_YELLOW                |
 | PA9          | LED_GREEN  (only v0.98)   |
 | PA10         |                           |

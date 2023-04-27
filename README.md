@@ -12,20 +12,20 @@
 - IO port, led, button.
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
-## 👋 Welcome!
+## ✌️✌️✌️ Welcome! ✌️✌️✌️
 If you need modify or any request for design hardware, development of product IoT please contact me:
-- Facebook https://www.facebook.com/kuem0912/ 
-- Email: thanhnamLT5@gmail.com
-- Number phone: +84932912789
-- Whatsapp: +84969809444
+- 👊🏻Facebook https://www.facebook.com/kuem0912/ 
+- 👊🏻Email: thanhnamLT5@gmail.com
+- 👊🏻Number phone: +84932912789
+- 👊🏻Whatsapp: +84969809444
 
-Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98]
+🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]
 
 
 ![338171997_3379629475584926_6618942085151932104_n](https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg)
 
 
-Version 0.98 [First version]
+🕵🏻‍♀️Version 0.98 [First version]
 ![Rak](https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg)
 
 ![333804518_559518592823403_3097202962608479760_n](https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg)

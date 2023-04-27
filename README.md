@@ -7,6 +7,8 @@
 - Battery backup 18650 x1 cell
 - RS485 auto DERE x1 port
 - I2C x1 port
+- One-wire
+- Analog in (4-20, 0-10V)
 - IO port, led, button.
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
@@ -179,8 +181,8 @@ You can use any of the pins below as Digital Pin.
 | PA6          | SPI                       |
 | PA7          | SPI                       |
 | PA8          | LED_YELLOW                |
-| PA9          | I2C_SCL                   |
-| PA10         | I2C_SDA                   |
+| PA9  ?       | I2C_SCL                   |
+| PA10 ?       | I2C_SDA                   |
 | PA15         |                           |
 | PB2          |                           |
 | PB3          | ADC1                      |

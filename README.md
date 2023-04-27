@@ -101,7 +101,7 @@ The RAK3172_Canopus board uses the RAK3172 WisDuo module.
 9. Install RAK3172_Canopus library
 
 ⚠️ WARNING
-Both RAK Wisblock Examples and RAK3172_Canopus Examples support for RAK3172_Canopus board
+**_Both RAK Wisblock Examples_** and **_RAK3172_Canopus Examples_** support for RAK3172_Canopus board
 
 Download https://github.com/NamNamIoT/RAK3172_CANOPUS and Extract to Arduino\libraries
 ![Extra](https://user-images.githubusercontent.com/49629370/224536933-6abbdef3-832f-401c-98c7-cdeeca470cff.PNG)

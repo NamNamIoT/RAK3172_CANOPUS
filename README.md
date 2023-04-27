@@ -18,9 +18,9 @@ If you need modify or any request for design hardware, development of product Io
 - Whatsapp: +84969809444
 
 Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98]
-![343560434_6390273054327965_8807436384440336323_n](https://user-images.githubusercontent.com/49629370/234736254-5b369b17-86b4-4870-929b-f2a454771148.jpg)
 
-![337928121_617830233176268_2979463859300973891_n](https://user-images.githubusercontent.com/49629370/234736518-bf1208ad-3cd2-4f72-92b0-32ea28584745.jpg)
+
+![338171997_3379629475584926_6618942085151932104_n](https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg)
 
 
 Version 0.98 [First version]

@@ -181,8 +181,10 @@ You can use any of the pins below as Digital Pin.
 | PA6          | SPI                       |
 | PA7          | SPI                       |
 | PA8          | LED_YELLOW                |
-| PA9  ?       | I2C_SCL                   |
-| PA10 ?       | I2C_SDA                   |
+| PA9          | LED_GREEN  (only v0.98)   |
+| PA10         |                           |
+| PA11         | I2C_SDA                   |
+| PA12         | I2C_SCL                   |
 | PA15         |                           |
 | PB2          |                           |
 | PB3          | ADC1                      |
@@ -369,8 +371,8 @@ There is one I2C peripheral available on RAK3172.
 
 | **I2C Pin Number** | **I2C Pin Name** |
 | ------------------ | ---------------- |
-| PA9                | I2C_SCL          |
-| PA10               | I2C_SDA          |
+| PA12               | I2C_SCL          |
+| PA11               | I2C_SDA          |
 
 
 - Use Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) library to communicate with I2C devices.

@@ -16,7 +16,9 @@ If you need modify or any request for design hardware, development of product Io
 - Email: thanhnamLT5@gmail.com
 - Number phone: +84932912789
 - Whatsapp: +84969809444
-
+Version 0.99
+![343560434_6390273054327965_8807436384440336323_n](https://user-images.githubusercontent.com/49629370/234736254-5b369b17-86b4-4870-929b-f2a454771148.jpg)
+Version 0.98
 ![Rak](https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg)
 ![333804518_559518592823403_3097202962608479760_n](https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg)
 #### Hardware Setup

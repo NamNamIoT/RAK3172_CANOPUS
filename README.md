@@ -784,4 +784,4 @@ void loop()
 ```
 ### Arduino Installation
 
-Refer to [Software section](#software).
+Refer to [Software section](#Software).

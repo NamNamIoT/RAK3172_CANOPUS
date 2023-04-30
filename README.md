@@ -56,7 +56,7 @@ The default firmware of RAK3172_Canopus is based on RUI3, which allows you to de
 
 If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#arduino-installation) of this document.
 
-:::tip 📝 NOTE
+:::tip 📝 NOTE:
 **For Windows 10 and up users**:
 If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 :::

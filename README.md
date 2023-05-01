@@ -2,7 +2,7 @@
 # RAK3172_Canopus Module Quick Start Guide  
 ## ✌️✌️✌️ Welcome! ✌️✌️✌️
 Hi, im Namnam 🕴🏼.  
-Please contact me if you have a need to develop ioT products.  
+Please contact me if you need to develop ioT products.  
 <p align="left">
 <a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" 
 height="30" width="40" /></a>
@@ -10,15 +10,19 @@ height="30" width="40" /></a>
 </p>
 
 ### Information RAK3172_Canopus board
+|     **Object**    |      **Detail component**      |          **Note**      |
+| ----------------- | ------------------------------ | ---------------------- |
+|        Power      | LP5301QVF                      | 5-30VDC                |
+|    Solar charge   | LT4054			     | upto 800mA             |
+|        RS485      | SP485EE                        | Serial1, auto DERE     |
+|         I2C       | -                              | SDA = PA12, SCL = PA11 |
+|      One-wire     | -                              | ADC4		      |
+|        4-20mA     | -                              | ADC1		      |
+|      Led blue     | -                              | PIN PA9                |
+|      Led yellow   | -                              | PIN PA8                |
+|      LORA SoC     | RAK3172		             | 433-868-915-923 MHz    |
+|       Case        | Plastic                        | IP65         	      | 
 
-- Power: 5-24V, support solar charge.
-- Battery backup 18650 x1 cell
-- RS485 auto DERE x1 port
-- I2C x1 port
-- One-wire
-- Analog in (4-20mA)
-- IO port, led, button.
-- Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]
 ![338171997_3379629475584926_6618942085151932104_n](https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg)

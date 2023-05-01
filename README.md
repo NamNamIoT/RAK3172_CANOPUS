@@ -14,10 +14,8 @@
 
 ## ✌️✌️✌️ Welcome! ✌️✌️✌️
 If you need modify or any request for design hardware, development of product IoT please contact me 🕴🏼:
-[![](https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg)](//www.facebook.com/kuem0912/)
-- 👊🏻Email: thanhnamLT5@gmail.com
-- 👊🏻Number phone: +84932912789
-- 👊🏻Whatsapp: +84969809444
+[![facebook](https://user-images.githubusercontent.com/49629370/235388122-8b0f08c1-3319-4daa-87cf-3c66b912fcd5.png)](https://www.facebook.com/kuem0912/)
+
 
 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]
 

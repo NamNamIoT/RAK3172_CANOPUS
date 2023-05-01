@@ -25,7 +25,7 @@ height="30" width="40" /></a>
 
 
 #### 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]  
-<img src="https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg" width="500"> 
+<img src="https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg" width="400"> 
 
 #### 🕵🏻‍♀️Version 0.98 [First version]  
 ![Rak](https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg)  

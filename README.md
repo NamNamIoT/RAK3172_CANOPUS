@@ -13,9 +13,9 @@
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
 ## ✌️✌️✌️ Welcome! ✌️✌️✌️
-If you need modify or any request for design hardware, development of product IoT please contact me 🕴🏼:
-[![facebook](https://user-images.githubusercontent.com/49629370/235388122-8b0f08c1-3319-4daa-87cf-3c66b912fcd5.png)](https://www.facebook.com/kuem0912/)
-[![whatsapp](https://user-images.githubusercontent.com/49629370/235388125-28712718-f516-4515-95fb-07ce44be6f26.png)](https://wa.me/84969809444)
+If you need modify or any request for design hardware, development of product IoT please contact me 🕴🏼:  
+[![facebook](https://user-images.githubusercontent.com/49629370/235388122-8b0f08c1-3319-4daa-87cf-3c66b912fcd5.png)](https://www.facebook.com/kuem0912/)  
+[![whatsapp](https://user-images.githubusercontent.com/49629370/235388125-28712718-f516-4515-95fb-07ce44be6f26.png)](https://wa.me/84969809444)  
 
 
 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]

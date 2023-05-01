@@ -14,7 +14,9 @@
 
 ## ✌️✌️✌️ Welcome! ✌️✌️✌️
 If you need modify or any request for design hardware, development of product IoT please contact me 🕴🏼.
-
+<p align="left">
+<a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" height="30" width="40" /></a>
+</p>
 
 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]
 

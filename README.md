@@ -1,7 +1,15 @@
 
-# RAK3172_Canopus Module Quick Start Guide
+# RAK3172_Canopus Module Quick Start Guide  
+## ✌️✌️✌️ Welcome! ✌️✌️✌️
+Hi, im Namnam 🕴🏼.  
+Please contact me if you have a need to develop ioT products.  
+<p align="left">
+<a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" 
+height="30" width="40" /></a>
+<a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
+</p>
 
-#### Information RAK3172_Canopus board
+### Information RAK3172_Canopus board
 
 - Power: 5-24V, support solar charge.
 - Battery backup 18650 x1 cell
@@ -12,17 +20,7 @@
 - IO port, led, button.
 - Layout size 90x60mm, hole to hole 80mm, hole size M3.
 
-## ✌️✌️✌️ Welcome! ✌️✌️✌️
-If you need modify or any request for design hardware, development of product IoT please contact me 🕴🏼.
-<p align="left">
-<a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" 
-height="30" width="40" /></a>
-<a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
-</p>
-
 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]
-
-
 ![338171997_3379629475584926_6618942085151932104_n](https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg)
 
 

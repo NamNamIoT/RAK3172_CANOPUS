@@ -212,6 +212,7 @@ void loop()
 ```
 
 **Modbus RTU**
+*This example, our board is modbus master.*
 
 Modbus RTU use Serial1 on RAK3172_Canopus board
 
@@ -364,14 +365,9 @@ The Arduino Serial Monitor shows the I2C device found.
 17:29:20.814 ->
 ```
 
-**SPI**
-
-If your RUI3 project uses SPI, then PA4 to PA7 pins are reserved for RUI3 SPI interface.
-
-
-:::tip 📝 NOTE:
-PA13 and PA14 pins are reserved for SWD debug interface. Check the [Connect to the RAK3172](#connect-to-the-rak3172) section.
-:::
+### Continue update  
+-Modbus slave  
+-Lora P2P  
 
 ### Arduino Installation
 

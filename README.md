@@ -23,12 +23,57 @@ height="30" width="40" /></a>
 |      LORA SoC     | RAK3172		             | 433-868-915-923 MHz    |
 |       Case        | Plastic                        | IP65         	      | 
 
+#### RF Characteristics
+
+The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
+
+##### Operating Frequencies
+
+| Module     | Region        | Frequency     |
+| ---------- | ------------- | ------------- |
+| RAK3172(L) | Europe        | EU433         |
+|            | China         | CN470         |
+| RAK3172(H) | Europe        | EU868         |
+|            | North America | US915         |
+|            | Australia     | AU915         |
+|            | Korea         | KR920         |
+|            | Asia          | AS923-1/2/3/4 |
+|            | India         | IN865         |
+|            | Russia        | RU864         |
+
+#### Electrical Characteristics
+
+##### Operating Voltage
+
+| Feature | Minimum | Typical | Maximum | Unit      |
+| ------- | ------- | ------- | ------- | --------- |
+| VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
+
+
+##### Operating Current
+
+| Feature           | Condition | Minimum                              | Typical | Maximum | Unit |
+| ----------------- | --------- | ------------------------------------ | ------- | ------- | ---- |
+| Operating Current | TX Mode   | 87 (@&nbsp;20&nbsp;dBm 868&nbsp;Mhz) |         |         | mA   |
+|                   | RX Mode   | 5.22                                 |         |         | mA   |
+
+##### Sleep Current
+
+| Feature             | Condition | Minimum (2.1&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
+| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
+| Current Consumption | EU868     | -                    | 1.69                 | -       | μA   |
+|                     | US915     | -                    | 1.69                 | -       | μA   |
+|                     | CN470     | -                    | 1.69                 | -       | μA   |
+
+:::tip 📝 NOTE:
+For the reference application schematic of RAK3172 with minimum components requirements, refer to the [RAK3272S Breakout Board Datasheet.](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
+:::
 
 #### 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]  
 <img src="https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg" width="500"> 
 
 #### 🕵🏻‍♀️Version 0.98 [First version]  
-<img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" width="500" height="600"><img src="https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg" width="500" height="600"> 
+<img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" width="250" height="300"><img src="https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg" width="250" height="300"> 
 #### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 

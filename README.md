@@ -63,8 +63,7 @@ For the reference application schematic of RAK3172 with minimum components requi
 :::
 
 #### 🕵🏻‍♀️Version 0.98[First version] ==> Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]  
-<img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" width="250" height="300">
-<img src="https://user-images.githubusercontent.com/49629370/236106303-ffb90c4f-a551-4fc7-9612-1e5bb125eecb.png" width="250" height="300"> 
+<img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" width="250" height="300"><img src="https://user-images.githubusercontent.com/49629370/236106303-ffb90c4f-a551-4fc7-9612-1e5bb125eecb.png" width="250" height="300"> 
 
 #### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.

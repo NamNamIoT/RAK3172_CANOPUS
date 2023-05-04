@@ -63,7 +63,7 @@ For the reference application schematic of RAK3172 with minimum components requi
 :::
 
 #### 🕵🏻‍♀️Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]  
-<img src="https://user-images.githubusercontent.com/49629370/234738042-8053d0ac-d4ad-4f15-8227-4ca4161748a6.jpg" width="500"> 
+<img src="https://user-images.githubusercontent.com/49629370/236106303-ffb90c4f-a551-4fc7-9612-1e5bb125eecb.png" width="250"> 
 
 #### 🕵🏻‍♀️Version 0.98 [First version]  
 <img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" width="250" height="300"><img src="https://user-images.githubusercontent.com/49629370/224530396-d14d1229-43c0-4f55-961b-5f322328d947.jpg" width="250" height="300"> 

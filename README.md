@@ -11,8 +11,8 @@ height="30" width="40" /></a>
 </p>
   
 #### 🎉🎉🎉*RAK3172_Canopus has become part of the [Rakwireless ecosystem.](https://rakwireless.kckb.st/canopus)* 
-##### tip 📝 NOTE: *Find Gateway of Rak3172_Canopus at [here.](https://rakwireless.kckb.st/canopus)*  
-##### tip 📝 NOTE: *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
+##### 📝 *Find Gateway of Rak3172_Canopus at [here.](https://rakwireless.kckb.st/canopus)*  
+##### 📝 *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
   
 ## Information RAK3172_Canopus board  

@@ -64,7 +64,9 @@ The RAK3172_Canopus board uses the RAK3172 WisDuo module.
 9. Install RAK3172_Canopus library
 
 ⚠️ WARNING
-**_Both RAK Wisblock Examples_** and **_RAK3172_Canopus Examples_** support for RAK3172_Canopus board
+**_Both RAK Wisblock Examples_** and **_RAK3172_Canopus Examples_** support for RAK3172_Canopus board  
+The RAK3172_Canopus library will only focus on sampleApp for common sensors and devices using the modbus RTU interface.  
+The RAK Wisblock library will focus on Lora and lora Wan applications.  
 
 Download https://github.com/NamNamIoT/RAK3172_CANOPUS and Extract to Arduino\libraries
 ![Extra](https://user-images.githubusercontent.com/49629370/224536933-6abbdef3-832f-401c-98c7-cdeeca470cff.PNG)
@@ -79,4 +81,5 @@ Find RAK3172_Canopus library:
 
 Connect the RAK3172 via USB type C and check COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
 
-![rui-port](https://user-images.githubusercontent.com/49629370/224521157-ca08067c-cce1-434d-bd27-10ac67277c7b.png)
+![rui-port](https://user-images.githubusercontent.com/49629370/224521157-ca08067c-cce1-434d-bd27-10ac67277c7b.png)  
+### At here , you are ready 👌 to execute the sample code for the RAK3172_CANOPUS board

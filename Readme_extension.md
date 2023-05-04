@@ -1,3 +1,5 @@
+#### 🧑🏼‍💻 Software setup  
+
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
 warning ⚠️ WARNING
@@ -82,4 +84,49 @@ Find RAK3172_Canopus library:
 Connect the RAK3172 via USB type C and check COM Port using Windows **Device Manager**. Double-click the reset button if the module is not detected.
 
 ![rui-port](https://user-images.githubusercontent.com/49629370/224521157-ca08067c-cce1-434d-bd27-10ac67277c7b.png)  
-### At here , you are ready 👌 to execute the sample code for the RAK3172_CANOPUS board
+#### At here , you are ready 👌 to execute the sample code for the RAK3172_CANOPUS board  
+
+### Compile an Example with Arduino LED Breathing
+
+1. After completing the steps on adding your RAK3172_Canopus to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add two LEDs to the bare minimum schematic of the RAK3172 module.
+
+<rk-img
+  src="/assets/images/wisduo/rak3172-module/quickstart/rak3172_bare_minimum_schematic_led.png"
+  width="90%"
+  caption="RAK3172 with two LEDs"
+/>
+
+2. Launch Arduino IDE and configure WisDuo RAK3172 Evaluation Board on board selection.
+
+3. Connect the RAK3172_Canopus via USB type C.
+
+4. Open the **Tools** Menu and select a COM port. **COM28** is currently used.
+![select-port](https://user-images.githubusercontent.com/49629370/224521257-10db6f5c-5e77-4e4c-b020-58a330de9ba4.png)
+
+5. You can see the serial monitor icon and click it to connect the COM port.
+![serial-mon](https://user-images.githubusercontent.com/49629370/224521270-9a2f7282-18f3-4334-a568-788f2e5a7bf0.png)
+
+6. Open **Arduino_Led_Breathing** example code.
+
+![led-example](https://user-images.githubusercontent.com/49629370/224521281-3bb48679-7d97-43c2-a011-3373e572af73.png)
+
+7. Click on the **Verify** icon to check if you have successfully compiled the example code.
+
+![verify-code](https://user-images.githubusercontent.com/49629370/224521295-0991bbb8-ab1a-44a7-b6fd-228f8f26dc27.png)
+
+8. Click the **Upload** icon to send the compiled firmware to your RAK3172 module.
+
+:::tip 📝 NOTE:
+RAK3172_Canopus should automatically go to BOOT mode when the firmware is uploaded via Arduino IDE.
+
+If BOOT mode is not initiated, pull to ground the RESET pin twice (or double click the reset button if available) to force BOOT mode.
+:::
+
+![upload-code](https://user-images.githubusercontent.com/49629370/224521302-282b1a09-dc2c-43ae-a24a-9be1c7050a3d.png)
+
+9. If the upload is successful, you will see the **Upgrade Complete** message.
+
+![dev-prog](https://user-images.githubusercontent.com/49629370/224521311-344542b3-d8ec-4008-a721-58e47bf241ce.png)
+
+10. After the Device Programmed is completed, you will see that LEDs are blinking.
+

@@ -1,6 +1,6 @@
 
 # RAK3172_Canopus Module Quick Start Guide  
-## ✌️✌️✌️ Welcome! ✌️✌️✌️
+## ✌️✌️ Welcome! ✌️✌️  
 Hi, im Namnam 🕴🏼.  
 Please contact me if you need to develop ioT products.  
 <p align="left">

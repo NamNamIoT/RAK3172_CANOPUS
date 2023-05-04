@@ -8,7 +8,7 @@ Please contact me if you need to develop IoT products.
 height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>  
-## Information RAK3172_Canopus board  
+## Information RAK3172_Canopus board
 |     **Object**    |      **Detail component**      |          **Note**      |  
 | ----------------- | ------------------------------ | ---------------------- |  
 |        Power      | LP5301QVF                      | 5-30VDC                |  
@@ -21,7 +21,6 @@ height="30" width="40" /></a>
 |      Led yellow   | -                              | PIN PA8                |  
 |      LORA SoC     | RAK3172		                     | STM32WL inside	        |  
 |       Case        | Plastic                        | IP65         	        |    
-  
 ### RF Characteristics
 
 The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.

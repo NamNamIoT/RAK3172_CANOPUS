@@ -8,20 +8,19 @@ Please contact me if you need to develop IoT products.
 height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>  
-RAK3172_Canopus has become part of the Rakwireless ecosystem, see more Gateway or end-device products to interface with Rak3172_Canopus here. Especially, you will get 3% discount on the total amount to pay when using code CANOPUS  
 ## Information RAK3172_Canopus board
 |     **Object**    |      **Detail component**      |          **Note**      |
 | ----------------- | ------------------------------ | ---------------------- |
 |        Power      | LP5301QVF                      | 5-30VDC                |
-|    Solar charge   | LT4054			     | upto 800mA             |
+|    Solar charge   | LT4054			                   | upto 800mA             |
 |        RS485      | SP485EE                        | Serial1, auto DERE     |
 |         I2C       | -                              | SDA = PA12, SCL = PA11 |
-|      One-wire     | -                              | PA10		      |
-|        4-20mA     | -                              | PB3 (ADC1)	      |
+|      One-wire     | -                              | PA10		                |
+|        4-20mA     | -                              | PB3 (ADC1)	            |
 |      Led blue     | -                              | PIN PA9                |
 |      Led yellow   | -                              | PIN PA8                |
-|      LORA SoC     | RAK3172		             | STM32WL inside	      |
-|       Case        | Plastic                        | IP65         	      | 
+|      LORA SoC     | RAK3172		                     | STM32WL inside	        |
+|       Case        | Plastic                        | IP65         	        | 
 
 ### RF Characteristics
 

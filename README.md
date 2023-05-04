@@ -88,7 +88,7 @@ This section discusses how to use and access RAK3172 pins using the RUI3 API. It
 
 #### How to Use Digital I/O
 
-You can use any of the pins below as Digital Pin.  
+This is table pin map of Rak3172_Canopú board.    
 
 | **Pin Name** | **Alternative Pin Usage** |
 | ------------ | ------------------------- |

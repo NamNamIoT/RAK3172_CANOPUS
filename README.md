@@ -1,12 +1,13 @@
 
 # RAK3172_Canopus Module Quick Start Guide  
 ## ✌️✌️ Welcome! ✌️✌️  
+
 Hi, im Namnam 🕴🏼.  
 Please contact me if you need to develop IoT products.  
   
-#### 👋👋👋👋👋 RAK3172_Canopus has become part of the Rakwireless ecosystem.  
-#### tip 📝 NOTE: See more Gateway or end-device products to interface with Rak3172_Canopus here.  
-#### tip 📝 NOTE: Especially, you will get 3% discount on the total amount to pay when using code CANOPUS
+#### RAK3172_Canopus has become part of the Rakwireless ecosystem.  
+##### tip 📝 NOTE: See more Gateway or end-device products to interface with Rak3172_Canopus here.  
+##### tip 📝 NOTE: Especially, you will get 3% discount on the total amount to pay when using code CANOPUS
 <p align="left">
 <a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" 
 height="30" width="40" /></a>

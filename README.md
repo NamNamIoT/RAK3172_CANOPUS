@@ -21,7 +21,7 @@ height="30" width="40" /></a>
 |      Led yellow   | -                              | PIN PA8                |  
 |      LORA SoC     | RAK3172		                     | STM32WL inside	        |  
 |       Case        | Plastic                        | IP65         	        |    
-
+  
 ### RF Characteristics
 
 The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.

@@ -76,19 +76,19 @@ For the reference application schematic of RAK3172 with minimum components requi
 The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
 ### 🧑🏼‍💻 Software setup  
-##### [Follow this guide: Install IDE arduino, add RAK3172 to manager board and import Canopus library](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
-##### [Compile an Example with RAK3172_Canopus board](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
+##### Follow this guide:  
+-[*Install IDE arduino, add RAK3172 to manager board and import Canopus library*](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
+-[*Compile an Example with RAK3172_Canopus board*](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 
-### RAK3172 I/O Pins and Peripherals
+### 🏷️🏷️RAK3172 I/O Pins and Peripherals
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
-![rak3172-pins](https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png)
+<img src="https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png" height="600">
 
 #### How to Use Digital I/O
 
-You can use any of the pins below as Digital Pin.
-
+You can use any of the pins below as Digital Pin.  
 
 | **Pin Name** | **Alternative Pin Usage** |
 | ------------ | ------------------------- |
@@ -102,7 +102,6 @@ You can use any of the pins below as Digital Pin.
 | PB6          | UART1_TX  RS485 MODBUSRTU |
 | PB7          | UART1_RX  RS485 MODBUSRTU |
 
-![rak3172-io-pins](https://user-images.githubusercontent.com/49629370/224521420-2f575c71-559b-45e6-a3ad-e7ac7075fcd9.png)
 
 The pins listed below must not be used.
 

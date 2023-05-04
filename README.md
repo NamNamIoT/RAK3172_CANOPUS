@@ -70,7 +70,7 @@ For the reference application schematic of RAK3172 with minimum components requi
 #### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
-#### 🧑🏼‍💻 Software
+#### 🧑🏼‍💻 Software setup
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 

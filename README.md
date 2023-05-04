@@ -68,11 +68,11 @@ For the reference application schematic of RAK3172 with minimum components requi
 #### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
-#### 🧑🏼‍💻 Software setup
+#### 🧑🏼‍💻 Software setup  
+##### [Follow this guide: Install IDE arduino, add RAK3172 to manager board and import Canopus library](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 
 
-
-##### Compile an Example with Arduino LED Breathing
+#### Compile an Example with Arduino LED Breathing
 
 1. After completing the steps on adding your RAK3172_Canopus to the Arduino IDE, you can now try to run a simple program to test your setup. You need to add two LEDs to the bare minimum schematic of the RAK3172 module.
 
@@ -129,22 +129,13 @@ You can use any of the pins below as Digital Pin.
 
 | **Pin Name** | **Alternative Pin Usage** |
 | ------------ | ------------------------- |
-| PA0          |                           |
-| PA1          |                           |
-| PA4          |                           |
-| PA5          |                           |
-| PA6          |                           |
-| PA7          |                           |
 | PA8          | LED_YELLOW                |
 | PA9          | LED_GREEN  (only v0.98)   |
 | PA10         | One-Wire                  |
 | PA11         | I2C_SDA                   |
 | PA12         | I2C_SCL                   |
-| PA15         |                           |
-| PB2          |                           |
 | PB3          | ADC1                      |
 | PB4          | ADC2                      |
-| PB5          |                           |
 | PB6          | UART1_TX  RS485 MODBUSRTU |
 | PB7          | UART1_RX  RS485 MODBUSRTU |
 
@@ -169,6 +160,8 @@ The pins listed below must not be used.
 The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and NOT the pin numbers.
 :::
 
+####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
+You will be stronger after working through the next 12 examples. 
 
 **Example code blink led yellow on RAK3172_Canopus board**
 

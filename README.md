@@ -20,7 +20,7 @@ height="30" width="40" /></a>
 |        4-20mA     | -                              | PB3 (ADC1)	      |
 |      Led blue     | -                              | PIN PA9                |
 |      Led yellow   | -                              | PIN PA8                |
-|      LORA SoC     | RAK3172		             | 433-868-915-923 MHz    |
+|      LORA SoC     | RAK3172		             | STM32WL inside	      |
 |       Case        | Plastic                        | IP65         	      | 
 
 #### RF Characteristics

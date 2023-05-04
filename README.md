@@ -16,8 +16,8 @@ height="30" width="40" /></a>
 |    Solar charge   | LT4054			     | upto 800mA             |
 |        RS485      | SP485EE                        | Serial1, auto DERE     |
 |         I2C       | -                              | SDA = PA12, SCL = PA11 |
-|      One-wire     | -                              | ADC4		      |
-|        4-20mA     | -                              | ADC1		      |
+|      One-wire     | -                              | PA10		      |
+|        4-20mA     | -                              | PB3 (ADC1)	      |
 |      Led blue     | -                              | PIN PA9                |
 |      Led yellow   | -                              | PIN PA8                |
 |      LORA SoC     | RAK3172		             | 433-868-915-923 MHz    |
@@ -182,7 +182,7 @@ You can use any of the pins below as Digital Pin.
 | PA7          |                           |
 | PA8          | LED_YELLOW                |
 | PA9          | LED_GREEN  (only v0.98)   |
-| PA10         |                           |
+| PA10         | One-Wire                  |
 | PA11         | I2C_SDA                   |
 | PA12         | I2C_SCL                   |
 | PA15         |                           |

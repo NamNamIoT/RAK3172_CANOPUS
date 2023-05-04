@@ -103,18 +103,6 @@ This is table pin map of Rak3172_Canopú board.
 | PB7          | UART1_RX  RS485 MODBUSRTU |
 
 
-The pins listed below must not be used.
-
-| **Pin name** | **Pin Usage**                                                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PA2          | UART2_TX                                                                                                                                          |
-| PA3          | UART2_RX                                                                                                                                          |
-| PA13         | SWDIO                                                                                                                                             |
-| PA14         | SWCLK                                                                                                                                             |
-| PB8          | RAK3172 Internal                                                                                                                                  |
-| PB12         | Internal 10k pull-up resistor for RAK3172 high frequency variant (8xx - 9xx Mhz) or pull-down resistor for RAK3172 low frequency variant (4xx Mhz)|
-
-
 - Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.
 - Use Arduino [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/) to write a HIGH or a LOW value to a Digital I/O pin.
 

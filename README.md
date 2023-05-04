@@ -9,7 +9,7 @@ height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>
 
-### Information RAK3172_Canopus board
+## Information RAK3172_Canopus board
 |     **Object**    |      **Detail component**      |          **Note**      |
 | ----------------- | ------------------------------ | ---------------------- |
 |        Power      | LP5301QVF                      | 5-30VDC                |
@@ -23,11 +23,11 @@ height="30" width="40" /></a>
 |      LORA SoC     | RAK3172		             | STM32WL inside	      |
 |       Case        | Plastic                        | IP65         	      | 
 
-#### RF Characteristics
+### RF Characteristics
 
 The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
 
-##### Operating Frequencies
+#### Operating Frequencies
 
 | Module     | Region        | Frequency     |
 | ---------- | ------------- | ------------- |
@@ -41,9 +41,9 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 |            | India         | IN865         |
 |            | Russia        | RU864         |
 
-#### Electrical Characteristics
+### Electrical Characteristics
 
-##### Operating Current
+#### Operating Current
 
 | Feature           | Condition | Minimum                              | Typical | Maximum | Unit |
 | ----------------- | --------- | ------------------------------------ | ------- | ------- | ---- |
@@ -65,20 +65,20 @@ For the reference application schematic of RAK3172 with minimum components requi
 #### 🕵🏻‍♀️Version 0.98[First version] ==> Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]  
 <img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" height="350"><img src="https://user-images.githubusercontent.com/49629370/236106303-ffb90c4f-a551-4fc7-9612-1e5bb125eecb.png" height="350"> 
 
-#### 🧑🏻‍🔧 Hardware Setup  
+### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work. The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
 
-#### 🧑🏼‍💻 Software setup  
+### 🧑🏼‍💻 Software setup  
 ##### [Follow this guide: Install IDE arduino, add RAK3172 to manager board and import Canopus library](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 ##### [Compile an Example with RAK3172_Canopus board](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 
-##### RAK3172 I/O Pins and Peripherals
+### RAK3172 I/O Pins and Peripherals
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
 ![rak3172-pins](https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png)
 
-###### How to Use Digital I/O
+#### How to Use Digital I/O
 
 You can use any of the pins below as Digital Pin.
 
@@ -136,7 +136,7 @@ void loop()
 }
 ```
 
-###### How to Use Analog Input
+#### How to Use Analog Input
 
 You can use any of the pins below as Analog Input.
 
@@ -151,7 +151,7 @@ Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/
 ![rak3172-adc-pins](https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png)
 
 
-**Example code**
+**Example code read analog on RAK3172_Canopus board**
 
 ```c
 #define analogPin PB3
@@ -171,7 +171,7 @@ void loop()
 }
 ```
 
-###### How to Use Serial Interfaces
+#### How to Use Serial Interfaces
 
 **UART**
 
@@ -366,7 +366,7 @@ If your RUI3 project uses SPI, then PA4 to PA7 pins are reserved for RUI3 SPI in
 PA13 and PA14 pins are reserved for SWD debug interface. Check the [Connect to the RAK3172](#connect-to-the-rak3172) section.
 :::
 
-##### LoRaWAN Example
+#### LoRaWAN Example
 
 This example illustrates how to program RAK3172 module as a stand-alone LoRaWAN end-device via [RUI3 Arduino APIs](https://docs.rakwireless.com/RUI3/Arduino-API/). To use RAK3172 module as a LoRaWAN end-device, it needs to be within reach of a working **LoRaWAN gateway** registered to a **LoRaWAN network server (LNS)** or with a built-in network server.
 
@@ -384,7 +384,7 @@ To correctly run this example, it is necessary to configure the LoRaWAN paramete
 
 :::
 
-###### Register the LoRaWAN Gateway on TTNv3 Community Edition
+##### Register the LoRaWAN Gateway on TTNv3 Community Edition
 
 After configuring your gateway, you need to register it in TTNv3:
 
@@ -406,11 +406,11 @@ After configuring your gateway, you need to register it in TTNv3:
 
 ![ttnv3-add](https://user-images.githubusercontent.com/49629370/224522677-b88c5a16-9be7-4a4d-8c36-32aa5136c4d1.png)
 
-###### Register the Device on TTNv3
+##### Register the Device on TTNv3
 
 The next step is to follow the procedure described in the section [TTN OTAA Device Registration](#ttn-otaa-device-registration).
 
-###### Uploading LoRaWAN Example to RAK3172
+##### Uploading LoRaWAN Example to RAK3172
 
 After a successful registration of the RAK3172 device on the LNS, you can now proceed with running the LoRaWAN OTAA demo application example.
 

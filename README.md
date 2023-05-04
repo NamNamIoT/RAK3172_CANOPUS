@@ -43,13 +43,6 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 
 #### Electrical Characteristics
 
-##### Operating Voltage
-
-| Feature | Minimum | Typical | Maximum | Unit      |
-| ------- | ------- | ------- | ------- | --------- |
-| VCC     | 2.0     | 3.3     | 3.6     | Volts (V) |
-
-
 ##### Operating Current
 
 | Feature           | Condition | Minimum                              | Typical | Maximum | Unit |

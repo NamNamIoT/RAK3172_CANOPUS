@@ -361,7 +361,3 @@ The Arduino Serial Monitor shows the I2C device found.
 If you want to speed up this process, invite me for a cup of coffee.  
 [Buy me coffee☕](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=U9ZHRXAWPY688&ssrt=1683260874159)  
 
-
-### Arduino Installation
-
-Refer to [Software section](#Software).

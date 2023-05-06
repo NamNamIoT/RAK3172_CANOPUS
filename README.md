@@ -84,7 +84,7 @@ The RAK3172_Canopus requires a few hardware connections before you can make it w
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
-<img src="https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png" height="550" width="550">
+<img src="https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png" height="550" width="500">
 
 #### How to Use Digital I/O
 
@@ -142,7 +142,7 @@ You can use any of the pins below as Analog Input.
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
 
-<img src="https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png" height="550" width="550">
+<img src="https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png" height="550" width="500">
 
 **Example code read analog on RAK3172_Canopus board**
 
@@ -176,7 +176,7 @@ There are two UART peripherals available on the RAK3172 module. There are also d
 | UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
 | UART2 (pins 1, 2) | Serial                         | AT Command       |
 
-<img src="https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png" height="500" width="500">
+<img src="https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png" height="500" width="450">
 **Example Code**
 
 ```c
@@ -274,7 +274,7 @@ There is one I2C peripheral available on RAK3172.
 
 - Use Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) library to communicate with I2C devices.
 
-<img src="https://user-images.githubusercontent.com/49629370/224522611-246efbcf-a1fb-4503-9ea5-41dc0b514656.png" height="550" width="550">
+<img src="https://user-images.githubusercontent.com/49629370/224522611-246efbcf-a1fb-4503-9ea5-41dc0b514656.png" height="550" width="500">
 
 **Example Code**
 

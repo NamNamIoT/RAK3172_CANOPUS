@@ -25,8 +25,8 @@ height="30" width="40" /></a>
 |         I2C       | -                              | SDA = PA12, SCL = PA11 |  
 |      One-wire     | -                              | PA10		                |  
 |        4-20mA     | -                              | PB3 (ADC1)	            |  
-|      Led blue     | -                              | PIN PA9                |  
-|      Led yellow   | -                              | PIN PA8                |  
+|      Led yellow   | -                              | PIN PA9                |  
+|      Led green    | -                              | PIN PA8                |  
 |      LORA SoC     | RAK3172		                     | STM32WL inside	        |  
 |       Case        | Plastic                        | IP65         	        |    
   
@@ -92,8 +92,8 @@ This is table pin map of Rak3172_Canopus board.
 
 | **Pin Name** | **Alternative Pin Usage** |
 | ------------ | ------------------------- |
-| PA8          | LED_YELLOW                |
-| PA9          | LED_GREEN  (only v0.98)   |
+| PA8          | LED_GREEN                 |
+| PA9          | LED_YELLOW  (only v0.98)  |
 | PA10         | One-Wire                  |
 | PA11         | I2C_SDA                   |
 | PA12         | I2C_SCL                   |

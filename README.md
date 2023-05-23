@@ -353,8 +353,8 @@ The Arduino Serial Monitor shows the I2C device found.
 ```
 
 ### Continue update  
--Modbus slave  
--Modbus bridge  
+-Modbus slave[27-May]  
+-Modbus bridge[28-May]  
 -RAK3172 DHT21 Sensor  
 -RAK3172 SHT30 Sensor  
 -RAK3172 DS18B20 Sensor  

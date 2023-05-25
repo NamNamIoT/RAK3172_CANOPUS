@@ -19,7 +19,7 @@ height="30" width="40" /></a>
   
 |     **Object**    |      **Detail component**      |          **Note**      |  
 | ----------------- | ------------------------------ | ---------------------- |  
-|        Power      | LP5301QVF                      | 5-30VDC                |  
+|        Power      | MC34063A                       | 5-30VDC                |  
 |    Solar charge   | LT4054			                   | upto 800mA             |  
 |        RS485      | SP485EE                        | Serial1, auto DERE     |  
 |         I2C       | -                              | SDA = PA12, SCL = PA11 |  

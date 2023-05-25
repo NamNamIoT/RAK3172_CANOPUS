@@ -70,7 +70,11 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 For the reference application schematic of RAK3172 with minimum components requirements, refer to the [RAK3272S Breakout Board Datasheet.](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
 :::
 
-#### 🕵🏻‍♀️Version 0.98[First version] ==> Version 0.99 [Change to use typeC vertical, fix some bug hardware V0.98 👋]  
+#### 🕵🏻‍♀️Version hardware log   
+🏷️Version 0.98 [March-2023] First version  
+🏷️Version 0.99 [April-2023] Change to use typeC vertical, fix some bug hardware V0.98 👋  
+🏷️Version 1.0 [May-2023] Upgrade charge battey, solar MTTP.  
+
 <img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" height="350"><img src="https://user-images.githubusercontent.com/49629370/236106303-ffb90c4f-a551-4fc7-9612-1e5bb125eecb.png" height="350"> 
 
 ### 🧑🏻‍🔧 Hardware Setup  

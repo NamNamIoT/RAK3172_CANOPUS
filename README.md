@@ -365,6 +365,6 @@ The Arduino Serial Monitor shows the I2C device found.
 -RAK3172 SR04 Ultrasonic Sensor  
 -RAK3172 VL53L1x Sensor  
 -RAK3172 Soil Moisture Sensor  
-If you want to speed up this process, invite me for a cup of coffee.  
+
 [Buy me coffee☕](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=U9ZHRXAWPY688&ssrt=1683260874159)  
 

@@ -36,17 +36,14 @@ height="30" width="40" /></a>
   
 |     **Object**    |      **Detail component**      |          **Note**      |  
 | ----------------- | ------------------------------ | ---------------------- |  
-|        Power      | MC34063A                       | 5-30VDC                |  
-|    Solar charge   | LT4054			                   | upto 800mA             |  
-|        RS485      | SP485EE                        | Serial1, auto DERE     |  
-|         I2C       | -                              | SDA = PA12, SCL = PA11 |  
-|      One-wire     | -                              | PA10		                |  
-|        4-20mA     | -                              | PB3 (ADC1)	            |  
-|      Led send     | -                              | PIN PA8                |  
-|      Led recv     | -                              | PIN PB2                |  
-|      Led sync     | -                              | PIN PA0                |   
-|      LORA SoC     | RAK3172		                     | STM32WL inside	        |  
-|       Case        | Plastic                        | IP65         	        |    
+| Power             | MC34063A                       | 5-30VDC                |  
+| Solar charge      | LT4054			                   | upto 800mA             |  
+| RS485             | SP485EE                        | Serial1, auto DERE     |  
+| I2C               | -                              | SDA = PA12, SCL = PA11 |  
+| One-wire          | -                              | PA10		                |  
+| 4-20mA            | -                              | PB3 (ADC1)	            |  
+| LORA SoC          | RAK3172		                     | STM32WL inside	        |  
+| Case              | Plastic                        | IP65         	        |    
   
 ### RF Characteristics
 

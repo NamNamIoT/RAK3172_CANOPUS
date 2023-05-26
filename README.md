@@ -200,9 +200,9 @@ There are two UART peripherals available on the RAK3172 module. There are also d
 | UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
 | UART2 (pins 1, 2) | Serial                         | AT Command       |
 
-<img src="https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png" height="300" width="450">
-**Example Code**
+<img src="https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png" height="300" width="450">  
 
+**Example Code**  
 ```c
 void setup()
 {

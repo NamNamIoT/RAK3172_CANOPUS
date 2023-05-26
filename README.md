@@ -34,6 +34,7 @@ height="30" width="40" /></a>
 |                   | Adafruit STEMMA Soil           |       ☐       |  
 |                   | SHT30                          |       ☐       |  
 
+All examples not yet available, we have plan update in May and June
   
 ## Information RAK3172_Canopus board  
   

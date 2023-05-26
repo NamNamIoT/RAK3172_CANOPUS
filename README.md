@@ -1,5 +1,5 @@
 
-# RAK3172_Canopus Module Quick Start Guide  
+# RAK3172_Canopus Board Quick Start Guide  
 ## ✌️✌️ Welcome! ✌️✌️  
 
 Hi, im **Namnam** 🕴🏼.  

@@ -15,6 +15,23 @@ height="30" width="40" /></a>
 ##### 📝 *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
   
+  
+## Here's a quick summary of what's included in this library:  
+  
+|    **Examples**   |          **Description**       |        **Note**        |  
+| ----------------- | ------------------------------ | ---------------------- |  
+|      Sensor       | DHT11, DHT21, DHT22, AM23xx    | Not yet, plan in May   |  
+|                   | DS18B20			                   | Not yet, plan in May   |  
+|                   | SR04 Ultrasonic                | Not yet, plan in May   |  
+|                   | VL53L1x Sensor                 | Not yet, plan in May   |  
+|                   | Adafruit STEMMA Soil           | Not yet, plan in May   |  
+|                   | SHT30                          | Not yet, plan in May   |  
+|     Modbus RTU    | RAK3172 is master              | Available              |  
+|                   | RAK3172 is slave               | Not yet, plan in May   |  
+|      Lora P2P     | Sender (send value sensor)     | Available              |   
+|                   | Reciever (request from gateway)| Available              |  
+|      LoraWan      |                                | Not yet, plan in June  |  
+  
 ## Information RAK3172_Canopus board  
   
 |     **Object**    |      **Detail component**      |          **Note**      |  
@@ -73,7 +90,7 @@ For the reference application schematic of RAK3172 with minimum components requi
 #### 🕵🏻‍♀️Version hardware log   
 🏷️Version 0.98 [March-2023] First version  
 🏷️Version 0.99 [April-2023] Change to use typeC vertical, fix some bug hardware V0.98 👋  
-🏷️Version 1.0 [May-2023] Upgrade charge battey, solar MTTP.  
+🏷️Version 1.0 [June-2023] Upgrade charge battey, solar charge.  
 
 <img src="https://user-images.githubusercontent.com/49629370/224533350-f1d8af92-e01a-412e-9fec-aa1b8b0195c0.jpg" height="350"><img src="https://user-images.githubusercontent.com/49629370/236106303-ffb90c4f-a551-4fc7-9612-1e5bb125eecb.png" height="350"> 
 
@@ -357,14 +374,7 @@ The Arduino Serial Monitor shows the I2C device found.
 ```
 
 ### Continue update  
--Modbus slave[27-May]  
--Modbus bridge[28-May]  
--RAK3172 DHT21 Sensor  
--RAK3172 SHT30 Sensor  
--RAK3172 DS18B20 Sensor  
--RAK3172 SR04 Ultrasonic Sensor  
--RAK3172 VL53L1x Sensor  
--RAK3172 Soil Moisture Sensor  
+  
 
 [Buy me coffee☕](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=U9ZHRXAWPY688&ssrt=1683260874159)  
 

@@ -20,6 +20,8 @@ height="30" width="40" /></a>
   
 |    **Examples**   |          **Description**       | **Available** |  
 | ----------------- | ------------------------------ | --------------|  
+| Blink led         | Pin PA8                        |       ☑       |  
+| Read analog       | Pin PB3 - ADC1                 |       ☑       |  
 | Modbus RTU        | RAK3172 is master              |       ☑       |  
 |                   | RAK3172 is slave               |       ☐       |  
 | Lora P2P          | Sender (send value sensor)     |       ☑       |  

@@ -20,17 +20,20 @@ height="30" width="40" /></a>
   
 |    **Examples**   |          **Description**       |        **Note**        |  
 | ----------------- | ------------------------------ | ---------------------- |  
-|      Sensor       | DHT11, DHT21, DHT22, AM23xx    | Not yet, plan in May   |  
+| Modbus RTU        | RAK3172 is master              | Available              |  
+|                   | RAK3172 is slave               | Not yet, plan in May   |  
+| Lora P2P          | Sender (send value sensor)     | Available              |  
+|                   | Reciever (request from gateway)| Available              |  
+| LoraWan           | Class B, Info, Multicast, ABP  | Available              |  
+| General           | Powersave, timer, interupt     | Available              |  
+|                   | Multitasking,                  | Available              |  
+| Sensor            | DHT11, DHT21, DHT22, AM23xx    | Not yet, plan in May   |  
 |                   | DS18B20			                   | Not yet, plan in May   |  
 |                   | SR04 Ultrasonic                | Not yet, plan in May   |  
 |                   | VL53L1x Sensor                 | Not yet, plan in May   |  
 |                   | Adafruit STEMMA Soil           | Not yet, plan in May   |  
 |                   | SHT30                          | Not yet, plan in May   |  
-|     Modbus RTU    | RAK3172 is master              | Available              |  
-|                   | RAK3172 is slave               | Not yet, plan in May   |  
-|      Lora P2P     | Sender (send value sensor)     | Available              |   
-|                   | Reciever (request from gateway)| Available              |  
-|      LoraWan      |                                | Not yet, plan in June  |  
+
   
 ## Information RAK3172_Canopus board  
   

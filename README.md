@@ -23,7 +23,7 @@ height="30" width="40" /></a>
 | [Blink led](#blink-led)         | Pin PA8                        |       ☑       |  
 | [Read ADC](#read-adc)          | Pin PB3 - ADC1                 |       ☑       |  
 | [Serial1](#uart)           | Serial1 print                  |       ☑       |  
-| Modbus RTU        | RAK3172 is master              |       ☑       |  
+| [Modbus RTU](#modbus-master)        | RAK3172 is master              |       ☑       |  
 |                   | RAK3172 is slave               |       ☐       |  
 | Lora P2P          | Sender (send value sensor)     |       ☑       |  
 |                   | Reciever (request from gateway)|       ☑       |  
@@ -223,7 +223,8 @@ void loop()
 
 ```
 
-**Modbus RTU**
+#### How to Use Modbus RTU  
+### Modbus master  
 *This example, our board is modbus master.*
 
 Modbus RTU use Serial1 on RAK3172_Canopus board

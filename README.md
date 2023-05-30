@@ -22,6 +22,7 @@ height="30" width="40" /></a>
 | ----------------- | ------------------------------ | --------------|  
 | [Blink led](#blink-led)         | Pin PA8                        |       ☑       |  
 | [Read ADC](#read-adc)          | Pin PB3 - ADC1                 |       ☑       |  
+| [Serial1](#uart)           | Serial1 print                  |       ☑       |  
 | Modbus RTU        | RAK3172 is master              |       ☑       |  
 |                   | RAK3172 is slave               |       ☐       |  
 | Lora P2P          | Sender (send value sensor)     |       ☑       |  
@@ -111,8 +112,8 @@ This section discusses how to use and access RAK3172 pins using the RUI3 API. It
 
 <img src="https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png" height="450" width="500">
 
-#### How to Use Digital I/O
-
+#### How to Use Digital I/O  
+### Blink led  
 This is table pin map of Rak3172_Canopus board.    
 
 | **Pin Name** | **Alternative Pin Usage** |
@@ -139,7 +140,7 @@ The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and 
 
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
 You will be stronger after working through the next 12 examples. 
-### Blink led  
+
 **Example code blink led yellow on RAK3172_Canopus board**
 
 ```c
@@ -157,8 +158,8 @@ void loop()
 }
 ```
 
-#### How to Use Analog Input
-
+#### How to Use Analog Input  
+### Read ADC  
 You can use any of the pins below as Analog Input.
 
 | **Analog Port** | **Pin Name** |
@@ -169,10 +170,8 @@ You can use any of the pins below as Analog Input.
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
 
-<img src="https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png" height="400" width="500">
+<img src="https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png" height="400" width="500">  
   
-### Read ADC  
-
 **Example code read analog on RAK3172_Canopus board**
 
 ```c

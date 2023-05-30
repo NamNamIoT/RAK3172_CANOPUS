@@ -21,7 +21,7 @@ height="30" width="40" /></a>
 |    **Examples**   |          **Description**       | **Available** |  
 | ----------------- | ------------------------------ | --------------|  
 | [Blink led](#blink-led)         | Pin PA8                        |       ☑       |  
-| Read analog       | Pin PB3 - ADC1                 |       ☑       |  
+| [Read ADC](#read-adc)          | Pin PB3 - ADC1                 |       ☑       |  
 | Modbus RTU        | RAK3172 is master              |       ☑       |  
 |                   | RAK3172 is slave               |       ☐       |  
 | Lora P2P          | Sender (send value sensor)     |       ☑       |  
@@ -170,7 +170,7 @@ You can use any of the pins below as Analog Input.
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
 
 <img src="https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png" height="400" width="500">
-
+### Read ADC  
 **Example code read analog on RAK3172_Canopus board**
 
 ```c

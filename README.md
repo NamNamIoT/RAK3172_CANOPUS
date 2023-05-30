@@ -113,7 +113,7 @@ This section discusses how to use and access RAK3172 pins using the RUI3 API. It
 <img src="https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png" height="450" width="500">
 
 #### How to Use Digital I/O  
-### Blink led  
+##### Blink led  
 This is table pin map of Rak3172_Canopus board.    
 
 | **Pin Name** | **Alternative Pin Usage** |
@@ -159,7 +159,7 @@ void loop()
 ```
 
 #### How to Use Analog Input  
-### Read ADC  
+##### Read ADC  
 You can use any of the pins below as Analog Input.
 
 | **Analog Port** | **Pin Name** |
@@ -193,7 +193,7 @@ void loop()
 ```
 
 #### How to Use Serial Interfaces  
-### UART
+##### UART
 
 There are two UART peripherals available on the RAK3172 module. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3, namely [Binary Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Binary-Command-Manual/), [AT Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/), and [Custom Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Custom-Mode/).
 
@@ -224,7 +224,7 @@ void loop()
 ```
 
 #### How to Use Modbus RTU  
-### Modbus master  
+##### Modbus master  
 *This example, our board is modbus master.*
 
 Modbus RTU use Serial1 on RAK3172_Canopus board

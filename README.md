@@ -37,7 +37,9 @@ height="30" width="40" /></a>
 |                   | Adafruit STEMMA Soil           |       ☐       |  
 |                   | SHT30                          |       ☐       |  
 
-All examples not yet available, we have plan update in May and June
+All examples not yet available, we have plan update in May and June  
+Regarding One-Wire sensors, we will wait for support from RAK team in Q3 2023.  
+Currently because of RUI3 limitations, there is no official library for this communication standard from Rakwireless.  
   
 ## Information RAK3172_Canopus board  
   

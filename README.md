@@ -37,8 +37,8 @@ height="30" width="40" /></a>
 |                   | Adafruit STEMMA Soil           |       ☐       |  
 |                   | SHT30                          |       ☐       |  
 
-All examples not yet available, we have plan update in May and June  
-Regarding One-Wire sensors, we will wait for support from RAK team in Q3 2023.  
+All examples not yet available, we have plan update in Q3-2023  
+Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  
 Currently because of RUI3 limitations, there is no official library for this communication standard from Rakwireless.  
   
 ## Information RAK3172_Canopus board  
@@ -52,7 +52,7 @@ Currently because of RUI3 limitations, there is no official library for this com
 | One-wire          | -                              | PA10		                |  
 | 4-20mA            | -                              | PB3 (ADC1)	            |  
 | LORA SoC          | RAK3172		                     | STM32WL inside	        |  
-| Case              | Plastic                        | IP65         	        |    
+| Case              | Plastic                        |              	        |    
   
 ### RF Characteristics
 
@@ -71,28 +71,7 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 |            | Asia          | AS923-1/2/3/4 |
 |            | India         | IN865         |
 |            | Russia        | RU864         |
-
-### Electrical Characteristics
-
-#### Operating Current
-
-| Feature           | Condition | Minimum                              | Typical | Maximum | Unit |
-| ----------------- | --------- | ------------------------------------ | ------- | ------- | ---- |
-| Operating Current | TX Mode   | 87 (@&nbsp;20&nbsp;dBm 868&nbsp;Mhz) |         |         | mA   |
-|                   | RX Mode   | 5.22                                 |         |         | mA   |
-
-##### Sleep Current
-
-| Feature             | Condition | Minimum (2.1&nbsp;V) | Typical (3.3&nbsp;V) | Maximum | Unit |
-| ------------------- | --------- | -------------------- | -------------------- | ------- | ---- |
-| Current Consumption | EU868     | -                    | 1.69                 | -       | μA   |
-|                     | US915     | -                    | 1.69                 | -       | μA   |
-|                     | CN470     | -                    | 1.69                 | -       | μA   |
-
-:::tip 📝 NOTE:
-For the reference application schematic of RAK3172 with minimum components requirements, refer to the [RAK3272S Breakout Board Datasheet.](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3272S-Breakout-Board/Datasheet/#schematic-diagram)
-:::
-
+  
 #### 🕵🏻‍♀️Version hardware log   
 🏷️Version 0.98 [March-2023] First version  
 🏷️Version 0.99 [April-2023] Change to use typeC vertical, fix some bug hardware V0.98 👋  

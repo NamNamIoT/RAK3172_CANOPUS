@@ -351,7 +351,7 @@ The Arduino Serial Monitor shows the I2C device found.
 17:29:20.814 ->
 ```
   
-***Read sensor SHT3X***  
+***Read sensor SHT3X***
 ##### SHT3X  
   ```c
 #include <Arduino.h>

@@ -32,14 +32,14 @@ height="30" width="40" /></a>
 | General           | Powersave, timer, interupt     |       ☑       |  
 |                   | Multitasking,                  |       ☑       |  
 | Sensor            |                                |               |  
-|     -Temp+Humidity| DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
-|     -Temp         | DS18B20			                   |       ☐       |  
-|                   | [SHT3X](#sht3x)                          |       ☑       |  
-|     -Light        | [BH1750](#bh1750)                        |       ☑       |  
-|     -CO2          | [MHZ19B](#MHZ19B)                        |       ☐       |   
-|     -Ultrasonic   | SR04 Ultrasonic                |       ☐       |  
-|     -Distance ToF | VL53L1x Sensor                 |       ☐       |  
-|     -Soil         | Adafruit STEMMA Soil           |       ☐       |  
+|                   | DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
+|                   | DS18B20	(Temperature Probe)    |       ☐       |  
+|                   | [SHT3X](#sht3x) (Temperature air)        |       ☑       |  
+|                   | [BH1750](#bh1750)  (Light)               |       ☑       |  
+|                   | [MHZ19B](#MHZ19B)  (CO2)                 |       ☐       |   
+|                   | SR04 (Ultrasonic)              |       ☐       |  
+|                   | VL53L1x (Laser Distance ToF)   |       ☐       |  
+|                   | Adafruit STEMMA Soil           |       ☐       |  
 
 
 All examples not yet available, we have plan update in Q3-2023  

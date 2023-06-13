@@ -21,7 +21,8 @@ height="30" width="40" /></a>
 |    **Examples**   |          **Description**       | **Available** |  
 | ----------------- | ------------------------------ | --------------|  
 | [Blink led](#blink-led)         | Pin PA8                        |       ☑       |  
-| [Read ADC](#read-adc)          | Pin PB3 - ADC1                 |       ☑       |  
+| [Read analog sensor](#read-adc)| Read 0-10V sensor              |       ☑       |  
+|                                | Read 4-20mA sensor             |       ☑       |  
 | [Serial1](#uart)           | Serial1 print                  |       ☑       |  
 | [Modbus RTU](#modbus-master)        | RAK3172 is master              |       ☑       |  
 |                   | RAK3172 is slave               |       ☐       |  
@@ -142,13 +143,13 @@ void loop()
 ```
 
 #### How to Use Analog Input  
-##### Read ADC  
+##### Read analog sensor  
 You can use any of the pins below as Analog Input.
 
 | **Analog Port** | **Pin Name** |
 | --------------- | ------------ |
-| ADC1            | PB3          |
-| ADC2            | PB4          |
+| ADC1 (4-20mA)   | PB3          |
+| ADC2 (0-10V)    | PB4          |
 
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.

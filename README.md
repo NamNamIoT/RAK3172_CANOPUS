@@ -35,7 +35,7 @@ height="30" width="40" /></a>
 |                   | SR04 Ultrasonic                |       ☐       |  
 |                   | VL53L1x Sensor                 |       ☐       |  
 |                   | Adafruit STEMMA Soil           |       ☐       |  
-|                   | SHT30                          |       ☐       |  
+|                   | [SHT3X](#sht3x)                          |       ☑       |  
 
 All examples not yet available, we have plan update in Q3-2023  
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  
@@ -286,8 +286,8 @@ There is one I2C peripheral available on RAK3172.
 
 <img src="https://user-images.githubusercontent.com/49629370/224522611-246efbcf-a1fb-4503-9ea5-41dc0b514656.png" height="350" width="500">
 
-**Example Code**
-
+**Example Code**  
+***Scan I2C***  
 Make sure you have an I2C device connected to specified I2C pins to run the I2C scanner code below:
 
 ```c
@@ -358,7 +358,53 @@ The Arduino Serial Monitor shows the I2C device found.
 17:29:20.814 -> done
 17:29:20.814 ->
 ```
+  
+***Read sensor SHT3X***  
+  
+  ```c
+#include <Arduino.h>
+#include <Wire.h>
+#include <ArtronShop_SHT3x.h>
+#define VSS_PIN PB5
+#define PWR_ON LOW
+ArtronShop_SHT3x sht3x(0x44, &Wire); // ADDR: 0 => 0x44, ADDR: 1 => 0x45
 
+void setup() {
+  Serial.begin(115200);
+   Serial.print("\r\n************RAK3172_CANOPUS**************");
+  pinMode(VSS_PIN, OUTPUT);
+  digitalWrite(VSS_PIN, PWR_ON);
+  delay(100);
+  Wire.begin();
+  while (!sht3x.begin()) {
+    Serial.println("SHT3x not found !");
+    delay(1000);
+  }
+}
+
+void loop() {
+  if (sht3x.measure()) {
+    Serial.print("Temperature: ");
+    Serial.print(sht3x.temperature(), 1);
+    Serial.print(" *C\tHumidity: ");
+    Serial.print(sht3x.humidity(), 1);
+    Serial.print(" %RH");
+    Serial.println();
+  } else {
+    Serial.println("SHT3x read error");
+  }
+  delay(1000);
+}
+```
+
+The Arduino Serial Monitor shows value.
+
+```c
+18:53:24.520 -> Temperature: 33.2 *C	Humidity: 76.1 %RH
+18:53:25.504 -> Temperature: 33.2 *C	Humidity: 75.8 %RH
+18:53:26.521 -> Temperature: 33.2 *C	Humidity: 76.0 %RH
+18:53:27.534 -> Temperature: 33.2 *C	Humidity: 76.3 %RH
+```
 ### Continue update  
   
 

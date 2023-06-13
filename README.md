@@ -233,7 +233,6 @@ void setup()
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
   Serial_Canopus.begin(9600, SERIAL_8N1);
-
 }
 void loop()
 {
@@ -296,20 +295,16 @@ Make sure you have an I2C device connected to specified I2C pins to run the I2C 
 void setup()
 {
   Wire.begin();
-
   Serial.begin(115200);
   while (!Serial);
   Serial.println("\nI2C Scanner");
 }
 
-
 void loop()
 {
   byte error, address;
   int nDevices;
-
   Serial.println("Scanning...");
-
   nDevices = 0;
   for(address = 1; address < 127; address++ )
   {
@@ -318,7 +313,6 @@ void loop()
     // a device did acknowledge to the address.
     Wire.beginTransmission(address);
     error = Wire.endTransmission();
-
     if (error == 0)
     {
       Serial.print("I2C device found at address 0x");
@@ -326,7 +320,6 @@ void loop()
         Serial.print("0");
       Serial.print(address,HEX);
       Serial.println("  !");
-
       nDevices++;
     }
     else if (error==4)
@@ -341,7 +334,6 @@ void loop()
     Serial.println("No I2C devices found\n");
   else
     Serial.println("done\n");
-
   delay(5000);           // wait 5 seconds for next scan
 }
 ```
@@ -360,7 +352,7 @@ The Arduino Serial Monitor shows the I2C device found.
 ```
   
 ***Read sensor SHT3X***  
-  
+##### SHT3X  
   ```c
 #include <Arduino.h>
 #include <Wire.h>
@@ -373,7 +365,7 @@ void setup() {
   Serial.begin(115200);
    Serial.print("\r\n************RAK3172_CANOPUS**************");
   pinMode(VSS_PIN, OUTPUT);
-  digitalWrite(VSS_PIN, PWR_ON);
+  digitalWrite(VSS_PIN, PWR_ON); //enable power sensor
   delay(100);
   Wire.begin();
   while (!sht3x.begin()) {

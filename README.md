@@ -37,6 +37,7 @@ height="30" width="40" /></a>
 |                   | VL53L1x Sensor                 |       ☐       |  
 |                   | Adafruit STEMMA Soil           |       ☐       |  
 |                   | [SHT3X](#sht3x)                          |       ☑       |  
+|                   | [BH1750](#bh1750)                        |       ☑       |  
 
 All examples not yet available, we have plan update in Q3-2023  
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  
@@ -398,6 +399,46 @@ The Arduino Serial Monitor shows value.
 18:53:25.504 -> Temperature: 33.2 *C	Humidity: 75.8 %RH
 18:53:26.521 -> Temperature: 33.2 *C	Humidity: 76.0 %RH
 18:53:27.534 -> Temperature: 33.2 *C	Humidity: 76.3 %RH
+```
+
+***Read sensor BH1750***
+##### BH1750  
+  ```c
+#include <Arduino.h>
+#include <Wire.h>
+#include <ArtronShop_BH1750.h>
+#define VSS_PIN PB5
+#define PWR_ON LOW
+ArtronShop_BH1750 bh1750(0x23, &Wire); // Non Jump ADDR: 0x23, Jump ADDR: 0x5C
+
+void setup() {
+  Serial.begin(115200);
+  Serial.print("\r\n************RAK3172_CANOPUS**************");
+  pinMode(VSS_PIN, OUTPUT);
+  digitalWrite(VSS_PIN, PWR_ON);
+  Wire.begin();
+  while (!bh1750.begin()) {
+    Serial.println("BH1750 not found !");
+    delay(1000);
+  }
+}
+
+void loop() {
+  Serial.print("Light: ");
+  Serial.print(bh1750.light());
+  Serial.print(" lx");
+  Serial.println();
+  delay(1000);
+}
+```
+
+The Arduino Serial Monitor shows value.
+
+```c
+19:36:53.106 -> Light: 0.83 lx
+19:36:54.088 -> Light: 0.83 lx
+19:36:55.089 -> Light: 0.83 lx
+19:36:56.103 -> Light: 0.83 lx
 ```
 ### Continue update  
   

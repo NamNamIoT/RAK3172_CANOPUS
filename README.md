@@ -143,7 +143,7 @@ void loop()
 ```
 
 #### How to Use Analog Input  
-##### Read analog
+##### Read analog  
 You can use any of the pins below as Analog Input.
 
 | **Analog Port** | **Pin Name** |

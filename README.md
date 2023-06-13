@@ -31,13 +31,16 @@ height="30" width="40" /></a>
 | LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |  
 | General           | Powersave, timer, interupt     |       ☑       |  
 |                   | Multitasking,                  |       ☑       |  
-| Sensor            | DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
-|                   | DS18B20			                   |       ☐       |  
-|                   | SR04 Ultrasonic                |       ☐       |  
-|                   | VL53L1x Sensor                 |       ☐       |  
-|                   | Adafruit STEMMA Soil           |       ☐       |  
+| Sensor            |                                |       ☐       |  
+|     -Temp-humidity| DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
+|     -Temp         | DS18B20			                   |       ☐       |  
 |                   | [SHT3X](#sht3x)                          |       ☑       |  
-|                   | [BH1750](#bh1750)                        |       ☑       |  
+|     -Light        | [BH1750](#bh1750)                        |       ☑       |  
+|     -CO2          | [MHZ19B](#MHZ19B)                        |       ☐       |   
+|     -Ultrasonic   | SR04 Ultrasonic                |       ☐       |  
+|     -Distance ToF | VL53L1x Sensor                 |       ☐       |  
+|     -Soil         | Adafruit STEMMA Soil           |       ☐       |  
+
 
 All examples not yet available, we have plan update in Q3-2023  
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  

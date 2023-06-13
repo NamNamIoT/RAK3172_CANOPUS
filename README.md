@@ -32,7 +32,7 @@ height="30" width="40" /></a>
 | General           | Powersave, timer, interupt     |       ☑       |  
 |                   | Multitasking,                  |       ☑       |  
 | Sensor            |                                |               |  
-|     -Temp-humidity| DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
+|     -Temp+Humidity| DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
 |     -Temp         | DS18B20			                   |       ☐       |  
 |                   | [SHT3X](#sht3x)                          |       ☑       |  
 |     -Light        | [BH1750](#bh1750)                        |       ☑       |  

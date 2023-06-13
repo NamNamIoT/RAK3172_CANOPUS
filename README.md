@@ -31,7 +31,7 @@ height="30" width="40" /></a>
 | LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |  
 | General           | Powersave, timer, interupt     |       ☑       |  
 |                   | Multitasking,                  |       ☑       |  
-| Sensor            |                                |       ☐       |  
+| Sensor            |                                |               |  
 |     -Temp-humidity| DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
 |     -Temp         | DS18B20			                   |       ☐       |  
 |                   | [SHT3X](#sht3x)                          |       ☑       |  

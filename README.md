@@ -30,7 +30,7 @@ height="30" width="40" /></a>
 |                   | Reciever (request from gateway)|       ☑       |  
 | LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |  
 | General           | Powersave, timer, interupt     |       ☑       |  
-|                   | Multitasking,                  |       ☑       |  
+|                   | Multitasking                   |       ☑       |  
 | Sensor            |                                |               |  
 |                   | DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
 |                   | DS18B20	(Temperature Probe)    |       ☐       |  

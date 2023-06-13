@@ -21,7 +21,7 @@ height="30" width="40" /></a>
 |    **Examples**   |          **Description**       | **Available** |  
 | ----------------- | ------------------------------ | --------------|  
 | [Blink led](#blink-led)         | Pin PA8                        |       ☑       |  
-| [Read analog](#read-adc)        | Read 0-10V sensor              |       ☑       |  
+| [Read analog](#read-analog)     | Read 0-10V sensor              |       ☑       |  
 |                                | Read 4-20mA sensor             |       ☑       |  
 | [Serial1](#uart)           | Serial1 print                  |       ☑       |  
 | [Modbus RTU](#modbus-master)        | RAK3172 is master              |       ☑       |  

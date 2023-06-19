@@ -40,6 +40,8 @@ height="30" width="40" /></a>
 |                   | SR04 (Ultrasonic)              |       ☐       |  
 |                   | VL53L1x (Laser Distance ToF)   |       ☐       |  
 |                   | Adafruit STEMMA Soil           |       ☐       |  
+|                   | PZEM-016, PZEM 004T            |       ☐       |  
+|                   | Gas (LPG/CO/CH4) MQ-2          |       ☐       |  
 
 
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  

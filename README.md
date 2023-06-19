@@ -98,9 +98,7 @@ The bare minimum requirement is to have the power section properly configured,  
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
 <img src="https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png" height="450" width="500">
-
-#### How to Use Digital I/O  
-##### Blink led  
+  
 This is table pin map of Rak3172_Canopus board.    
 
 | **Pin Name** | **Alternative Pin Usage** |
@@ -118,16 +116,19 @@ This is table pin map of Rak3172_Canopus board.
 | PB6          | UART1_TX  RS485 MODBUSRTU |
 | PB7          | UART1_RX  RS485 MODBUSRTU |
 
-
+  
+####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
+You will be stronger after working through the next 12 examples. 
+  
+#### How to Use Digital I/O  
+##### Blink led  
+  
 - Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.
 - Use Arduino [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/) to write a HIGH or a LOW value to a Digital I/O pin.
-
+  
 :::tip 📝 NOTE:
 The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and NOT the pin numbers.
 :::
-
-####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
-You will be stronger after working through the next 12 examples. 
 
 **Example code blink led yellow on RAK3172_Canopus board**
 

@@ -20,7 +20,7 @@ height="30" width="40" /></a>
   
 |    **Examples**   |          **Description**       | **Available** |  
 | ----------------- | ------------------------------ | --------------|  
-| [Blink led](#blink-led)         | Pin PA8                        |       ☑       |  
+| [Blink led](#blink-led)         | On/off led on board            |       ☑       |  
 | [Read analog](#read-analog)     | Read 0-10V sensor              |       ☑       |  
 |                                | Read 4-20mA sensor             |       ☑       |  
 | [Serial1](#uart)           | Serial1 print                  |       ☑       |  

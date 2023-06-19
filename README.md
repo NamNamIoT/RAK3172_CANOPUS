@@ -85,7 +85,7 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 🏷️Version 0.99 [April-2023] Prototype. Add typeC vertical, fix some bug hardware V0.98 👋  
 🏷️Version 1.0 [June-2023] Ready for sale. Upgrade charge battery, solar charge.  
 
-><img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450"> 
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450"> 
 ### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  
 The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
@@ -161,7 +161,7 @@ You can use any of the pins below as Analog Input.
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
 
-<img src="https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png" height="400" width="500">  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/c48d3ecc-73a6-4a35-ae64-f4ed497c8023" height="400" width="270"><img src="https://user-images.githubusercontent.com/49629370/224522583-21ff739b-7f3b-4a7d-9697-72e8b69e8c4a.png" height="400" width="500">
   
 **Example code read analog on RAK3172_Canopus board**
 
@@ -204,7 +204,7 @@ There are two UART peripherals available on the RAK3172 module. There are also d
 | UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
 | UART2 (pins 1, 2) | Serial                         | AT Command       |
 
-<img src="https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png" height="300" width="450">  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/99762220-3aa7-4f4c-ba2f-0167730652c3" height="300" width="220"><img src="https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png" height="300" width="450">  
 
 **Example Code**  
 ```c
@@ -357,7 +357,7 @@ There is one I2C peripheral available on RAK3172.
 
 - Use Arduino [Wire](https://www.arduino.cc/reference/en/language/functions/communication/wire/) library to communicate with I2C devices.
 
-<img src="https://user-images.githubusercontent.com/49629370/224522611-246efbcf-a1fb-4503-9ea5-41dc0b514656.png" height="350" width="500">
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/a8da41d4-12a5-4daa-89a1-7c62a2648887" height="350" width="250"><img src="https://user-images.githubusercontent.com/49629370/224522611-246efbcf-a1fb-4503-9ea5-41dc0b514656.png" height="350" width="500">
 
 **Example Code**  
 ***Scan I2C***  

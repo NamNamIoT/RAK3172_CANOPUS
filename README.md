@@ -47,16 +47,17 @@ Currently because of RUI3 limitations, there is no official library for this com
   
 ## Information RAK3172_Canopus board  
   
-|     **Object**    |      **Detail component**      |          **Note**      |
-| ----------------- | ------------------------------ | ---------------------- |
-| Power             | Solar 5V or DC 5V              | Maximun 6VDC           |
-| Solar charge      | LT4054			                   | upto 800mA             |
-| RS485             | SP485EE                        | Serial1, auto DERE     |
-| I2C               | -                              | SDA = PA12, SCL = PA11 |
-| One-wire          | -                              | PA10		                |
-| 4-20mA            | -                              | PB3 (ADC1)	            |
-| LORA SoC          | RAK3172		                     | STM32WL inside	        |
-| Case              | Plastic                        |              	        |  
+|     **Object**    |      **Detail component**      |             **Note**         |
+| ----------------- | ------------------------------ | ---------------------------- |
+| Power             | Solar 5V or DC 5V              | Maximun 6VDC                 |
+| Solar charge      | LT4054			                   | Upto 800mA                   |
+| RS485             | SP485EE                        | Protect over volt, current   |
+| I2C               | -                              | Pull up 4.7k onboard         |
+| One-wire          | -                              | Pull up 4.7k onboard         |
+| 4-20mA            | -                              | Resolution 12bit             |
+| 0-10V             | -                              | Resolution 12bit             |
+| LORA SoC          | RAK3172		                     | STM32WL inside	              |
+| Case              | Plastic                        | Size 100x68x50	              |  
   
 Current consumption in sleep mode is 10.2uA @ 4.2V 
 ### RF Characteristics

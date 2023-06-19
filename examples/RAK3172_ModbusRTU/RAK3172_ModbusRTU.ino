@@ -1,9 +1,12 @@
 #include "Canopus_Modbus.h"
 ModbusMaster node;
 #define LED_YELLOW PA8
+#define VRS_PIN PB12
+#define PWR_ON LOW
 uint8_t result;
 void setup()
 {
+  pinMode(VRS_PIN, PWR_ON);
   pinMode(LED_YELLOW, OUTPUT);
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
@@ -27,6 +30,6 @@ void loop()
     }
   }
   else Serial.print("Read Fail node 1"); //read fail
-  digitalWrite(LED_YELLOW, !digitalRead(PA8)); //blink led yellow
+  digitalWrite(LED_YELLOW, !digitalRead(PA8)); //blink led
   delay(500);
 }

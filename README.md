@@ -237,7 +237,7 @@ Modbus RTU use Serial1 on RAK3172_Canopus board
 ![RAKmodbus](https://user-images.githubusercontent.com/49629370/224534542-f279d2f3-cd5c-4dbe-8af6-d8c383c315a0.PNG)
 
 
-**Example Code**
+**Example Code modbus master read slave**
 
 Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canopus board:
 
@@ -298,7 +298,7 @@ Value 40009: 10
   
 ##### Modbus slave  
 *This example, our board is modbus **slave**. Board read AI(4-20mA) and set value register 040001 (FC03, address 1)*  
-**Example Code**
+**Example Code modbus slave update value register**
 
 ```c
 #include "modbus.h"

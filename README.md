@@ -245,10 +245,14 @@ Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canop
 #include "Canopus_Modbus.h"
 ModbusMaster node;
 #define LED_YELLOW PA8
+#define VRS_PIN PB12
+#define PWR_ON LOW
 uint8_t result;
 void setup()
 {
   pinMode(LED_YELLOW, OUTPUT);
+  pinMode(VRS_PIN, OUTPUT);
+  digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
   Serial_Canopus.begin(9600, SERIAL_8N1);

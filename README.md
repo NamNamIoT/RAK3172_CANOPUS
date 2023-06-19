@@ -315,7 +315,6 @@ modbusSlave slave;
 #define PWR_ON LOW
 #define PWR_OFF HIGH
 
-uint8_t result;
 void setup()
 {
   pinMode(LED_YELLOW, OUTPUT);
@@ -331,7 +330,7 @@ void setup()
   regBank.add(40001);  //Add register FC03, holding register, address 1
   regBank.set(40001,0);  //Set default value for 40001 is 0
   slave._device = &regBank;
-  slave.setBaud(9600);
+  slave.setBaud(9600); //Set baudrate 9600
   
   analogReadResolution(12);  //Set Resolution adc is 12bit, can upto 14bit
 }

@@ -314,9 +314,12 @@ Make sure you have an I2C device connected to specified I2C pins to run the I2C 
 
 ```c
 #include <Wire.h>
-
+#define VSS_PIN PB5
+#define PWR_ON LOW
 void setup()
 {
+  pinMode(VSS_PIN, OUTPUT);
+  digitalWrite(VSS_PIN, PWR_ON); //enable power sensor
   Wire.begin();
   Serial.begin(115200);
   while (!Serial);
@@ -386,7 +389,7 @@ ArtronShop_SHT3x sht3x(0x44, &Wire); // ADDR: 0 => 0x44, ADDR: 1 => 0x45
 
 void setup() {
   Serial.begin(115200);
-   Serial.print("\r\n************RAK3172_CANOPUS**************");
+  Serial.print("\r\n************RAK3172_CANOPUS**************");
   pinMode(VSS_PIN, OUTPUT);
   digitalWrite(VSS_PIN, PWR_ON); //enable power sensor
   delay(100);

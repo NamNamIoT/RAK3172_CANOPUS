@@ -25,7 +25,7 @@ height="30" width="40" /></a>
 |                                | Read 4-20mA sensor             |       ☑       |  
 | [Serial1](#uart)           | Serial1 print                  |       ☑       |  
 | [Modbus RTU](#modbus-master)        | RAK3172 is master              |       ☑       |  
-|                   | RAK3172 is slave               |       ☐       |  
+|                   | RAK3172 is slave               |       ☑       |  
 | Lora P2P          | Sender (send value sensor)     |       ☑       |  
 |                   | Reciever (request from gateway)|       ☑       |  
 | LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |  
@@ -294,6 +294,58 @@ Value 40007: 8
 Value 40008: 9
 Value 40009: 10
 ```
+
+  
+##### Modbus slave  
+*This example, our board is modbus **slave**. Board read AI(4-20mA) and set value register 040001 (FC03, address 1)*  
+**Example Code**
+
+```c
+#include "modbus.h"
+#include "modbusDevice.h"
+#include "modbusRegBank.h"
+#include "modbusSlave.h"
+modbusDevice regBank;
+modbusSlave slave;
+
+#define LED_YELLOW PA8
+#define mA_PIN PB3
+#define VSS_PIN PB5
+#define VRS_PIN PB12
+#define PWR_ON LOW
+#define PWR_OFF HIGH
+
+uint8_t result;
+void setup()
+{
+  pinMode(LED_YELLOW, OUTPUT);
+  pinMode(VRS_PIN, OUTPUT);
+  digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485
+  pinMode(VSS_PIN, OUTPUT);
+  digitalWrite(VSS_PIN, PWR_ON);  //On power Vsensor
+  
+  Serial.begin(115200);
+  Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
+  
+  regBank.setId(1);  //Set id slave
+  regBank.add(40001);  //Add register FC03, holding register, address 1
+  regBank.set(40001,0);  //Set default value for 40001 is 0
+  slave._device = &regBank;
+  slave.setBaud(9600);
+  
+  analogReadResolution(12);  //Set Resolution adc is 12bit, can upto 14bit
+}
+void loop()
+{
+  int AI = (float)analogRead(mA_PIN) * 3300 / 100 / 4096;  //Get value 4-20mA
+  
+  regBank.set(40001, AI);  //Update value for 40001 is AI
+  slave.run();  //Run service modbus RTU slave
+  digitalWrite(LED_YELLOW, !digitalRead(LED_YELLOW)); //blink led
+  delay(200);
+}
+```
+
 **I2C**
 
 There is one I2C peripheral available on RAK3172.

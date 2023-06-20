@@ -132,7 +132,7 @@ You will be stronger after working through the next 12 examples.
 The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and NOT the pin numbers.
 :::
 
-**Example code blink led yellow on RAK3172_Canopus board**
+**Example code blink led on RAK3172_Canopus board**
 
 ```c
 void setup()

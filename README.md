@@ -84,7 +84,8 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 🏷️Version 0.99 [April-2023] Prototype. Add typeC vertical, fix some bug hardware V0.98 👋  
 🏷️Version 1.0 [June-2023] Ready for sale. Upgrade charge battery, solar charge.  
 
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450">  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450">
+  
 ### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  
 The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.

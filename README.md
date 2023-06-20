@@ -152,10 +152,10 @@ void loop()
 ##### Read analog  
 You can use any of the pins below as Analog Input.
 
-| **Analog Port** | **Pin Name** |
-| --------------- | ------------ |
-| ADC1 (4-20mA)   | PB3          |
-| ADC2 (0-10V)    | PB4          |
+| **Analog Port** | **Pin Name** | **Onboard** |
+| --------------- | ------------ | ----------- |
+| ADC1 (4-20mA)   | PB3          | AI          |
+| ADC2 (0-10V)    | PB4          | AV          |
 
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.

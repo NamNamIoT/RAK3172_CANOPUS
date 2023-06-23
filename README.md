@@ -10,7 +10,6 @@ height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>
   
-#### 🎉🎉🎉*RAK3172_Canopus has become part of the [Rakwireless ecosystem.](https://rakwireless.kckb.st/canopus)* 
 ##### 📝 *Find Gateway of Rak3172_Canopus at [here.](https://rakwireless.kckb.st/canopus)*  
 ##### 📝 *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
@@ -129,10 +128,9 @@ You will be stronger after working through the next 12 examples.
 - Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.
 - Use Arduino [digitalWrite](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/) to write a HIGH or a LOW value to a Digital I/O pin.
   
-:::tip 📝 NOTE:
-The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and NOT the pin numbers.
-:::
-
+> **tip 📝 NOTE:**  
+> The GPIO Pin Name is the one to be used on the digitalRead and digitalWrite and NOT the pin numbers.
+  
 **Example code blink led on RAK3172_Canopus board**
 
 ```c

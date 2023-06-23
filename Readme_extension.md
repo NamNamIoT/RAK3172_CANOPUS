@@ -2,10 +2,10 @@
 
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
-warning ⚠️ WARNING
-_**If you are using Windows 10**_.
-Do _**NOT**_ install the Arduino IDE from the Microsoft App Store. Instead, install the original Arduino IDE from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
-:::
+> **⚠️ Warning**  
+> **For Windows 10 and up users**:
+> If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website.
+> The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
 
 - Add RAK3172_Canopus as a supported board in Arduino IDE by updating Board Manager URLs in **Preferences** settings of Arduino IDE with the JSON URL below.
 ```json
@@ -20,12 +20,7 @@ The default firmware of RAK3172_Canopus is based on RUI3, which allows you to de
 ##### RAK3172_Canopus board Support Package in Arduino IDE
 
 If you don't have an Arduino IDE yet, you can download it on the [Arduino official website](https://www.arduino.cc/en/Main/Software) and follow the installation procedure in the [miscellaneous section](/Product-Categories/wisduo/RAK3172-Module/Quickstart/#arduino-installation) of this document.
-
-:::tip 📝 NOTE:
-**For Windows 10 and up users**:
-If your Arduino IDE is installed from the Microsoft App Store, you need to reinstall your Arduino IDE by getting it from the Arduino official website. The Arduino app from the Microsoft App Store has problems using third-party Board Support Packages.
-:::
-
+  
 Once the Arduino IDE has been successfully installed, you can now configure the IDE to add the RAK3172_Canopus to its board selection by following these steps.
 
 1. Open Arduino IDE and go to **File** > **Preferences**.

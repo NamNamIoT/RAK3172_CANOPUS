@@ -243,13 +243,13 @@ Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canop
 ```c
 #include "Canopus_Modbus.h"
 ModbusMaster node;
-#define LED_YELLOW PA8
+#define LED PA8
 #define VRS_PIN PB12
 #define PWR_ON LOW
 uint8_t result;
 void setup()
 {
-  pinMode(LED_YELLOW, OUTPUT);
+  pinMode(LED, OUTPUT);
   pinMode(VRS_PIN, OUTPUT);
   digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485
   Serial.begin(115200);
@@ -273,7 +273,7 @@ void loop()
     }
   }
   else Serial.print("Read Fail node 1"); //read fail
-  digitalWrite(LED_YELLOW, !digitalRead(PA8)); //blink led yellow
+  digitalWrite(LED, !digitalRead(PA8)); //blink led
   delay(500);
 }
 ```
@@ -307,7 +307,7 @@ Value 40009: 10
 modbusDevice regBank;
 modbusSlave slave;
 
-#define LED_YELLOW PA8
+#define LED PA8
 #define mA_PIN PB3
 #define VSS_PIN PB5
 #define VRS_PIN PB12
@@ -316,7 +316,7 @@ modbusSlave slave;
 
 void setup()
 {
-  pinMode(LED_YELLOW, OUTPUT);
+  pinMode(LED, OUTPUT);
   pinMode(VRS_PIN, OUTPUT);
   digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485
   pinMode(VSS_PIN, OUTPUT);
@@ -339,7 +339,7 @@ void loop()
   
   regBank.set(40001, AI);  //Update value for 40001 is AI
   slave.run();  //Run service modbus RTU slave
-  digitalWrite(LED_YELLOW, !digitalRead(LED_YELLOW)); //blink led
+  digitalWrite(LED, !digitalRead(LED)); //blink led
   delay(200);
 }
 ```

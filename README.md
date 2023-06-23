@@ -81,9 +81,9 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 |            | Russia        | RU864         |
   
 #### 🕵🏻‍♀️Version hardware log   
-🏷️Version 0.98 [March-2023] Prototype  
-🏷️Version 0.99 [April-2023] Prototype. Add typeC vertical, fix some bug hardware V0.98 👋  
-🏷️Version 1.0 [June-2023] Ready for sale. Upgrade charge battery, solar charge.  
+🏷️Version 0.98 [March-2023] (Prototype).  
+🏷️Version 0.99 [April-2023].  
+🏷️Version 1.0 [June-2023].  
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450">
   

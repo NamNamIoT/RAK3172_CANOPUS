@@ -96,7 +96,7 @@ The bare minimum requirement is to have the power section properly configured,  
 -[*Install IDE arduino, add RAK3172 to manager board and import Canopus library*](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 -[*Compile an Example with RAK3172_Canopus board*](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 
-### 🏷️🏷️RAK3172 I/O Pins and Peripherals
+### 🏷️RAK3172 I/O Pins and Peripherals
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 

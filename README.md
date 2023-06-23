@@ -42,6 +42,7 @@ height="30" width="40" /></a>
 |                   | Adafruit STEMMA Soil           |       ☐       |  
 |                   | PZEM-016, PZEM 004T            |       ☐       |  
 |                   | Gas (LPG/CO/CH4) MQ-2          |       ☐       |  
+|                   | PM2.5 Air Quality GP2Y1014AU0F |       ☐       |  
 
 
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  

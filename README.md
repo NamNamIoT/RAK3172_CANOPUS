@@ -27,6 +27,7 @@ height="30" width="40" /></a>
 |                   | RAK3172 is slave               |       ☑       |  
 | Lora P2P          | Sender (send value sensor)     |       ☑       |  
 |                   | Reciever (request from gateway)|       ☑       |  
+|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)                 |       ☑       |  
 | LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |  
 | General           | Powersave, timer, interupt     |       ☑       |  
 |                   | Multitasking                   |       ☑       |  

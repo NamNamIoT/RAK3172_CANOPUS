@@ -9,9 +9,12 @@ int counter = 0;
 #define RST 14   //  SX1278's RESET
 #define DI0 2    //  SX1278's IRQ(Interrupt Request)
 #define BAND 433E6
+String outgoing;  // outgoing message
 
-unsigned int counter = 0;
-
+byte localAddress = 0xBB;  // address of this device
+byte destination = 0xFF;   // destination to send to
+long lastSendTime = 0;     // last send time
+int interval = 2000;       // interval between sends
 void setup() {
   delay(10000);
 
@@ -30,8 +33,6 @@ void setup() {
     while (1) {
       delay(1);
     };
-  } else {
-    Serial.println("Starting LoRa-Receiver succeed!");
   }
 
   LoRa.setPreambleLength(8);
@@ -39,35 +40,40 @@ void setup() {
   LoRa.setSignalBandwidth(125E3);
   LoRa.setCodingRate4(5);
   LoRa.setTxPower(17);
-  LoRa.onReceive(onReceive);
-  LoRa.receive();
-  delay(5000);
+
+  Serial.println("LoRa init succeeded.");
 }
 
 void loop() {
-  LoRa.beginPacket();
-  LoRa.print("hello ");
-  LoRa.endPacket();
-  delay(3000);
+  if (millis() - lastSendTime > interval) {
+    String message = "Hello Rak3172";  // send a message
+    sendMessage(message);
+    Serial.println("Sending " + message);
+    lastSendTime = millis();  // timestamp the message
+    interval = 3000;          // 2-3 seconds
+  }
+
+  // parse for a packet, and call onReceive with the result:
+  onReceive(LoRa.parsePacket());
 }
 
+void sendMessage(String outgoing) {
+  LoRa.beginPacket();    // start packet
+  LoRa.print(outgoing);  // add payload
+  LoRa.endPacket();      // finish packet and send it
+}
 
 void onReceive(int packetSize) {
-  unsigned int i = 0;
+  if (packetSize == 0) return;  // if there's no packet, return
 
-  // received a packet
-  Serial.print("Received packet: ");
-  Serial.print(counter++);
-  Serial.print(' ');
-  Serial.print("Paketgroesse: ");
-  Serial.print(packetSize);  // print RSSI of packet
-  Serial.print(" With RSSI: ");
-  Serial.println(LoRa.packetRssi());
-  Serial.print("available:");
-  Serial.println(LoRa.available());
+  String incoming = "";
 
-  // read packet
-  for (i = 0; i < packetSize; i++) {
-    Serial.print((char)LoRa.read());
+  while (LoRa.available()) {
+    incoming += (char)LoRa.read();
   }
+  incoming = incoming.substring(0, incoming.length() - 1);
+  Serial.println("Recieve: " + incoming);
+  Serial.println("RSSI: " + String(LoRa.packetRssi()));
+  Serial.println("Snr: " + String(LoRa.packetSnr()));
+  Serial.println();
 }

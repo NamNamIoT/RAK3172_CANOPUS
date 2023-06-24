@@ -1,8 +1,3 @@
-/*************************************
- * This example is from https://github.com/Kongduino/RUI3_LoRa_P2P_PING_PONG
- * This example needs two devices, a device will send LoRa P2P package after receiving LoRa P2P package.
- *************************************/
-
 long startTime;
 bool rx_done = false;
 double myFreq = 433000000;
@@ -40,18 +35,6 @@ void hexDump(uint8_t* buf, uint16_t len) {
   Serial.print(F("   +------------------------------------------------+ +----------------+\r\n"));
 }
 
-/*
-  typedef struct rui_lora_p2p_revc {
-  // Pointer to the received data stream
-  uint8_t *Buffer;
-  // Size of the received data stream
-  uint8_t BufferSize;
-  // Rssi of the received packet
-  int16_t Rssi;
-  // Snr of the received packet
-  int8_t Snr;
-  } rui_lora_p2p_recv_t;
-*/
 void recv_cb(rui_lora_p2p_recv_t data) {
   rx_done = true;
   if (data.BufferSize == 0) {
@@ -67,7 +50,7 @@ void recv_cb(rui_lora_p2p_recv_t data) {
 
 void send_cb(void) {
   Serial.printf("P2P set Rx mode %s\r\n",
-                api.lorawan.precv(65534) ? "Success" : "Fail");
+                api.lorawan.precv(3000) ? "Success" : "Fail");
 }
 
 void setup() {
@@ -109,12 +92,12 @@ void setup() {
   api.lorawan.registerPRecvCallback(recv_cb);
   api.lorawan.registerPSendCallback(send_cb);
   Serial.printf("P2P set Rx mode %s\r\n",
-                api.lorawan.precv(65534) ? "Success" : "Fail");
+                api.lorawan.precv(3000) ? "Success" : "Fail");
   // let's kick-start things by waiting 3 seconds.
 }
 
 void loop() {
-  uint8_t payload[] = "payload";
+  uint8_t payload[] = "Hello Ra02";
   bool send_result = false;
   if (rx_done) {
     rx_done = false;
@@ -127,5 +110,5 @@ void loop() {
       }
     }
   }
-  delay(500);
+  delay(2000);
 }

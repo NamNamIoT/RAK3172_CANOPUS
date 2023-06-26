@@ -3,7 +3,7 @@
 ## ✌️✌️ Welcome! ✌️✌️  
 
 Hi, im **Namnam** 🕴🏼.  
-Please contact me if you need to develop IoT products.  
+Say Hi! with me:
 <p align="left">
 <a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" 
 height="30" width="40" /></a>
@@ -17,37 +17,51 @@ height="30" width="40" /></a>
   
 ## Here's a quick summary of what's included in this library:  
   
-|    **Examples**   |          **Description**       | **Available** |  
-| ----------------- | ------------------------------ | --------------|  
-| [Blink led](#blink-led)         | On/off led on board            |       ☑       |  
-| [Read analog](#read-analog)     | Read 0-10V sensor              |       ☑       |  
-|                                | Read 4-20mA sensor             |       ☑       |  
-| [Serial1](#uart)           | Serial1 print                  |       ☑       |  
-| [Modbus RTU](#modbus-master)        | RAK3172 is master              |       ☑       |  
-|                   | RAK3172 is slave               |       ☑       |  
-| Lora P2P          | Sender (send value sensor)     |       ☑       |  
-|                   | Reciever (request from Gateway)|       ☑       |  
-|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)                 |       ☑       |  
-| LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |  
-| General           | Powersave, timer, interupt     |       ☑       |  
-|                   | Multitasking                   |       ☑       |  
-| Sensor            |                                |               |  
-|                   | DHT11, DHT21, DHT22, AM23xx    |       ☐       |  
-|                   | DS18B20	(Temperature Probe)    |       ☐       |  
-|                   | [SHT3X](#sht3x) (Temperature air)        |       ☑       |  
-|                   | [BH1750](#bh1750)  (Light)               |       ☑       |  
-|                   | [MHZ19B](#MHZ19B)  (CO2)                 |       ☐       |   
-|                   | SR04 (Ultrasonic)              |       ☐       |  
-|                   | VL53L1x (Laser Distance ToF)   |       ☐       |  
-|                   | Adafruit STEMMA Soil           |       ☐       |  
-|                   | PZEM-016, PZEM 004T            |       ☐       |  
-|                   | Gas (LPG/CO/CH4) MQ-2          |       ☐       |  
-|                   | PM2.5 Air Quality GP2Y1014AU0F |       ☐       |  
+|    **Examples**   |          **Description**       | **Support** | **Verify by** |  
+| :---: | :---: | :---: | :---:  
+| [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus|  
+| [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus|  
+|| Read 4-20mA sensor|       ☑       |Canopus|  
+| [Serial1](#uart)           | Serial1 print|       ☑       |Canopus|  
+| [Modbus RTU](#modbus-master)| RAK3172 is master|       ☑       |Canopus|  
+|                   | RAK3172 is slave               |       ☑       |Canopus|  
+| Lora P2P          | Sender (send value sensor)     |       ☑       |Canopus|  
+|                   | Reciever (request from Gateway)|       ☑       |Canopus|  
+|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus|  
+| LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |Canopus|  
+| General           | Powersave, timer, interupt     |       ☑       |Canopus|  
+|                   | Multitasking                   |       ☑       |Canopus|  
+| Sensor            | DHT11, DHT21, DHT22, AM23xx    |       ☐       | |  
+|                   | DS18B20	(Temperature Probe)    |       ☐       | |  
+|                   | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus|  
+|                   | [BH1750](#bh1750)  (Light)|       ☑       |Canopus|  
+|                   | [MHZ19B](#MHZ19B)  (CO2)|       ☑       | |  
+|                   | SR04 (Ultrasonic)              |       ☑       | |  
+|                   | VL53L1x (Laser Distance ToF)   |       ☑       | |  
+|                   | Adafruit STEMMA Soil           |       ☐       | |  
+|                   | PZEM-016, PZEM 004T            |       ☑       | |  
+|                   | Gas (LPG/CO/CH4) MQ-2          |       ☑       | |  
+|                   | PM2.5 Air Quality GP2Y1014AU0F |       ☑       | |  
 
 
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  
 Currently, because of RUI3 limitations, there is no official library for this communication standard from Rakwireless.  
-The first packages publish on 9 July 2023.  
+  
+  
+#### Plan Summary
+
+| Status | Milestone | ETA |
+| :---: | :--- | :---: |
+| 🚀 | **The first packages publish** | July 2023 |
+| 🚀 | **Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | September 2023 |
+| 🚀 | **Fixed solar panel 5V-20mA on top of box**| November 2023 |
+| 🚀 | **Support Hatboard 2In-2Out (optinal)**| January 2024 |
+
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)
+
+  
 ## Information RAK3172_Canopus board  
   
 |     **Object**    |      **Detail component**      |             **Note**         |
@@ -519,7 +533,4 @@ The Arduino Serial Monitor shows value.
 19:36:56.103 -> Light: 0.83 lx
 ```
 ### Continue update  
-  
-
-[Buy me coffee☕](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=U9ZHRXAWPY688&ssrt=1683260874159)  
 

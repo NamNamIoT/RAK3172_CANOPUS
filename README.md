@@ -89,7 +89,11 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
   
 ### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  
-The bare minimum requirement is to have the power section properly configured,  antenna, and USB type C.
+The requirement is:  
+-Antenna  
+-USB type C  
+-Battery 18650  
+-Solar panel (Ex: 5V-3W)  
 
 ### 🧑🏼‍💻 Software setup  
 ##### Follow this guide:  

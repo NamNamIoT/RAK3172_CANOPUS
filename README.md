@@ -26,7 +26,7 @@ height="30" width="40" /></a>
 | [Modbus RTU](#modbus-master)        | RAK3172 is master              |       ☑       |  
 |                   | RAK3172 is slave               |       ☑       |  
 | Lora P2P          | Sender (send value sensor)     |       ☑       |  
-|                   | Reciever (request from gateway)|       ☑       |  
+|                   | Reciever (request from Gateway)|       ☑       |  
 |                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)                 |       ☑       |  
 | LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |  
 | General           | Powersave, timer, interupt     |       ☑       |  
@@ -52,11 +52,11 @@ Currently because of RUI3 limitations, there is no official library for this com
   
 |     **Object**    |      **Detail component**      |             **Note**         |
 | ----------------- | ------------------------------ | ---------------------------- |
-| Power             | Solar 5V or DC 5V              | Maximun 6VDC                 |
+| Power             | Solar 5V or DC 5V              | Maximum 6VDC                 |
 | Solar charge      | LT4054			                   | Upto 800mA                   |
 | RS485             | SP485EE                        | Protect over volt, current   |
-| I2C               | -                              | Pull up 4.7k onboard         |
-| One-wire          | -                              | Pull up 4.7k onboard         |
+| I2C               | -                              | Pullup internal ~100k        |
+| One-wire          | -                              | Pullup internal ~100k        |
 | 4-20mA            | -                              | Resolution 14bit             |
 | 0-10V             | -                              | Resolution 14bit             |
 | LORA SoC          | RAK3172		                     | STM32WL inside	              |

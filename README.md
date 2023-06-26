@@ -46,8 +46,8 @@ height="30" width="40" /></a>
 
 
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  
-Currently because of RUI3 limitations, there is no official library for this communication standard from Rakwireless.  
-  
+Currently, because of RUI3 limitations, there is no official library for this communication standard from Rakwireless.  
+The first packages publish on 9 July 2023.  
 ## Information RAK3172_Canopus board  
   
 |     **Object**    |      **Detail component**      |             **Note**         |

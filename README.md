@@ -19,22 +19,22 @@ height="30" width="40" /></a>
   
 |    **Examples**   |          **Description**       | **Support** | **Verify by** |  
 | :---: | :---: | :---: | :---:  
-| [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus|  
-| [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus|  
-|| Read 4-20mA sensor|       ☑       |Canopus|  
-| [Serial1](#uart)           | Serial1 print|       ☑       |Canopus|  
-| [Modbus RTU](#modbus-master)| RAK3172 is master|       ☑       |Canopus|  
-|                   | RAK3172 is slave               |       ☑       |Canopus|  
-| Lora P2P          | Sender (send value sensor)     |       ☑       |Canopus|  
-|                   | Reciever (request from Gateway)|       ☑       |Canopus|  
-|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus|  
-| LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |Canopus|  
-| General           | Powersave, timer, interupt     |       ☑       |Canopus|  
-|                   | Multitasking                   |       ☑       |Canopus|  
+| [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus Lab|  
+| [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus Lab|  
+|| Read 4-20mA sensor|       ☑       |Canopus Lab|  
+| [Serial1](#uart)           | Serial1 print|       ☑       |Canopus Lab|  
+| [Modbus RTU](#modbus-master)| RAK3172 is master|       ☑       |Canopus Lab|  
+|                   | RAK3172 is slave               |       ☑       |Canopus Lab|  
+| Lora P2P          | Sender (send value sensor)     |       ☑       |Canopus Lab|  
+|                   | Reciever (request from Gateway)|       ☑       |Canopus Lab|  
+|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus Lab|  
+| LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |Canopus Lab|  
+| General           | Powersave, timer, interupt     |       ☑       |Canopus Lab|  
+|                   | Multitasking                   |       ☑       |Canopus Lab|  
 | Sensor            | DHT11, DHT21, DHT22, AM23xx    |       ☐       | |  
 |                   | DS18B20	(Temperature Probe)    |       ☐       | |  
-|                   | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus|  
-|                   | [BH1750](#bh1750)  (Light)|       ☑       |Canopus|  
+|                   | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus Lab|  
+|                   | [BH1750](#bh1750)  (Light)|       ☑       |Canopus Lab|  
 |                   | [MHZ19B](#MHZ19B)  (CO2)|       ☑       | |  
 |                   | SR04 (Ultrasonic)              |       ☑       | |  
 |                   | VL53L1x (Laser Distance ToF)   |       ☑       | |  

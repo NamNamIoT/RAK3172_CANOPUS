@@ -52,10 +52,10 @@ Currently, because of RUI3 limitations, there is no official library for this co
 
 | Status | Milestone | ETA |
 | :---: | :--- | :---: |
-| 🚀 | **The first packages publish** | July 2023 |
-| 🚀 | **Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | September 2023 |
-| 🚀 | **Add solar panel 5V-20mA on top of box**| November 2023 |
-| 🚀 | **Support Hatboard 2In-2Out** *(optinal pluggage)*| January 2024 |
+| 🚀 | **[Firmware]The first packages publish** | July 2023 |
+| 🚀 | **[Firmware]Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | September 2023 |
+| 🚀 | **[Hardware]Add solar panel 5V-20mA on top of box**| November 2023 |
+| 🚀 | **[Hardware]Support Hatboard 2In-2Out** *(optinal pluggage)*| January 2024 |
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)

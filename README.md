@@ -17,8 +17,8 @@ height="30" width="40" /></a>
   
 ## Here's a quick summary of what's included in this library:  
   
-|    **Examples**   |          **Description**       | **Support** | **Verify by** |  
-| --- | ------------------------------ | --- | --- 
+|    **Examples**   |               **Description**            | **Support** | **Verify by** |  
+| --- | --- | --- | --- 
 | [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus Lab|
 | [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus Lab|
 || Read 4-20mA sensor|       ☑       |Canopus Lab|

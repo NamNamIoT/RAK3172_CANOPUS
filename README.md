@@ -365,9 +365,9 @@ void setup()
 }
 void loop()
 {
-  int AI = (float)analogRead(mA_PIN) * 3300 / 100 / 4096;  //Get value 4-20mA
+  int analog_In = (float)analogRead(mA_PIN) * 3300 / 100 / 4096;  //Get value 4-20mA
   
-  regBank.set(40001, AI);  //Update value for 40001 is AI
+  regBank.set(40001, analog_In);  //Update value for 40001 is analog_In
   slave.run();  //Run service modbus RTU slave
   digitalWrite(LED, !digitalRead(LED)); //blink led
   delay(200);

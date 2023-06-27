@@ -61,6 +61,8 @@ Currently, because of RUI3 limitations, there is no official library for this co
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)
+[![GitHub Repo stars](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://www.paypal.com/paypalme/thanhnamlt5)
+
   
 ## Information RAK3172_Canopus board  
   
@@ -533,8 +535,3 @@ The Arduino Serial Monitor shows value.
 19:36:56.103 -> Light: 0.83 lx
 ```
 ### Continue update  
-<p align="center">
-  <a href="https://www.paypal.com/paypalme/thanhnamlt5">
-    <img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4"/> 
-  </a>
-</p>

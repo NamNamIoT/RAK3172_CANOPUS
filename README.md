@@ -18,7 +18,7 @@ height="30" width="40" /></a>
 ## Here's a quick summary of what's included in this library:  
   
 |    **Examples**   |          **Description**       | **Support** | **Verify by** |  
-| :---: | :---: | :---: | :---:  
+| --- | ------------------------------ | --- | --- 
 | [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus Lab|
 | [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus Lab|
 || Read 4-20mA sensor|       ☑       |Canopus Lab|
@@ -76,7 +76,7 @@ height="30" width="40" /></a>
 ## Information RAK3172_Canopus board  
   
 |     **Object**    |      **Detail component**      |             **Note**         |
-| ----------------- | ------------------------------ | ---------------------------- |
+| --- | --- | --- |
 | Power             | Solar 5V or DC 5V              | Maximum 6VDC                 |
 | Solar charge      | LT4054			                   | Upto 800mA                   |
 | RS485             | SP485EE                        | Protect over volt, current   |

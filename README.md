@@ -19,29 +19,33 @@ height="30" width="40" /></a>
   
 |    **Examples**   |          **Description**       | **Support** | **Verify by** |  
 | :---: | :---: | :---: | :---:  
-| [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus Lab|  
-| [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus Lab|  
-|| Read 4-20mA sensor|       ☑       |Canopus Lab|  
-| [Serial1](#uart)           | Serial1 print|       ☑       |Canopus Lab|  
-| [Modbus RTU](#modbus-master)| RAK3172 is master|       ☑       |Canopus Lab|  
-|                   | RAK3172 is slave               |       ☑       |Canopus Lab|  
-| Lora P2P          | Sender (send value sensor)     |       ☑       |Canopus Lab|  
-|                   | Reciever (request from Gateway)|       ☑       |Canopus Lab|  
-|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus Lab|  
-| LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |Canopus Lab|  
-| General           | Powersave, timer, interupt     |       ☑       |Canopus Lab|  
-|                   | Multitasking                   |       ☑       |Canopus Lab|  
-| Sensor            | DHT11, DHT21, DHT22, AM23xx    |       ☐       | |  
-|                   | DS18B20	(Temperature Probe)    |       ☐       | |  
-|                   | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus Lab|  
-|                   | [BH1750](#bh1750)  (Light)|       ☑       |Canopus Lab|  
-|                   | [MHZ19B](#MHZ19B)  (CO2)|       ☑       | |  
-|                   | SR04 (Ultrasonic)              |       ☑       | |  
-|                   | VL53L1x (Laser Distance ToF)   |       ☑       | |  
-|                   | Adafruit STEMMA Soil           |       ☐       | |  
-|                   | PZEM-016, PZEM 004T            |       ☑       | |  
-|                   | Gas (LPG/CO/CH4) MQ-2          |       ☑       | |  
-|                   | PM2.5 Air Quality GP2Y1014AU0F |       ☑       | |  
+| [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus Lab|
+| [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus Lab|
+|| Read 4-20mA sensor|       ☑       |Canopus Lab|
+| [Serial1](#uart)           | Serial1 print|       ☑       |Canopus Lab|
+| [Modbus RTU](#modbus-master)| RAK3172 is master|       ☑       |Canopus Lab|
+|                   | RAK3172 is slave               |       ☑       |Canopus Lab|
+| Lora P2P          | Sender (send value sensor)     |       ☑       |Canopus Lab|
+|                   | Reciever (request from Gateway)|       ☑       |Canopus Lab|
+|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus Lab|
+| LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |Canopus Lab|
+| General           | Powersave, timer, interupt     |       ☑       |Canopus Lab|
+|                   | Multitasking                   |       ☑       |Canopus Lab|
+| Sensor            | DHT11, DHT21, DHT22, AM23xx    |       ☐       | |
+|                   | DS18B20	(Temperature Probe)    |       ☐       | |
+|                   | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus Lab|
+|                   | [BH1750](#bh1750)  (Light)|       ☑       |Canopus Lab|
+|                   | [MHZ19B](#MHZ19B)  (CO2)|       ☑       | |
+|                   | SR04 (Ultrasonic)              |       ☑       | |
+|                   | VL53L1x (Laser Distance ToF)   |       ☑       | |
+|                   | Adafruit STEMMA Soil           |       ☐       | |
+|                   | PZEM-016, PZEM 004T            |       ☑       | |
+|                   | Gas (LPG/CO/CH4) MQ-2          |       ☑       | |
+|                   | PM2.5 Air Quality GP2Y1014AU0F |       ☑       | |
+| Scenarios         | Modbus_Lora <--> Lora_Modbus|       ☐       | |
+|                   | I2C_Lora <--> Lora_Modbus|       ☐       | |
+|                   | 4-20mA_Lora <--> Lora_Modbus|       ☐       | |
+|                   | 0-10V_Lora <--> Lora_Modbus|       ☐       | |
 
 
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  
@@ -52,7 +56,7 @@ Currently, because of RUI3 limitations, there is no official library for this co
 
 | Status | Milestone | ETA |
 | :---: | :--- | :---: |
-| 🚀 | **[Firmware] Add examples code scenario Modbus** | July 2023 |
+| 🚀 | **[Firmware] Add examples code scenarios** | July 2023 |
 | 🚀 | **[Firmware] The first packages publish** | July 2023 |
 | 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | September 2023 |
 | 🚀 | **[Hardware] Add solar panel 5V-20mA on top of box**| November 2023 |

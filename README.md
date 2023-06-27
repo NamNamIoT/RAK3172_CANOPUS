@@ -49,7 +49,7 @@ height="30" width="40" /></a>
 
 
 ##### Note
-(*) Scenarios: Node A read value from sensor (I2C, modbus, 4-20mA, 0-10V, one-wire) and send value to node B.  
+(*) **Scenarios**: Node A read value from sensor (I2C, modbus, 4-20mA, 0-10V, one-wire) and send value to node B.  
 Node B is modbus slave, simulation sensor, update value in register each time recieve signal from node A.  
 We can use PLC or another device read value modbus RTU from node B. It is same read direct sensor, but there is a small delay.
   

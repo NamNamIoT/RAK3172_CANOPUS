@@ -52,6 +52,7 @@ Currently, because of RUI3 limitations, there is no official library for this co
 
 | Status | Milestone | ETA |
 | :---: | :--- | :---: |
+| 🚀 | **[Firmware] Add examples code scenario Modbus** | July 2023 |
 | 🚀 | **[Firmware] The first packages publish** | July 2023 |
 | 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | September 2023 |
 | 🚀 | **[Hardware] Add solar panel 5V-20mA on top of box**| November 2023 |

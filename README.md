@@ -42,10 +42,10 @@ height="30" width="40" /></a>
 |                   | PZEM-016, PZEM 004T            |       ☑       | |
 |                   | Gas (LPG/CO/CH4) MQ-2          |       ☑       | |
 |                   | PM2.5 Air Quality GP2Y1014AU0F |       ☑       | |
-| Scenarios         | Modbus_Lora <--> Lora_Modbus|       ☐       | |
-|                   | I2C_Lora <--> Lora_Modbus|       ☐       | |
-|                   | 4-20mA_Lora <--> Lora_Modbus|       ☐       | |
-|                   | 0-10V_Lora <--> Lora_Modbus|       ☐       | |
+| Scenarios         | Modbus_Lora (node A) <--> (node B) Lora_Modbus|       ☐       | |
+|                   | I2C_Lora (node A) <--> (node B) Lora_Modbus|       ☐       | |
+|                   | 4-20mA_Lora (node A) <--> (node B) Lora_Modbus|       ☐       | |
+|                   | 0-10V_Lora(node A) <--> (node B) Lora_Modbus|       ☐       | |
 
 
 Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  

@@ -135,18 +135,17 @@ This is table pin map of Rak3172_Canopus board.
 
 | **Pin Name** | **Alternative Pin Usage** |
 | ------------ | ------------------------- |
-| PA8          | LED_SEND                  |
-| PA0          | LED_SYNC                  |
-| PB2          | LED_RECV                  |
-| PA9          | LED_YELLOW  (only v0.98)  |
-| PB5          | Enable power sensor       |
-| PA11         | I2C_SDA or One-Wire       |
-| PA12         | I2C_SCL or One-Wire       |
-| PB3          | ADC1      4-20mA          |
-| PB4          | ADC2      0-10V           |
-| PB12         | Enable power RS485        |
-| PB6          | UART1_TX  RS485 MODBUSRTU |
-| PB7          | UART1_RX  RS485 MODBUSRTU |
+| PA8| LED_SEND|
+| PA0| LED_SYNC|
+| PB2| LED_RECV|
+| PB5| Vss(Enable power sensor)|
+| PA11| I2C_SDA or One-Wire|
+| PA12| I2C_SCL or One-Wire|
+| PB3| ADC1 (4-20mA)|
+| PB4| ADC2 (0-10V)|
+| PB12| Vrs(Enable power RS485)|
+| PB6| UART1_TX (RS485 ModbusRTU)|
+| PB7| UART1_RX (RS485 ModbusRTU)|
 
   
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   

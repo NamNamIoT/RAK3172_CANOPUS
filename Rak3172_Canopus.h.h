@@ -1,0 +1,6 @@
+#ifndef RAK3172_CANOPUS_H
+#define RAK3172_CANOPUS_H
+
+#ifdef RAK3172_CANOPUS_H
+
+#endif

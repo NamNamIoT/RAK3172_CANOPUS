@@ -3,7 +3,7 @@
 #define LED_SYNC PA0
 long startTime;
 bool rx_done = false;
-double myFreq = 868000000;
+double myFreq = 433000000;
 uint16_t sf = 12, bw = 0, cr = 0, preamble = 8, txPower = 22;
 
 void hexDump(uint8_t* buf, uint16_t len) {

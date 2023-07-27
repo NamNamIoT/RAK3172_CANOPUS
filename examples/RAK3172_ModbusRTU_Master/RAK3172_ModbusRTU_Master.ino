@@ -1,8 +1,7 @@
 #include "Canopus_Modbus.h"
+#include "Rak3172_Canopus.h"
 ModbusMaster node;
-#define LED_YELLOW PA8
-#define VRS_PIN PB12
-#define PWR_ON LOW
+
 uint8_t result;
 void setup()
 {

@@ -3,7 +3,7 @@
 #define LED_SYNC PA0
 long startTime;
 bool rx_done = false;
-double myFreq = 915000000;
+double myFreq = 433000000;
 uint16_t sf = 12, bw = 0, cr = 0, preamble = 8, txPower = 22;
 
 void recv_cb(rui_lora_p2p_recv_t data) {

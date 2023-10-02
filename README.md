@@ -63,8 +63,8 @@ height="30" width="40" /></a>
 | :---: | :--- | :---: |
 | 🚀 | **[Firmware] Add examples code scenarios** | Sept 2023 |
 | 🚀 | **[Firmware] The first packages publish** | Oct 2023 |
-| 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | September 2023 |
-| 🚀 | **[Hardware] Add solar panel 5V-60mA on top of box**| November 2023 |
+| 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | Nov 2023 |
+| 🚀 | **[Hardware] Add solar panel 5V-60mA on top of box**| Dec 2023 |
 | 🚀 | **[Hardware] Support Hatboard 2In-2Out** *(optinal pluggage)*| January 2024 |
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)

@@ -140,12 +140,12 @@ This is table pin map of Rak3172_Canopus board.
 | PA8| LED_SEND|
 | PA0| LED_SYNC|
 | PB2| LED_RECV|
-| PB5| Vss(Enable power sensor)|
+| PB5| VSS_PIN (Enable power sensor)|
 | PA11| I2C_SDA or One-Wire|
 | PA12| I2C_SCL or One-Wire|
-| PB3| ADC1 (4-20mA)|
-| PB4| ADC2 (0-10V)|
-| PB12| Vrs(Enable power RS485)|
+| PB3| mA_PIN (4-20mA)|
+| PB4| Volt_PIN (0-10V)|
+| PB12| VRS_485 (Enable power RS485)|
 | PB6| UART1_TX (RS485 ModbusRTU)|
 | PB7| UART1_RX (RS485 ModbusRTU)|
 

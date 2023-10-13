@@ -11,7 +11,7 @@
 #define I2C_SCL PA12
 #define mA_PIN PB3
 #define Volt_PIN PB4
-#define VRS_485 -1
+#define VRS_485 PA1
 #define PWR_ON LOW
 #define PWR_OFF HIGH
 

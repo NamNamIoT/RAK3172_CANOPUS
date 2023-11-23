@@ -61,10 +61,10 @@ height="30" width="40" /></a>
 
 | Status | Milestone | ETA |
 | :---: | :--- | :---: |
-| 🚀 | **[Firmware] Add examples code scenarios** | Sept 2023 |
-| 🚀 | **[Firmware] The first packages publish** | Oct 2023 |
-| 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | Nov 2023 |
-| 🚀 | **[Hardware] Add solar panel 5V-60mA on top of box**| Dec 2023 |
+| 🚀 | **[Firmware] Add examples code scenarios** | Dec 2023 |
+| 🚀 | **[Firmware] The first packages publish** | Dec 2023 |
+| 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | Dec 2023 |
+| 🚀 | **[Hardware] Add solar panel 5V-60mA on top of box**| January 2024 |
 | 🚀 | **[Hardware] Support Hatboard 2In-2Out** *(optinal pluggage)*| January 2024 |
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
@@ -135,19 +135,20 @@ This section discusses how to use and access RAK3172 pins using the RUI3 API. It
   
 This is table pin map of Rak3172_Canopus board.    
 
-| **Pin Name** | **Alternative Pin Usage** | **Note** |
-| ------------ | ------------------------- |--------- |
-| PA8| LED_SEND |           |  
-| PA0| LED_SYNC |           |  
-| PB2| LED_RECV |           |  
-| PB5| VSS_PIN | Enable power sensor |  
-| PA11| I2C_SDA | I2C pin |  
-| PA12| I2C_SCL | I2C pin |  
-| PB3| mA_PIN | 4-20mA |  
-| PB4| Volt_PIN | 0-10V |  
-| PB12| VRS_485 | Enable power RS485 |  
-| PB6| UART1_TX | RS485 ModbusRTU |  
-| PB7| UART1_RX | RS485 ModbusRTU |  
+| **Alternative Pin Usage** | **Pin Name (V1)** | **Pin Name (V2)** | **Pin Name (V3)** | **Note** |  
+| ------------ | ------------------------- | ------------------------- | ------------------------- |--------- |  
+|LED_SEND | PA8 | PA8 | PA8 |           |  
+|LED_SYNC | PA0 | **PA10** | PA10 |           |  
+|LED_RECV | PB2 | PB2 | PB2 |           |  
+|VSS_PIN | PB5 | PB5 | PB5 | Enable power sensor |  
+|I2C_SDA | PA11 | PA11 | PA11 | I2C pin |  
+|I2C_SCL | PA12 | PA12 | PA12 | I2C pin |  
+|mA_PIN | PB3 | PB3 | **PA15** | 4-20mA |  
+|Volt_PIN | PB4 | PB4 | PB4 | 0-10V |  
+|VRS_485 | PB12 | **PA1** | PA1 | Enable power RS485 |  
+|UART1_TX | PB6 | PB6 | PB6 | RS485 ModbusRTU |  
+|UART1_RX | PB7 | PB7 | PB7 | RS485 ModbusRTU |  
+|READ BATTERY | **PA15** | **---** | **PB3** |    |  
 
   
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   

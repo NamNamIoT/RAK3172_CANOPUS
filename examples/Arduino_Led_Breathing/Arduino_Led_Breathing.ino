@@ -1,15 +1,5 @@
-/***
- *  This example shows led breathing by analog.
-***/
-
-#if defined(WISBLOCK_BASE_5005) || defined(WISBLOCK_BASE_5005_O)
-uint8_t ledPin1 = LED_GREEN;
-uint8_t ledPin2 = LED_BLUE;
-#else
-#warning please set the right pin refer to the documentation.
-uint8_t ledPin1 = 0xFF;
-uint8_t ledPin2 = 0xFF;
-#endif
+#include <Rak3172_Canopus.h>
+#define V3
 
 int val = 0;			// variable for LED brightness value
 bool state = false;		// variable for control led brightness status
@@ -30,8 +20,8 @@ void setup()
     Serial.println("RAKwireless Arduino LED Breathing Example");
     Serial.println("------------------------------------------------------");
     // initialize the LED pin as an output
-    pinMode(ledPin1, OUTPUT);
-    pinMode(ledPin2, OUTPUT);
+    pinMode(LED_SYNC, OUTPUT);
+    pinMode(LED_SEND, OUTPUT);
 }
 
 void loop()
@@ -47,7 +37,7 @@ void loop()
         val--;
     // To switch the lighting led
     if (ledSwitch)
-        analogWrite(ledPin1, val);	// Light the green led
+        analogWrite(LED_SYNC, val);	// Light the green led
     else
-        analogWrite(ledPin2, val);	// Light the blue led
+        analogWrite(LED_SEND, val);	// Light the blue led
 }

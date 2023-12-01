@@ -12,6 +12,7 @@
 #define PWR_ON LOW
 #define PWR_OFF HIGH
 #define Volt_PIN PB4
+
 #ifdef V1
 #define LED_SYNC PA0
 #define mA_PIN PB3

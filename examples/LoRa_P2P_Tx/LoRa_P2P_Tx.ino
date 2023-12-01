@@ -1,6 +1,6 @@
-#define LED_SEND PA8
-#define LED_RECV PB2
-#define LED_SYNC PA0
+#include <Rak3172_Canopus.h>
+#define V3
+
 long startTime;
 bool rx_done = false;
 double myFreq = 433000000;
@@ -84,8 +84,7 @@ void setup() {
   api.lorawan.registerPRecvCallback(recv_cb);
   api.lorawan.registerPSendCallback(send_cb);
   Serial.printf("P2P set Rx mode %s\r\n",
-                api.lorawan.precv(3000) ? "Success" : "Fail");
-  // let's kick-start things by waiting 3 seconds.
+                api.lorawan.precv(65534) ? "Success" : "Fail");
 }
 
 void loop() {

@@ -77,11 +77,11 @@ height="30" width="40" /></a>
   
 |     **Object**    |      **Detail component**      |             **Note**         |
 | --- | --- | --- |
-| Power             | Solar 5V or DC 5V              | Maximum 6VDC                 |
-| Solar charge      | LT4054			                   | Upto 800mA                   |
+| Power             | Solar or DC power              | Maximum 6VDC (V1, V2) or **18V (V3)**|  
+| Solar charge      | LT4054 (V1, V2) or TP5100 (V3) | 800mA (V1, V2) or 2A (V3)            |
 | RS485             | SP485EE                        | Protect over volt, current   |
 | I2C               | -                              | Pullup internal ~100k        |
-| One-wire          | -                              | Pullup internal ~100k        |
+| One-wire          | -                              | RUI3 not yet support         |
 | 4-20mA            | -                              | Resolution 14bit             |
 | 0-10V             | -                              | Resolution 14bit             |
 | LORA SoC          | RAK3172		                     | STM32WL inside	              |
@@ -109,7 +109,8 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
 🏷️Version 0.98 [March-2023] (Prototype).  
 🏷️Version 0.99 [April-2023].  
 🏷️Version 1.0 [June-2023].  
-🏷️Version 1.1 [Oct-2023].  
+🏷️Version 2 [Oct-2023].  
+🏷️**Version 3 [Jan-2024].**  
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450">  
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="450">  

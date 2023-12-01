@@ -1,7 +1,5 @@
-#define VSS_PIN PB5
-#define mA_PIN PB3
-#define Volt_PIN PB4
-#define PWR_ON LOW
+#include <Rak3172_Canopus.h>
+#define V3
 
 void setup() {
   Serial.begin(115200);

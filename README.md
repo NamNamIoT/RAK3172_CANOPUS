@@ -107,7 +107,7 @@ The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Fr
   
 #### 🕵🏻‍♀️Version hardware log   
 🏷️Version 0.98 [March-2023] (Prototype).  
-🏷️Version 0.99 [April-2023].  
+🏷️Version 0.99 [April-2023] (Prototype).  
 🏷️Version 1.0 [June-2023].  
 🏷️Version 2 [Oct-2023].  
 🏷️**Version 3 [Jan-2024].**  

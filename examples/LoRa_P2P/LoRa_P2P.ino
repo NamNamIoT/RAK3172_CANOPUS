@@ -111,7 +111,7 @@ void setup()
     api.lorawan.registerPRecvCallback(recv_cb);
     api.lorawan.registerPSendCallback(send_cb);
     Serial.printf("P2P set Rx mode %s\r\n",
-  		api.lorawan.precv(3000) ? "Success" : "Fail");
+  		api.lorawan.precv(65534) ? "Success" : "Fail");
     // let's kick-start things by waiting 3 seconds.
 }
 

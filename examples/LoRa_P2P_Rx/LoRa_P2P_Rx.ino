@@ -1,6 +1,6 @@
-#define LED_SEND PA8
-#define LED_RECV PB2
-#define LED_SYNC PA0
+#include <Rak3172_Canopus.h>
+#define V3
+
 long startTime;
 bool rx_done = false;
 double myFreq = 433000000;

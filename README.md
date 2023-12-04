@@ -339,12 +339,8 @@ Value 40009: 10
 modbusDevice regBank;
 modbusSlave slave;
 
-#define LED PA8
-#define mA_PIN PB3
-#define VSS_PIN PB5
-#define VRS_PIN PB12
-#define PWR_ON LOW
-#define PWR_OFF HIGH
+#include <Rak3172_Canopus.h>
+#define V3
 
 void setup()
 {

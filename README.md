@@ -167,16 +167,18 @@ You will be stronger after working through the next 12 examples.
 **Example code blink led on RAK3172_Canopus board**
 
 ```c
+#include <Rak3172_Canopus.h>
+#define V3
 void setup()
 {
-  pinMode(PA8, OUTPUT); //Change the PA8 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
+  pinMode(LED_SEND, OUTPUT); //Change the PA8 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
 }
 
 void loop()
 {
-  digitalWrite(PA8,HIGH); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  digitalWrite(LED_SEND, HIGH); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
   delay(1000); // delay for 1 second
-  digitalWrite(PA8,LOW); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  digitalWrite(LED_SEND, LOW); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
   delay(1000); // delay for 1 second
 }
 ```
@@ -198,10 +200,8 @@ Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/
 **Example code read analog on RAK3172_Canopus board**
 
 ```c
-#define VSS_PIN PB5
-#define mA_PIN PB3
-#define Volt_PIN PB4
-#define PWR_ON LOW
+#include <Rak3172_Canopus.h>
+#define V3
 
 void setup() {
   Serial.begin(115200);
@@ -276,9 +276,8 @@ Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canop
 ```c
 #include "Canopus_Modbus.h"
 ModbusMaster node;
-#define LED PA8
-#define VRS_PIN PB12
-#define PWR_ON LOW
+#include <Rak3172_Canopus.h>
+#define V3
 uint8_t result;
 void setup()
 {
@@ -397,8 +396,8 @@ Make sure you have an I2C device connected to specified I2C pins to run the I2C 
 
 ```c
 #include <Wire.h>
-#define VSS_PIN PB5
-#define PWR_ON LOW
+#include <Rak3172_Canopus.h>
+#define V3
 void setup()
 {
   pinMode(VSS_PIN, OUTPUT);
@@ -466,8 +465,8 @@ The Arduino Serial Monitor shows the I2C device found.
 #include <Arduino.h>
 #include <Wire.h>
 #include <ArtronShop_SHT3x.h>
-#define VSS_PIN PB5
-#define PWR_ON LOW
+#include <Rak3172_Canopus.h>
+#define V3
 ArtronShop_SHT3x sht3x(0x44, &Wire); // ADDR: 0 => 0x44, ADDR: 1 => 0x45
 
 void setup() {
@@ -513,8 +512,8 @@ The Arduino Serial Monitor shows value.
 #include <Arduino.h>
 #include <Wire.h>
 #include <ArtronShop_BH1750.h>
-#define VSS_PIN PB5
-#define PWR_ON LOW
+#include <Rak3172_Canopus.h>
+#define V3
 ArtronShop_BH1750 bh1750(0x23, &Wire); // Non Jump ADDR: 0x23, Jump ADDR: 0x5C
 
 void setup() {

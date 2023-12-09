@@ -168,7 +168,7 @@ You will be stronger after working through the next 12 examples.
 
 ```c
 #include <Rak3172_Canopus.h>
-#define V3
+
 void setup()
 {
   pinMode(LED_SEND, OUTPUT); //Change the PA8 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
@@ -201,7 +201,6 @@ Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/
 
 ```c
 #include <Rak3172_Canopus.h>
-#define V3
 
 void setup() {
   Serial.begin(115200);
@@ -277,7 +276,7 @@ Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canop
 #include "Canopus_Modbus.h"
 ModbusMaster node;
 #include <Rak3172_Canopus.h>
-#define V3
+
 uint8_t result;
 void setup()
 {
@@ -340,7 +339,6 @@ modbusDevice regBank;
 modbusSlave slave;
 
 #include <Rak3172_Canopus.h>
-#define V3
 
 void setup()
 {
@@ -393,7 +391,7 @@ Make sure you have an I2C device connected to specified I2C pins to run the I2C 
 ```c
 #include <Wire.h>
 #include <Rak3172_Canopus.h>
-#define V3
+
 void setup()
 {
   pinMode(VSS_PIN, OUTPUT);
@@ -462,7 +460,7 @@ The Arduino Serial Monitor shows the I2C device found.
 #include <Wire.h>
 #include <ArtronShop_SHT3x.h>
 #include <Rak3172_Canopus.h>
-#define V3
+
 ArtronShop_SHT3x sht3x(0x44, &Wire); // ADDR: 0 => 0x44, ADDR: 1 => 0x45
 
 void setup() {
@@ -509,7 +507,7 @@ The Arduino Serial Monitor shows value.
 #include <Wire.h>
 #include <ArtronShop_BH1750.h>
 #include <Rak3172_Canopus.h>
-#define V3
+
 ArtronShop_BH1750 bh1750(0x23, &Wire); // Non Jump ADDR: 0x23, Jump ADDR: 0x5C
 
 void setup() {

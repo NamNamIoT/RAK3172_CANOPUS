@@ -53,7 +53,7 @@ height="30" width="40" /></a>
 > Node B is modbus slave, simulation sensor, update value in register each time recieve signal from node A.  
 > We can use PLC or another device read value modbus RTU from node B. It is same read direct sensor, but there is a small delay.***
 >  
-> Regarding One-Wire sensors, we will wait for support from RAK team in Q3-2023.  
+> Regarding One-Wire sensors, we will wait for support from RAK team in 2024.  
 > Currently, because of RUI3 limitations, there is no official library for this communication standard from Rakwireless.  
   
   

@@ -61,9 +61,9 @@ height="30" width="40" /></a>
 
 | Status | Milestone | ETA |
 | :---: | :--- | :---: |
-| 🚀 | **[Firmware] Add examples code scenarios** | Dec 2023 |
-| 🚀 | **[Firmware] The first packages publish** | Dec 2023 |
-| 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | Dec 2023 |
+| 🚀 | **[Firmware] Add examples code scenarios** | January 2024 |
+| 🚀 | **[Firmware] The first packages publish** | January 2024 |
+| 🚀 | **[Firmware] Support One-wire sensor.** *Ex: DHT2x, DHT1x, DS18B20* | 2024 |
 | 🚀 | **[Hardware] Add solar panel 5V-60mA on top of box**| January 2024 |
 | 🚀 | **[Hardware] Support Hatboard 2In-2Out** *(optinal pluggage)*| January 2024 |
 

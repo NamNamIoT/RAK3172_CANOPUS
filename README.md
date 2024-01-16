@@ -61,8 +61,9 @@ height="30" width="40" /></a>
 
 | Status | Milestone | ETA |
 | :---: | :--- | :---: |
-| 🚀 | **[Firmware] Add examples code scenarios** | January 2024 |
-| 🚀 | **[Firmware] The first packages publish** | January 2024 |
+| 🚀 | **[Hardware] V3** | January 2024 |  
+| 🚀 | **[Firmware] The first packages publish** | January 2024 |  
+| 🚀 | **[Firmware] Add examples code scenarios** | Feb 2024 |
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)

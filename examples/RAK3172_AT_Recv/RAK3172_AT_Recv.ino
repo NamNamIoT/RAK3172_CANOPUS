@@ -1,6 +1,7 @@
 #include "HardwareSerial.h"
+#define TX1 26
+#define RX1 25
 HardwareSerial Serial_Lora(1);
-
 #define LED_RED 14
 #define LED_BLUE 27
 #include "RAK3172_AT.h"

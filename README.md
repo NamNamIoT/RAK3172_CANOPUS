@@ -2,61 +2,45 @@
 # RAK3172_Canopus Board Quick Start Guide  
 ## ✌️✌️ Welcome! ✌️✌️  
 
-Hi, im **Namnam** 🕴🏼.  
-Say Hi! with me:
+Hi, i'm **Namnam** 🕴🏼.  
 <p align="left">
 <a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" 
 height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>
-  
-##### 📝 *Find Gateway of Rak3172_Canopus at [here.](https://rakwireless.kckb.st/canopus)*  
+
 ##### 📝 *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
   
   
-## Here's a quick summary of what's included in this library:  
+## What's included in this library:  
   
 |    **Examples**   |               **Description**            | **Support** | **Verify by** |  
 | --- | --- | :---: | --- 
 | [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus Lab|
+| **Lora P2P**      | Sender     |       ☑       |Canopus Lab|
+|                   | Reciever|       ☑       |Canopus Lab|
+| Lora different type | [Lora Ra02 - Lora Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus Lab|
 | [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus Lab|
 || Read 4-20mA sensor|       ☑       |Canopus Lab|
 | [Serial1](#uart)           | Serial1 print|       ☑       |Canopus Lab|
 | [Modbus RTU](#modbus-master)| RAK3172 is master|       ☑       |Canopus Lab|
 |                   | RAK3172 is slave               |       ☑       |Canopus Lab|
-| Lora P2P          | Sender (send value sensor)     |       ☑       |Canopus Lab|
-|                   | Reciever (request from Gateway)|       ☑       |Canopus Lab|
-|                   | [Ra02 - Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus Lab|
 | LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |Canopus Lab|
 | General           | Powersave, timer, interupt     |       ☑       |Canopus Lab|
 |                   | Multitasking                   |       ☑       |Canopus Lab|
-| Sensor            | DHT11, DHT21, DHT22, AM23xx    |       ☐       | |
-|                   | DS18B20	(Temperature Probe)    |       ☐       | |
-|                   | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus Lab|
+| Sensor            | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus Lab|
 |                   | [BH1750](#bh1750)  (Light)|       ☑       |Canopus Lab|
 |                   | [MHZ19B](#MHZ19B)  (CO2)|       ☑       | |
-|                   | SR04 (Ultrasonic)              |       ☑       | |
 |                   | VL53L1x (Laser Distance ToF)   |       ☑       | |
-|                   | Adafruit STEMMA Soil           |       ☐       | |
 |                   | PZEM-016, PZEM 004T            |       ☑       | |
 |                   | Gas (LPG/CO/CH4) MQ-2          |       ☑       | |
 |                   | PM2.5 Air Quality GP2Y1014AU0F |       ☑       | |
-| [Scenarios](#Note) (*)| Modbus_Lora📡<-->📡Lora_Modbus|       ☐       | |
-|                   | I2C_Lora📡<-->📡Lora_Modbus|       ☐       | |
-|                   | 4-20mA_Lora📡<-->📡Lora_Modbus|       ☐       | |
-|                   | 0-10V_Lora📡<-->📡Lora_Modbus|       ☐       | |
+
 
 
 ##### 📝Note:
-> (*) **Scenarios**: ***Node A read value from sensor (I2C, modbus, 4-20mA, 0-10V, one-wire), and send to node B.  
-> Node B is modbus slave, simulation sensor, update value in register each time recieve signal from node A.  
-> We can use PLC or another device read value modbus RTU from node B. It is same read direct sensor, but there is a small delay.***
->  
-> Regarding One-Wire sensors, we will wait for support from RAK team in 2024.  
-> Currently, because of RUI3 limitations, there is no official library for this communication standard from Rakwireless.  
-  
-  
+
 #### Plan Summary
 
 | Status | Milestone | ETA |

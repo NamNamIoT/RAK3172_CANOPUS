@@ -20,26 +20,19 @@ height="30" width="40" /></a>
 | Blink led| On/off led on board|[Go!](#blink-led)|
 | **Lora P2P**      | Sender     |[Go!]|
 |                   | Reciever|[Go!]|
-| Lora different type | Lora Ra02 - Lora Rak3172|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|
-| Read analog| Read 0-10V sensor|[Go!](#read-analog)|
-|| Read 4-20mA sensor|[Go!](#read-analog)|
-| Modbus RTU| RAK3172 is master|[Go!](#modbus-master)|
-|                   | RAK3172 is slave               |[Go!]|
+|                   | Lora Ra02 - Lora Rak3172|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|
 | LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|
+| Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|
+|                   | RAK3172 is slave               |[Go!]|
 | General           | Powersave, timer, interupt     |[Go!]|
 |                   | Multitasking                   |[Go!]|
 | Sensor            | SHT3X (Temperature air)|[Go!](#sht3x)|
 |                   | BH1750  (Light)|[Go!](#bh1750)|
 |                   | MHZ19B  (CO2)|[Go!](#MHZ19B)|
-|                   | VL53L1x (Laser Distance ToF)   |[Go!]|
-|                   | PZEM-016, PZEM 004T            |[Go!]|
-|                   | Gas (LPG/CO/CH4) MQ-2          |[Go!]|
-|                   | PM2.5 Air Quality GP2Y1014AU0F |[Go!]|
-
-
+| Read analog       | Read 0-10V sensor|[Go!](#read-analog)|
+|                   | Read 4-20mA sensor|[Go!](#read-analog)|
 
 ##### 📝Note:
-
 #### Plan Summary
 
 | Status | Milestone | ETA |
@@ -201,37 +194,6 @@ void loop() {
   Serial.printf("AV = %dmV\r\n", AV);                       // print value 0-10V
   delay(1000);
 
-}
-
-```
-
-#### How to Use Serial Interfaces  
-##### UART
-
-There are two UART peripherals available on the RAK3172 module. There are also different [Serial Operating Modes](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/#rui3-serial-operating-modes) possible in RUI3, namely [Binary Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Binary-Command-Manual/), [AT Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/), and [Custom Mode](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/Custom-Mode/).
-
-
-| **Serial Port**   | **Serial Instance Assignment** | **Default Mode** |
-| ----------------- | ------------------------------ | ---------------- |
-| UART1 (pins 4, 5) | Serial1                        | Custom Mode      |
-| UART2 (pins 1, 2) | Serial                         | AT Command       |
-
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/99762220-3aa7-4f4c-ba2f-0167730652c3" height="300" width="220"><img src="https://user-images.githubusercontent.com/49629370/224522599-7e96ce64-dc19-47e5-b921-4494c3b7081b.png" height="300" width="450">  
-
-**Example Code**  
-```c
-void setup()
-{
-  Serial1.begin(115200); // use Serial1 for UART1 and Serial for UART2
-                         // you can designate separate baudrate for each.
-  Serial.begin(115200);
-}
-
-void loop()
-{
-  Serial1.println("RAK3172 UART1 TEST!");
-  Serial.println("RAK3172 UART2 TEST!");
-  delay(1000); // delay for 1 second
 }
 
 ```

@@ -127,7 +127,6 @@ This is table pin map of Rak3172_Canopus board.
 
   
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
-You will be stronger after working through the next 12 examples. 
   
 #### How to Use Digital I/O  
 ##### Blink led  
@@ -145,14 +144,14 @@ You will be stronger after working through the next 12 examples.
 
 void setup()
 {
-  pinMode(LED_SEND, OUTPUT); //Change the PA8 to any digital pin you want. Also, you can set this to INPUT or OUTPUT
+  pinMode(LED_SEND, OUTPUT); //Change the LED_SEND to any digital pin you want. Also, you can set this to INPUT or OUTPUT
 }
 
 void loop()
 {
-  digitalWrite(LED_SEND, HIGH); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  digitalWrite(LED_SEND, HIGH); //Change the LED_SEND to any digital pin you want. Also, you can set this to HIGH or LOW state.
   delay(1000); // delay for 1 second
-  digitalWrite(LED_SEND, LOW); //Change the PA8 to any digital pin you want. Also, you can set this to HIGH or LOW state.
+  digitalWrite(LED_SEND, LOW); //Change the LED_SEND to any digital pin you want. Also, you can set this to HIGH or LOW state.
   delay(1000); // delay for 1 second
 }
 ```

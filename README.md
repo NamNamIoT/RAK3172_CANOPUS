@@ -28,7 +28,6 @@ height="30" width="40" /></a>
 |                   | Multitasking                   |[Go!]|
 | Sensor            | SHT3X (Temperature air)|[Go!](#sht3x)|
 |                   | BH1750  (Light)|[Go!](#bh1750)|
-|                   | MHZ19B  (CO2)|[Go!](#MHZ19B)|
 | Read analog       | Read 0-10V sensor|[Go!](#read-analog)|
 |                   | Read 4-20mA sensor|[Go!](#read-analog)|
 

@@ -23,7 +23,7 @@ height="30" width="40" /></a>
 |                   | Lora Ra02 - Lora Rak3172|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|
 | LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|
 | Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|
-|                   | RAK3172 is slave               |[Go!]|
+|                   | RAK3172 is slave               |[Go!](#modbus-slave)|
 | General           | Powersave, timer, interupt     |[Go!]|
 |                   | Multitasking                   |[Go!]|
 | Sensor            | SHT3X (Temperature air)|[Go!](#sht3x)|

@@ -8,7 +8,7 @@ Hi, i'm **Namnam** 🕴🏼.
 height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>
-
+##### 📝Note
 ##### 📝 *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
   
@@ -30,15 +30,6 @@ height="30" width="40" /></a>
 |                   | BH1750  (Light)|[Go!](#bh1750)|
 | Read analog       | Read 0-10V sensor|[Go!](#read-analog)|
 |                   | Read 4-20mA sensor|[Go!](#read-analog)|
-
-##### 📝Note:
-#### Plan Summary
-
-| Status | Milestone | ETA |
-| :---: | :--- | :---: |
-| 🚀 | **[Hardware] V3** | January 2024 |  
-| 🚀 | **[Firmware] The first packages publish** | January 2024 |  
-| 🚀 | **[Firmware] Add examples code scenarios** | Feb 2024 |
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)

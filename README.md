@@ -15,27 +15,26 @@ height="30" width="40" /></a>
   
 ## What's included in this library:  
   
-|    **Examples**   |               **Description**            | **Support** | **Verify by** |  
-| --- | --- | :---: | --- 
-| [Blink led](#blink-led)| On/off led on board|       ☑       |Canopus Lab|
-| **Lora P2P**      | Sender     |       ☑       |Canopus Lab|
-|                   | Reciever|       ☑       |Canopus Lab|
-| Lora different type | [Lora Ra02 - Lora Rak3172](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|       ☑       |Canopus Lab|
-| [Read analog](#read-analog)| Read 0-10V sensor|       ☑       |Canopus Lab|
-|| Read 4-20mA sensor|       ☑       |Canopus Lab|
-| [Serial1](#uart)           | Serial1 print|       ☑       |Canopus Lab|
-| [Modbus RTU](#modbus-master)| RAK3172 is master|       ☑       |Canopus Lab|
-|                   | RAK3172 is slave               |       ☑       |Canopus Lab|
-| LoraWan           | Class B, Info, Multicast, ABP  |       ☑       |Canopus Lab|
-| General           | Powersave, timer, interupt     |       ☑       |Canopus Lab|
-|                   | Multitasking                   |       ☑       |Canopus Lab|
-| Sensor            | [SHT3X](#sht3x) (Temperature air)|       ☑       |Canopus Lab|
-|                   | [BH1750](#bh1750)  (Light)|       ☑       |Canopus Lab|
-|                   | [MHZ19B](#MHZ19B)  (CO2)|       ☑       | |
-|                   | VL53L1x (Laser Distance ToF)   |       ☑       | |
-|                   | PZEM-016, PZEM 004T            |       ☑       | |
-|                   | Gas (LPG/CO/CH4) MQ-2          |       ☑       | |
-|                   | PM2.5 Air Quality GP2Y1014AU0F |       ☑       | |
+|    **Examples**   |               **Description**            | **Click download** |  
+| --- | --- | :---: |
+| Blink led| On/off led on board|[Go!](#blink-led)|
+| **Lora P2P**      | Sender     |[Go!]|
+|                   | Reciever|[Go!]|
+| Lora different type | Lora Ra02 - Lora Rak3172|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|
+| Read analog| Read 0-10V sensor|[Go!](#read-analog)|
+|| Read 4-20mA sensor|[Go!](#read-analog)|
+| Modbus RTU| RAK3172 is master|[Go!](#modbus-master)|
+|                   | RAK3172 is slave               |[Go!]|
+| LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|
+| General           | Powersave, timer, interupt     |[Go!]|
+|                   | Multitasking                   |[Go!]|
+| Sensor            | SHT3X (Temperature air)|[Go!](#sht3x)|
+|                   | BH1750  (Light)|[Go!](#bh1750)|
+|                   | MHZ19B  (CO2)|[Go!](#MHZ19B)|
+|                   | VL53L1x (Laser Distance ToF)   |[Go!]|
+|                   | PZEM-016, PZEM 004T            |[Go!]|
+|                   | Gas (LPG/CO/CH4) MQ-2          |[Go!]|
+|                   | PM2.5 Air Quality GP2Y1014AU0F |[Go!]|
 
 
 

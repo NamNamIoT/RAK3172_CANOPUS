@@ -99,7 +99,7 @@ This section discusses how to use and access RAK3172 pins using the RUI3 API. It
 This is table pin map of Rak3172_Canopus board.    
 
 | **Alternative Pin Usage** | **Pin Name (V1)** | **Pin Name (V2)** | **Pin Name (V3)** | **Note** |  
-| ------------ | ------------------------- | ------------------------- | ------------------------- |--------- |  
+| :---: | :---: | :---: | :---: | :---: |    
 |LED_SEND | PA8 | PA8 | PA8 |           |  
 |LED_SYNC | PA0 | **PA10** | PA10 |           |  
 |LED_RECV | PB2 | PB2 | PB2 |           |  

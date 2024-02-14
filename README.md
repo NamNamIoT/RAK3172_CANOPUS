@@ -200,7 +200,7 @@ Modbus RTU use Serial1 on RAK3172_Canopus board
 
 **Example Code modbus master read slave**
 
-Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canopus board:
+##### 📝Note: Make sure you have an ModbusRTU device connected to pin A and B on Rak3172_Canopus board.
 
 ```c
 #include "Canopus_Modbus.h"
@@ -234,7 +234,7 @@ void loop()
     }
   }
   else Serial.print("Read Fail node 1"); //read fail
-  digitalWrite(LED, !digitalRead(PA8)); //blink led
+  digitalWrite(LED, !digitalRead(LED)); //blink led
   delay(500);
 }
 ```

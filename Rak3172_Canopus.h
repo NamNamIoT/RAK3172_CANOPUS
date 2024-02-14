@@ -4,6 +4,7 @@
 #define V3
 #ifdef RAK3172_CANOPUS_H
 
+#define	LED PA8
 #define	LED_SEND PA8
 #define LED_RECV PB2
 #define VSS_PIN PB5

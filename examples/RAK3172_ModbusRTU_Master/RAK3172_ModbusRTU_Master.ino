@@ -10,7 +10,6 @@ void setup()
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
   Serial_Canopus.begin(9600, SERIAL_8N1);
-
 }
 void loop()
 {

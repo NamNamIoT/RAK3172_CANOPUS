@@ -2,22 +2,17 @@
 #include "modbusDevice.h"
 #include "modbusRegBank.h"
 #include "modbusSlave.h"
+#include <Rak3172_Canopus.h>
 modbusDevice regBank;
 modbusSlave slave;
-
-#define LED PA8
-#define mA_PIN PB3
-#define VSS_PIN PB5
-#define VRS_PIN PB12
-#define PWR_ON LOW
-#define PWR_OFF HIGH
 
 void setup()
 {
   pinMode(LED, OUTPUT);
   pinMode(VRS_PIN, OUTPUT);
-  digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485
+  digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485, not work in V1.
   pinMode(VSS_PIN, OUTPUT);
+  //If use V1, you need connect wire from 3.3V in terminal I2C to terminal RS485.
   digitalWrite(VSS_PIN, PWR_ON);  //On power Vsensor
   
   Serial.begin(115200);

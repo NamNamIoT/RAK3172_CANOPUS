@@ -385,39 +385,40 @@ The Arduino Serial Monitor shows the I2C device found.
 ***Read sensor SHT3X***
 ##### SHT3X  
   ```c
-#include <Arduino.h>
-#include <Wire.h>
-#include <ArtronShop_SHT3x.h>
-#include <Rak3172_Canopus.h>
-
-ArtronShop_SHT3x sht3x(0x44, &Wire); // ADDR: 0 => 0x44, ADDR: 1 => 0x45
+#include <Arduino.h>  // Include the Arduino core library.
+#include <Wire.h>  // Include the Wire library for I2C communication.
+#include <ArtronShop_SHT3x.h>  // Include the SHT3x library.
+#include <Rak3172_Canopus.h>  // Include the Rak3172_Canopus library header file.
+#define V3  // Define macro V3.
+ArtronShop_SHT3x sht3x(0x44, &Wire);  // ADDR: 0 => 0x44, ADDR: 1 => 0x45
 
 void setup() {
-  Serial.begin(115200);
-  Serial.print("\r\n************RAK3172_CANOPUS**************");
-  pinMode(VSS_PIN, OUTPUT);
-  digitalWrite(VSS_PIN, PWR_ON); //enable power sensor
-  delay(100);
-  Wire.begin();
-  while (!sht3x.begin()) {
-    Serial.println("SHT3x not found !");
-    delay(1000);
+  Serial.begin(115200);  // Initialize serial communication at 115200 baud rate.
+  Serial.print("\r\n************RAK3172_CANOPUS**************");  // Print a message indicating the start of the program.
+  pinMode(V_SS3, OUTPUT);  // Set pin V_SS3 as an output.
+  digitalWrite(V_SS3, PWR_ON);  // Turn on the V_SS3 pin.
+  delay(100);  // Wait for 100 milliseconds.
+  Wire.begin();  // Initialize the I2C communication.
+  while (!sht3x.begin()) {  // Check if SHT3x sensor is detected.
+    Serial.println("SHT3x not found !");  // Print a message if SHT3x sensor is not detected.
+    delay(1000);  // Wait for 1 second before retrying.
   }
 }
 
 void loop() {
-  if (sht3x.measure()) {
-    Serial.print("Temperature: ");
-    Serial.print(sht3x.temperature(), 1);
-    Serial.print(" *C\tHumidity: ");
-    Serial.print(sht3x.humidity(), 1);
-    Serial.print(" %RH");
-    Serial.println();
+  if (sht3x.measure()) {  // Check if the measurement is successful.
+    Serial.print("Temperature: ");  // Print a label indicating the temperature measurement.
+    Serial.print(sht3x.temperature(), 1);  // Print the temperature value with one decimal place.
+    Serial.print(" *C\tHumidity: ");  // Print a label indicating the humidity measurement.
+    Serial.print(sht3x.humidity(), 1);  // Print the humidity value with one decimal place.
+    Serial.print(" %RH");  // Print unit (% relative humidity).
+    Serial.println();  // Print a newline character.
   } else {
-    Serial.println("SHT3x read error");
+    Serial.println("SHT3x read error");  // Print a message if there is an error reading from the SHT3x sensor.
   }
-  delay(1000);
+  delay(1000);  // Wait for 1 second before the next measurement.
 }
+
 ```
 
 The Arduino Serial Monitor shows value.
@@ -432,31 +433,31 @@ The Arduino Serial Monitor shows value.
 ***Read sensor BH1750***
 ##### BH1750  
   ```c
-#include <Arduino.h>
-#include <Wire.h>
-#include <ArtronShop_BH1750.h>
-#include <Rak3172_Canopus.h>
-
+#include <Arduino.h>  // Include the Arduino core library.
+#include <Wire.h>  // Include the Wire library for I2C communication.
+#include <ArtronShop_BH1750.h>  // Include the BH1750 library.
+#include <Rak3172_Canopus.h>  // Include the Rak3172_Canopus library header file.
+#define V3  // Define macro V3.
 ArtronShop_BH1750 bh1750(0x23, &Wire); // Non Jump ADDR: 0x23, Jump ADDR: 0x5C
 
 void setup() {
-  Serial.begin(115200);
-  Serial.print("\r\n************RAK3172_CANOPUS**************");
-  pinMode(VSS_PIN, OUTPUT);
-  digitalWrite(VSS_PIN, PWR_ON);
-  Wire.begin();
-  while (!bh1750.begin()) {
-    Serial.println("BH1750 not found !");
-    delay(1000);
+  Serial.begin(115200);  // Initialize serial communication at 115200 baud rate.
+  Serial.print("\r\n************RAK3172_CANOPUS**************");  // Print a message indicating the start of the program.
+  pinMode(V_SS3, OUTPUT);  // Set pin V_SS3 as an output.
+  digitalWrite(V_SS3, PWR_ON);  // Turn on the V_SS3 pin.
+  Wire.begin();  // Initialize the I2C communication.
+  while (!bh1750.begin()) {  // Check if BH1750 sensor is detected.
+    Serial.println("BH1750 not found !");  // Print a message if BH1750 sensor is not detected.
+    delay(1000);  // Wait for 1 second before retrying.
   }
 }
 
 void loop() {
-  Serial.print("Light: ");
-  Serial.print(bh1750.light());
-  Serial.print(" lx");
-  Serial.println();
-  delay(1000);
+  Serial.print("Light: ");  // Print a label indicating the light intensity measurement.
+  Serial.print(bh1750.light());  // Print the light intensity value.
+  Serial.print(" lx");  // Print unit (lux).
+  Serial.println();  // Print a newline character.
+  delay(1000);  // Wait for 1 second before the next measurement.
 }
 ```
 

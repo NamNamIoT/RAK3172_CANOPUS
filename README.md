@@ -320,10 +320,11 @@ Make sure you have an I2C device connected to specified I2C pins to run the I2C 
 ```c
 #include <Wire.h>
 #include <Rak3172_Canopus.h>
+#define V3  // Define macro V3.
 
 void setup()
 {
-  pinMode(VSS_PIN, OUTPUT);
+  pinMode(V_SS3, OUTPUT);
   digitalWrite(VSS_PIN, PWR_ON); //enable power sensor
   Wire.begin();
   Serial.begin(115200);

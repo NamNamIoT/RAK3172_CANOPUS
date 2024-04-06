@@ -34,6 +34,9 @@ $ tree
 |      |       |-- Reciever
 |      |-- How to use LoraWan
 |      |-- How to get information board
+|      |       |--
+|      |       |--
+|      |       |-- 
 ```
 
 ## Quick access panel  
@@ -47,8 +50,10 @@ $ tree
 | LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|
 | Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|
 |                   | RAK3172 is slave               |[Go!](#modbus-slave)|
-| General           | Powersave     |[Go!]|
-|                   | Timer                   |[Go!]|
+| System            | Powersave     |[Go!](#Powersave)|
+|                   | Time          |[Go!](#Time)|
+|                   | Timer         |[Go!](#Timer)|
+|                   | General       |[Go!](#General)|
 | Sensor            | SHT3X (Temperature air)|[Go!](#sht3x)|
 |                   | BH1750  (Light)|[Go!](#bh1750)|
 | Read analog       | Read 0-10V sensor|[Go!](#read-analog)|
@@ -111,7 +116,7 @@ This is table pin map of Rak3172_Canopus board.
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
 
 ## Examples
-#### How to Use Digital I/O  
+### How to Use Digital I/O  
 ##### Blink led  
   
 - Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.
@@ -139,7 +144,7 @@ void loop()
 }
 ```
 
-#### How to Use Analog Input  
+### How to Use Analog Input  
 ##### Read analog  
 You can use any of the pins below as Analog Input.
 
@@ -180,7 +185,7 @@ void loop() {
 
 ```
 
-#### How to Use Modbus RTU  
+### How to Use Modbus RTU  
 ##### Modbus master  
 *This example, our board is modbus master.*
 
@@ -296,7 +301,7 @@ void loop()
 }
 ```
 
-**How to Use I2C**
+### How to Use I2C
 
 There is one I2C peripheral available on RAK3172.
 
@@ -468,7 +473,7 @@ The Arduino Serial Monitor shows value.
 19:36:56.103 -> Light: 0.83 lx
 ```
 
-***Lora P2P***
+### Lora P2P
 ##### Sender
 ```c
 #include <Rak3172_Canopus.h>
@@ -669,7 +674,7 @@ void loop() {
 }
 ```
 
-***System***
+### System
 ##### Powersave
 ```c
 void setup()

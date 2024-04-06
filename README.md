@@ -37,7 +37,6 @@ $ tree
 ```
 
 ## Quick access panel  
-### What's included in this library:  
   
 |    **Examples**   |               **Description**            | **Click download** |  
 | --- | --- | :---: |

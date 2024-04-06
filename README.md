@@ -160,7 +160,6 @@ Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/
 
 ```c
 #include <Rak3172_Canopus.h>  // Include the Rak3172_Canopus library header file.
-
 #define V3  // Define macro V3.
 
 void setup() {
@@ -205,13 +204,12 @@ Modbus RTU use Serial1 on RAK3172_Canopus board
 #include "Canopus_Modbus.h"
 ModbusMaster node;
 #include <Rak3172_Canopus.h>
-
+#define V3
 uint8_t result;
 void setup()
 {
-  pinMode(LED, OUTPUT);
-  pinMode(VRS_PIN, OUTPUT);
-  digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485
+  pinMode(V_SS5, PWR_ON);
+  pinMode(LED_YELLOW, OUTPUT);
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
   Serial_Canopus.begin(9600, SERIAL_8N1);
@@ -233,9 +231,10 @@ void loop()
     }
   }
   else Serial.print("Read Fail node 1"); //read fail
-  digitalWrite(LED, !digitalRead(LED)); //blink led
+  digitalWrite(LED_YELLOW, !digitalRead(LED_YELLOW)); //blink led
   delay(500);
 }
+
 ```
 
 The Arduino Serial Monitor shows the value of register:
@@ -260,6 +259,8 @@ Value 40009: 10
 **Example Code modbus slave update value register**
 
 ```c
+#include <Rak3172_Canopus.h>
+#define V3
 #include "modbus.h"
 #include "modbusDevice.h"
 #include "modbusRegBank.h"
@@ -267,15 +268,14 @@ Value 40009: 10
 modbusDevice regBank;
 modbusSlave slave;
 
-#include <Rak3172_Canopus.h>
 
 void setup()
 {
-  pinMode(LED, OUTPUT);
-  pinMode(VRS_PIN, OUTPUT);
-  digitalWrite(VRS_PIN, PWR_ON);  //On power Vrs485
-  pinMode(VSS_PIN, OUTPUT);
-  digitalWrite(VSS_PIN, PWR_ON);  //On power Vsensor
+  pinMode(LED_YELLOW, OUTPUT);
+  pinMode(V_SS5, OUTPUT);
+  digitalWrite(V_SS5, PWR_ON);  //On power Vrs485
+  pinMode(V_SS3, OUTPUT);
+  digitalWrite(V_SS3, PWR_ON);  //On power Vsensor
   
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
@@ -290,11 +290,11 @@ void setup()
 }
 void loop()
 {
-  int analog_In = (float)analogRead(mA_PIN) * 3300 / 100 / 4096;  //Get value 4-20mA
+  int analog_In = analogRead(AI1_PIN); 
   
   regBank.set(40001, analog_In);  //Update value for 40001 is analog_In
   slave.run();  //Run service modbus RTU slave
-  digitalWrite(LED, !digitalRead(LED)); //blink led
+  digitalWrite(LED_YELLOW, !digitalRead(LED_YELLOW)); //blink led
   delay(200);
 }
 ```

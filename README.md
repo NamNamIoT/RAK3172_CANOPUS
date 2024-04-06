@@ -668,4 +668,142 @@ void loop() {
   digitalWrite(LED_SYNC, !digitalRead(LED_SYNC));
 }
 ```
+
+***System***
+##### Powersave
+```c
+void setup()
+{
+    Serial.begin(115200);
+    Serial.println("RAKwireless System Powersave Example");
+    Serial.println("------------------------------------------------------");
+
+}
+
+void loop()
+{
+    Serial.print("The timestamp before sleeping: ");
+    Serial.print(millis());
+    Serial.println(" ms");
+    Serial.println("(Wait 10 seconds or Press any key to wakeup)");
+    api.system.sleep.all(10000);
+    Serial.print("The timestamp after sleeping: ");
+    Serial.print(millis());
+    Serial.println(" ms");
+}
+```
+
+##### Time
+```c
+/***
+ *  This example shows time function, including millis, micros, delay, delayMicroseconds.
+***/
+
+long delayTime = 1000;		// variable for setting the delay time 
+
+void setup()
+{
+    // initialize serial communication at 115200 bits per second
+    Serial.begin(115200);
+
+    Serial.println("RAKwireless Arduino Time Example");
+    Serial.println("------------------------------------------------------");
+}
+
+void loop()
+{
+    Serial.println("Now Time:");
+    Serial.print("millis(): ");
+    Serial.println(millis());	// show the time with millis
+    Serial.print("micros(): ");
+    Serial.println(micros());	// show the time with micros
+  
+    Serial.printf("After Delay %d milliseconds\n", delayTime);
+    delay(delayTime);		// delay time (second)
+    Serial.print("millis(): ");
+    Serial.println(millis());	// show the time with millis
+    Serial.print("micros(): ");
+    Serial.println(micros());	// show the time with micros
+  
+    Serial.printf("After Delay %d microseconds\n", delayTime);
+    delayMicroseconds(delayTime);	// delay time (Microseconds)
+    Serial.print("millis(): ");
+    Serial.println(millis());	// show the time with millis
+    Serial.print("micros(): ");
+    Serial.println(micros());	// show the time with micros
+  
+    Serial.println("");
+  
+    delayTime += 1000;		// delay time add 1000
+  
+    delay(5000);
+}
+```
+ 
+##### Timer
+```c
+void handler(void *data)
+{
+    Serial.printf("[%lu]This is the handler of timer #%d\r\n", millis(), (int)data);
+    /* Actually, the handler is not executed in interrupt context. The real ISR for timer just sends an event to the system event queue.
+     * If main loop found there is any event in the event queue, the handler for that event will be processed. */
+}
+
+void setup()
+{
+    Serial.begin(115200);
+  
+    Serial.println("RAKwireless System Timer Example");
+    Serial.println("------------------------------------------------------");
+  
+    for (int i = 0 ; i < RAK_TIMER_ID_MAX ; i++) {
+        if (api.system.timer.create((RAK_TIMER_ID)i, (RAK_TIMER_HANDLER)handler, RAK_TIMER_PERIODIC) != true) {
+            Serial.printf("Creating timer #%d failed.\r\n", i);
+            continue;
+        }
+        if (api.system.timer.start((RAK_TIMER_ID)i, (i+1)*1000, (void *)i) != true) {
+            Serial.printf("Starting timer #%d failed.\r\n", i);
+            continue;
+        }
+    }
+}
+
+void loop()
+{
+}
+```
+  
+##### General
+```c
+/***
+ *  This example print the device information.
+***/
+int i;
+void setup()
+{
+    Serial.begin(115200);
+    Serial.println("RAKwireless System General Example");
+    Serial.println("------------------------------------------------------");
+    api.system.restoreDefault();
+}
+
+void loop()
+{
+    if (++i == 20) {
+        Serial.printf("Reboot now..\r\n");
+        api.system.reboot();
+    }
+    Serial.printf("===Loop %d==\r\n", i);
+    Serial.printf("Firmware Version: %s\r\n",
+		api.system.firmwareVersion.get().c_str());
+    Serial.printf("AT Command Version: %s\r\n",
+		api.system.cliVersion.get().c_str());
+    Serial.printf("RUI API Version: %s\r\n",
+		api.system.apiVersion.get().c_str());
+    Serial.printf("Model ID: %s\r\n", api.system.modelId.get().c_str());
+    Serial.printf("Hardware ID: %s\r\n", api.system.chipId.get().c_str());
+    Serial.printf("Battery Level: %f\r\n", api.system.bat.get());
+    delay(1000);
+}
+```
 ### Continue update  

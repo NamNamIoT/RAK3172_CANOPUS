@@ -63,7 +63,7 @@ $ tree
   
 |     **Object**    |      **Detail component**      |             **Note**         |
 | --- | --- | --- |
-| Power             | Solar or DC power              | Maximum 6VDC (V1, V2) or **18V (V3)**|  
+| Power             | HT7533-1, TPLP2985-33DBVR,H8118A50M5R | Maximum 6VDC (V1, V2) or **18V (V3)**|  
 | Solar charge      | LT4054 (V1, V2) or TP5100 (V3) | 800mA (V1, V2) or 2A (V3)            |
 | RS485             | SP485EE                        | Protect over volt, current   |
 | I2C               | -                              | Pullup internal ~100k        |

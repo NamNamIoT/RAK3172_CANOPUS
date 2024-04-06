@@ -282,7 +282,7 @@ void loop()
 }
 ```
 
-**I2C**
+**How to Use I2C**
 
 There is one I2C peripheral available on RAK3172.
 
@@ -296,7 +296,7 @@ There is one I2C peripheral available on RAK3172.
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/a8da41d4-12a5-4daa-89a1-7c62a2648887" height="350" width="250"><img src="https://user-images.githubusercontent.com/49629370/224522611-246efbcf-a1fb-4503-9ea5-41dc0b514656.png" height="350" width="500">
 
-**Example Code**  
+**Example Code I2C**  
 ***Scan I2C***  
 Make sure you have an I2C device connected to specified I2C pins to run the I2C scanner code below:
 

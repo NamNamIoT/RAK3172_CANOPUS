@@ -8,7 +8,7 @@
 height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>  
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Docs/Job1-ezgif.com-speed.gif">  
+
 ##### 📝Note: *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
 ```c
@@ -830,6 +830,8 @@ void loop()
     delay(1000);
 }
 ```
+<p align="center">  <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Docs/Job1-ezgif.com-speed.gif"/><br><b>PCB Render</b></p>  
+  
 ### Continue update  
 [Click go top](#Quick-access-panel)  
   

@@ -43,7 +43,6 @@ height="30" width="40" /></a>
 | Solar charge      | LT4054 (V1, V2) or TP5100 (V3) | 800mA (V1, V2) or 2A (V3)            |
 | RS485             | SP485EE                        | Protect over volt, current   |
 | I2C               | -                              | Pullup internal ~100k        |
-| One-wire          | -                              | RUI3 not yet support         |
 | 0-10V             | -                              | Resolution 14bit             |
 | LORA SoC          | RAK3172		                     | STM32WL inside	              |
 | Case              | Plastic                        | Size 100x68x50	              |  

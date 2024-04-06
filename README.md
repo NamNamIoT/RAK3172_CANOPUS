@@ -148,8 +148,8 @@ You can use any of the pins below as Analog Input.
 
 | **Analog Port** | **Pin Name** | **Onboard** |
 | --------------- | ------------ | ----------- |
-| ADC1 (4-20mA)   | PB3          | AI          |
-| ADC2 (0-10V)    | PB4          | AV          |
+| ADC4 (0-10V)    |  PA15        | AI1          |
+| ADC5 (0-10V)    |  PA10        | AI2          |
 
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.
@@ -159,26 +159,27 @@ Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/
 **Example code read analog on RAK3172_Canopus board**
 
 ```c
-#include <Rak3172_Canopus.h>
+#include <Rak3172_Canopus.h>  // Include the Rak3172_Canopus library header file.
+
+#define V3  // Define macro V3.
 
 void setup() {
-  Serial.begin(115200);
-  Serial.println("Canopus Analog Example");
-  Serial.println("------------------------------------------------------");
-  pinMode(VSS_PIN, OUTPUT);
-  digitalWrite(VSS_PIN, PWR_ON);  //On power Vss
-  analogReadResolution(12);
+  Serial.begin(115200);  // Initialize serial communication at 115200 baud rate.
+  Serial.println("Canopus Analog Example");  // Print a message indicating the start of the program.
+  Serial.println("------------------------------------------------------");  // Print a separator line.
+  pinMode(V_SS5, OUTPUT);  // Set pin V_SS5 as an output.
+  digitalWrite(V_SS5, PWR_ON);  // Turn on the V_SS5 pin.
+  analogReadResolution(12);  // Set analog read resolution to 12 bits.
 }
 
 void loop() {
+  float AI1 = analogRead(AI1_PIN)*2.58;         // Read analog voltage from pin AI1_PIN and store it in AI1.
+  Serial.printf("AI1 = %0.0fmV\r\n", AI1); // Print the analog voltage value of AI1 in millivolts.
 
-  int AI = (float)analogRead(mA_PIN) * 3300 / 100 / 4096;  //Get value 4-20mA
-  Serial.printf("\nAI = %dmA\r\n", AI);                   // print value 4-20mA
+  float AI2 = analogRead(AI2_PIN)*2.58;         // Read analog voltage from pin AI2_PIN and store it in AI2.
+  Serial.printf("AI2 = %0.0fmV\r\n", AI2); // Print the analog voltage value of AI2 in millivolts.
 
-  int AV = (float)analogRead(Volt_PIN) * 3300 / 4096 * 5.7;  //Get value 0-10V
-  Serial.printf("AV = %dmV\r\n", AV);                       // print value 0-10V
-  delay(1000);
-
+  delay(1000);  // Wait for 1 second before the next iteration of the loop.
 }
 
 ```

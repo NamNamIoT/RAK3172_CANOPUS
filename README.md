@@ -23,40 +23,48 @@ $ tree
 |      |-- How to Use Digital I/O
 |      |-- How to Use Analog Input
 |      |-- How to Use Modbus RTU
-|      |       |-- Modbus master
-|      |       |-- Modbus slave
+|      |      |-- Modbus master
+|      |      |-- Modbus slave
 |      |-- How to Use I2C
-|      |       |-- Scan I2C
-|      |       |-- Read sensor SHT3X
-|      |       |-- Read sensor BH1750
+|      |      |-- Scan I2C
+|      |      |-- Read sensor SHT3X
+|      |      |-- Read sensor BH1750
 |      |-- How to use Lora P2P
-|      |       |-- Sender
-|      |       |-- Reciever
+|      |      |-- Sender
+|      |      |-- Reciever
 |      |-- How to use LoraWan
-|      |-- How to get information board
-|      |       |--
-|      |       |--
-|      |       |-- 
+|      |-- How to get information System
+|      |      |-- Powersave
+|      |      |-- Time
+|      |      |-- Timer
+|      |      |-- General
+|      |      |      |-- Battery Level
+|      |      |      |-- Hardware ID
+|      |      |      |-- Model ID
+|      |      |      |-- Firmware Version
+|      |      |      |-- AT Command Version
+|      |      |      |-- RUI API Version
 ```
 
 ## Quick access panel  
   
 |    **Examples**   |               **Description**            | **Click download** |  
 | --- | --- | :---: |
-| Blink led| On/off led on board|[Go!](#blink-led)|
-| **Lora P2P**      | Sender     |[Go!](#sender)|
+| Digital I/O       | On/off led on board|[Go!](#blink-led)|
+| Analog Input      | Read 0-10V sensor|[Go!](#read-analog)|
+| Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|
+|                   | RAK3172 is slave               |[Go!](#modbus-slave)|
+| I2C               | SHT3X (Temperature air)|[Go!](#sht3x)|
+|                   | BH1750  (Light)|[Go!](#bh1750)|
+| Lora P2P          | Sender     |[Go!](#sender)|
 |                   | Reciever|[Go!](#receive)|
 |                   | Lora Ra02 - Lora Rak3172|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|
 | LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|
-| Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|
-|                   | RAK3172 is slave               |[Go!](#modbus-slave)|
 | System            | Powersave     |[Go!](#Powersave)|
 |                   | Time          |[Go!](#Time)|
 |                   | Timer         |[Go!](#Timer)|
 |                   | General       |[Go!](#General)|
-| Sensor            | SHT3X (Temperature air)|[Go!](#sht3x)|
-|                   | BH1750  (Light)|[Go!](#bh1750)|
-| Read analog       | Read 0-10V sensor|[Go!](#read-analog)|
+
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)

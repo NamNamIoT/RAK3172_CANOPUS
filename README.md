@@ -118,7 +118,7 @@ This is table pin map of Rak3172_Canopus board.
 |V_RS485  | PB12 | **PA1** | PA1 | Enable power RS485 |  
 |UART1_TX | PB6 | PB6 | PB6 | RS485 ModbusRTU |  
 |UART1_RX | PB7 | PB7 | PB7 | RS485 ModbusRTU |  
-|BATTERY_PIN | PA15 | **---** | **PB3** | meansure battery   |  
+|ABAT     | PA15 | **---** | **PB3** | ADC Battery   |  
 
   
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   

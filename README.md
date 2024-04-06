@@ -59,18 +59,7 @@ $ tree
 [![GitHub Repo stars](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://www.paypal.com/paypalme/thanhnamlt5)
 
   
-## Information board  
-  
-|     **Object**    |      **Detail component**      |             **Note**         |
-| --- | --- | --- |
-| Power             | HT7533-1, TPLP2985-33DBVR,H8118A50M5R | Maximum 6VDC (V1, V2) or **18V (V3)**|  
-| Solar charge      | LT4054 (V1, V2) or TP5100 (V3) | 800mA (V1, V2) or 2A (V3)            |
-| RS485             | SP485EE                        | Protect over volt, current   |
-| I2C               | -                              | Pullup internal ~100k        |
-| 0-10V             | -                              | Resolution 14bit             |
-| LORA SoC          | RAK3172		                     | STM32WL inside	              |
-| Case              | Plastic                        | Size 100x68x50	              |  
-  
+## Information board   
 #### 🕵🏻‍♀️Version hardware log   
 🏷️Version 0.98 [March-2023] (Prototype).  
 🏷️Version 0.99 [April-2023] (Prototype).  

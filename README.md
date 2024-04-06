@@ -11,6 +11,28 @@ height="30" width="40" /></a>
   
 ##### 📝Note: *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
   
+|-- Quick access table
+|-- Information board
+      |-- Version hardware log
+      |-- Hardware Setup
+      |-- Software setup
+      |-- RAK3172 I/O
+|-- Examples
+      |-- How to Use Digital I/O
+      |-- How to Use Analog Input
+      |-- How to Use Modbus RTU
+             |-- Modbus master
+             |-- Modbus slave
+      |-- How to Use I2C
+             |-- Scan I2C
+             |-- Read sensor SHT3X
+             |-- Read sensor BH1750
+      |-- How to use Lora P2P
+             |-- Sender
+             |-- Reciever
+	  |-- How to use LoraWan
+	  |-- How to get information board 
+     
 ## What's included in this library:  
   
 |    **Examples**   |               **Description**            | **Click download** |  

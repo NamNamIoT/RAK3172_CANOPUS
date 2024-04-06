@@ -98,18 +98,19 @@ This is table pin map of Rak3172_Canopus board.
 
 | **Alternative Pin Usage** | **Pin Name (V1)** | **Pin Name (V2)** | **Pin Name (V3)** | **Note** |  
 | :---: | :---: | :---: | :---: | :---: |    
-|LED_SEND | PA8 | PA8 | PA8 |           |  
-|LED_SYNC | PA0 | **PA10** | PA10 |           |  
-|LED_RECV | PB2 | PB2 | PB2 |           |  
-|VSS_PIN | PB5 | PB5 | PB5 | Enable power sensor |  
+|LED_SEND | PA8 | PA8 | PA8 |   BLUE color   |  
+|LED_SYNC | PA0 | **PA10** | PA9 |   RED color   |  
+|LED_RECV | PB2 | PB2 | PB2 | YELLOW color |  
+|VSS_PIN  | PB5 | PB5 | PB5 | Enable power sensor |  
 |I2C_SDA | PA11 | PA11 | PA11 | I2C pin |  
 |I2C_SCL | PA12 | PA12 | PA12 | I2C pin |  
-|mA_PIN | PB3 | PB3 | **---** | 4-20mA |  
-|Volt_PIN | PB4 | PB4 | PB4 | 0-10V |  
-|VRS_485 | PB12 | **PA1** | PA1 | Enable power RS485 |  
+|mA_PIN | PB3 | PB3 | **---** |    -    |  
+|AI1_PIN  | PB4 | PB4 | PB4 | 0-10V |  
+|AI2_PIN  |  -  |  -  | **PA10** | 0-10V |  
+|V_RS485  | PB12 | **PA1** | PA1 | Enable power RS485 |  
 |UART1_TX | PB6 | PB6 | PB6 | RS485 ModbusRTU |  
 |UART1_RX | PB7 | PB7 | PB7 | RS485 ModbusRTU |  
-|BATTERY_PIN | **PA15** | **---** | **PB3** |    |  
+|BATTERY_PIN | PA15 | **---** | **PB3** | meansure battery   |  
 
   
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   

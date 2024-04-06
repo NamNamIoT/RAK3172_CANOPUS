@@ -41,8 +41,8 @@ $ tree
 |    **Examples**   |               **Description**            | **Click download** |  
 | --- | --- | :---: |
 | Blink led| On/off led on board|[Go!](#blink-led)|
-| **Lora P2P**      | Sender     |[Go!]|(#sender)|
-|                   | Reciever|[Go!]|(#receive)|
+| **Lora P2P**      | Sender     |[Go!](#sender)|
+|                   | Reciever|[Go!](#receive)|
 |                   | Lora Ra02 - Lora Rak3172|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|
 | LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|
 | Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|

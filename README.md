@@ -44,7 +44,6 @@ height="30" width="40" /></a>
 | RS485             | SP485EE                        | Protect over volt, current   |
 | I2C               | -                              | Pullup internal ~100k        |
 | One-wire          | -                              | RUI3 not yet support         |
-| 4-20mA            | -                              | Resolution 14bit             |
 | 0-10V             | -                              | Resolution 14bit             |
 | LORA SoC          | RAK3172		                     | STM32WL inside	              |
 | Case              | Plastic                        | Size 100x68x50	              |  

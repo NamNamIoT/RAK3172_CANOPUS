@@ -45,7 +45,7 @@ $ tree
 |      |      |      |-- AT Command Version
 |      |      |      |-- RUI API Version
 ```
-
+  
 ## Quick access panel  
   
 |    **Examples**   |               **Description**            | **Click download** |  
@@ -82,7 +82,6 @@ $ tree
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450">  
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="450">  
-  
 #### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  
 The requirement is:  

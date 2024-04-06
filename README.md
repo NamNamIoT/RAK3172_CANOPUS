@@ -10,29 +10,32 @@ height="30" width="40" /></a>
 </p>  
   
 ##### 📝Note: *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
-  
+
+```c
+$ tree
 |-- Quick access table
 |-- Information board
-      |-- Version hardware log
-      |-- Hardware Setup
-      |-- Software setup
-      |-- RAK3172 I/O
+|      |-- Version hardware log
+|      |-- Hardware Setup
+|      |-- Software setup
+|      |-- RAK3172 I/O
 |-- Examples
-      |-- How to Use Digital I/O
-      |-- How to Use Analog Input
-      |-- How to Use Modbus RTU
-             |-- Modbus master
-             |-- Modbus slave
-      |-- How to Use I2C
-             |-- Scan I2C
-             |-- Read sensor SHT3X
-             |-- Read sensor BH1750
-      |-- How to use Lora P2P
-             |-- Sender
-             |-- Reciever
-	  |-- How to use LoraWan
-	  |-- How to get information board 
-     
+|      |-- How to Use Digital I/O
+|      |-- How to Use Analog Input
+|      |-- How to Use Modbus RTU
+|      |       |-- Modbus master
+|      |       |-- Modbus slave
+|      |-- How to Use I2C
+|      |       |-- Scan I2C
+|      |       |-- Read sensor SHT3X
+|      |       |-- Read sensor BH1750
+|      |-- How to use Lora P2P
+|      |       |-- Sender
+|      |       |-- Reciever
+|      |-- How to use LoraWan
+|      |-- How to get information board
+```
+       
 ## What's included in this library:  
   
 |    **Examples**   |               **Description**            | **Click download** |  
@@ -44,12 +47,11 @@ height="30" width="40" /></a>
 | LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|
 | Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|
 |                   | RAK3172 is slave               |[Go!](#modbus-slave)|
-| General           | Powersave, timer, interupt     |[Go!]|
-|                   | Multitasking                   |[Go!]|
+| General           | Powersave     |[Go!]|
+|                   | timer                   |[Go!]|
 | Sensor            | SHT3X (Temperature air)|[Go!](#sht3x)|
 |                   | BH1750  (Light)|[Go!](#bh1750)|
 | Read analog       | Read 0-10V sensor|[Go!](#read-analog)|
-|                   | Read 4-20mA sensor|[Go!](#read-analog)|
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/NamNamIoT/RAK3172_CANOPUS)

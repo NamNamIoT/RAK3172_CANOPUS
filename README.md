@@ -8,7 +8,7 @@
 height="30" width="40" /></a>
 <a href="https://wa.me/84969809444" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="84969809444" height="30" width="40" /></a>
 </p>  
-  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Docs/Job1-ezgif.com-speed.gif">  
 ##### 📝Note: *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
 ```c
@@ -81,8 +81,7 @@ $ tree
 🏷️**Version 3 [Jan-2024].**  
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450">  
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="450">  
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Docs/Job1-ezgif.com-speed.gif">  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="450">    
   
 #### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  

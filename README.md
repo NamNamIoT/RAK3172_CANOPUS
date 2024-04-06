@@ -35,8 +35,9 @@ $ tree
 |      |-- How to use LoraWan
 |      |-- How to get information board
 ```
-       
-## What's included in this library:  
+
+## Quick access panel  
+### What's included in this library:  
   
 |    **Examples**   |               **Description**            | **Click download** |  
 | --- | --- | :---: |
@@ -59,7 +60,7 @@ $ tree
 [![GitHub Repo stars](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://www.paypal.com/paypalme/thanhnamlt5)
 
   
-## Information RAK3172_Canopus board  
+## Information board  
   
 |     **Object**    |      **Detail component**      |             **Note**         |
 | --- | --- | --- |

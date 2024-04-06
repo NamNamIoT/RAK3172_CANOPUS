@@ -2,7 +2,7 @@
 # RAK3172_Canopus Board Quick Start Guide  
 ## ✌️✌️ Welcome! ✌️✌️  
 
-Hi, i'm **Namnam** 🕴🏼.  
+##### Hi, i'm **Namnam** 🕴🏼.  
 <p align="left">
 <a href="https://fb.com/kuem0912" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kuem0912" 
 height="30" width="40" /></a>
@@ -807,4 +807,4 @@ void loop()
 }
 ```
 ### Continue update  
-[Click go top](#panel)
+[Click go top](#Hi)

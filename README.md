@@ -47,24 +47,6 @@ height="30" width="40" /></a>
 | LORA SoC          | RAK3172		                     | STM32WL inside	              |
 | Case              | Plastic                        | Size 100x68x50	              |  
   
-### RF Characteristics
-
-The RAK3172 supports two different frequency variations: RAK3172(L) Low Radio Frequency and RAK3172(H) High Radio Frequency.
-
-#### Operating Frequencies
-
-| Module     | Region        | Frequency     |
-| ---------- | ------------- | ------------- |
-| RAK3172(L) | Europe        | EU433         |
-|            | China         | CN470         |
-| RAK3172(H) | Europe        | EU868         |
-|            | North America | US915         |
-|            | Australia     | AU915         |
-|            | Korea         | KR920         |
-|            | Asia          | AS923-1/2/3/4 |
-|            | India         | IN865         |
-|            | Russia        | RU864         |
-  
 #### 🕵🏻‍♀️Version hardware log   
 🏷️Version 0.98 [March-2023] (Prototype).  
 🏷️Version 0.99 [April-2023] (Prototype).  

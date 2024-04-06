@@ -29,7 +29,6 @@ void setup()
 
 void loop()
 {
-
     now = millis();
     if ((elapsed = (now - start)) > 30000 && locked == true) {
         Serial.println("Serial port is auto unlocked now..\r\n");

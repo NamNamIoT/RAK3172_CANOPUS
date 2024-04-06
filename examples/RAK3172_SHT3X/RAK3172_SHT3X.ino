@@ -8,8 +8,8 @@ ArtronShop_SHT3x sht3x(0x44, &Wire);  // ADDR: 0 => 0x44, ADDR: 1 => 0x45
 void setup() {
   Serial.begin(115200);
   Serial.print("\r\n************RAK3172_CANOPUS**************");
-  pinMode(VSS_PIN, OUTPUT);
-  digitalWrite(VSS_PIN, PWR_ON);
+  pinMode(V_SS3, OUTPUT);
+  digitalWrite(V_SS3, PWR_ON);
   delay(100);
   Wire.begin();
   while (!sht3x.begin()) {

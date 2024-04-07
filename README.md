@@ -105,8 +105,6 @@ This is table pin map of Rak3172_Canopus board.
 |ABAT     | PA15 | **---** | **PB3** | ADC Battery   |  
 
   
-####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
-
 ## Examples
 ### How to Use Digital IO  
 ##### Blink led  

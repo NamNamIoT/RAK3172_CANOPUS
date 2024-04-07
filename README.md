@@ -18,7 +18,9 @@ $ tree
 |      |-- Version hardware log
 |      |-- Hardware Setup
 |      |-- Software setup
-|      |-- RAK3172 I/O
+|      |      |-- Add RAK3172_Canopus to IDE arduino
+|      |      |-- Install library RAK3172_Canopus
+|      |-- RAK3172 I/O pinout
 |-- Examples
 |      |-- How to Use Digital I/O
 |      |-- How to Use Analog Input

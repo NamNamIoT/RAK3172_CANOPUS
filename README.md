@@ -11,47 +11,23 @@ height="30" width="40" /></a>
 
 ##### 📝Note: *Especially, you will get 3% discount on the total amount to pay when using code [CANOPUS](https://rakwireless.kckb.st/canopus) to shop at [https://store.rakwireless.com/products/](https://rakwireless.kckb.st/canopus)*
 
-```c
-$ tree
-|-- Quick access table
-|-- Information board
-|      |-- Version hardware log
-|      |-- Hardware Setup
-|      |-- Software setup
-|      |      |-- Add RAK3172_Canopus to IDE arduino
-|      |      |-- Install library RAK3172_Canopus
-|      |
-|      |-- RAK3172 I/O pinout
-|
-|-- Examples
-|      |-- How to Use Digital I/O
-|      |-- How to Use Analog Input
-|      |-- How to Use Modbus RTU
-|      |      |-- Modbus master
-|      |      |-- Modbus slave
-|      |
-|      |-- How to Use I2C
-|      |      |-- Scan I2C
-|      |      |-- Read sensor SHT3X
-|      |      |-- Read sensor BH1750
-|      |
-|      |-- How to use Lora P2P
-|      |      |-- Sender
-|      |      |-- Reciever
-|      |
-|      |-- How to use LoraWan
-|      |-- How to get information System
-|      |      |-- Powersave
-|      |      |-- Time
-|      |      |-- Timer
-|      |      |-- General
-|      |      |      |-- Battery Level
-|      |      |      |-- Hardware ID
-|      |      |      |-- Model ID
-|      |      |      |-- Firmware Version
-|      |      |      |-- AT Command Version
-|      |      |      |-- RUI API Version
-```
+## Content
+
+* [Quick access table](#Quick-access-panel)
+* [Information board](#Information-board)
+	- [Version hardware log](#🕵🏻‍♀️Version-hardware-log)
+	- [Hardware Setup](#)
+	- [Software setup](#)
+	- [RAK3172 I/O pinout](#)
+* [Examples](#)
+	- [How to Use Digital I/O](#)
+	- [How to Use Analog Input](#)
+	- [How to Use Modbus RTU](#)
+	- [How to Use I2C](#)
+	- [How to use Lora P2P](#)
+	- [How to use LoraWan](#)
+	- [How to get information System](#)
+
   
 ## Quick access panel  
   

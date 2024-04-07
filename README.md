@@ -24,9 +24,9 @@ height="30" width="40" /></a>
 	- [How to Use Analog Input](#How-to-Use-Analog-Input)
 	- [How to Use Modbus RTU](#How-to-Use-Modbus-RTU)
 	- [How to Use I2C](#How-to-Use-I2C)
-	- [How to use Lora P2P](#How-to-use-Lora-P2P)
-	- [How to use LoraWan](#How-to-use-LoraWan)
-	- [How to get information System](#How-to-get-information-System)
+	- [How to use Lora P2P](#Lora-P2P)
+	- [How to use LoraWan](#LoraWan)
+	- [How to get information System](#System)
 
   
 ## Quick access panel  

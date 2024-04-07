@@ -20,7 +20,7 @@ height="30" width="40" /></a>
 	- [Software setup](#Software-setup)
 	- [RAK3172 I/O pinout](#RAK3172-I/O-Pins)
 * [Examples](#)
-	- [How to Use Digital I/O](#How-to-Use-Digital-I/O)
+	- [How to Use Digital IO](#How-to-Use-Digital-IO)
 	- [How to Use Analog Input](#How-to-Use-Analog-Input)
 	- [How to Use Modbus RTU](#How-to-Use-Modbus-RTU)
 	- [How to Use I2C](#How-to-Use-I2C)
@@ -108,7 +108,7 @@ This is table pin map of Rak3172_Canopus board.
 ####  ⚠️ WARNING: Prepare yourself a cup of coffee ☕☕☕, because the next is a fascinating journey with Canopus board 🤪.   
 
 ## Examples
-### How to Use Digital I/O  
+### How to Use Digital IO  
 ##### Blink led  
   
 - Use Arduino [digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) to read the value from a specified Digital I/O pin, either HIGH or LOW.

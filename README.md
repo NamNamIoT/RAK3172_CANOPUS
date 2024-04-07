@@ -15,10 +15,10 @@ height="30" width="40" /></a>
 
 * [Quick access table](#Quick-access-panel)
 * [Information board](#Information-board)
-	- [Version hardware log](#hardware)
-	- [Hardware Setup](#)
-	- [Software setup](#)
-	- [RAK3172 I/O pinout](#)
+	- [Version hardware log](#Version-hardware-log)
+	- [Hardware Setup](#Hardware-Setup)
+	- [Software setup](#Software-setup)
+	- [RAK3172 I/O pinout](#RAK3172-I/O-Pins)
 * [Examples](#)
 	- [How to Use Digital I/O](#)
 	- [How to Use Analog Input](#)
@@ -56,7 +56,7 @@ height="30" width="40" /></a>
 
   
 ## Information board   
-#### 🕵🏻‍♀️Version hardware log   
+#### Version hardware log   
 🏷️Version 0.98 [March-2023] (Prototype).  
 🏷️Version 0.99 [April-2023] (Prototype).  
 🏷️Version 1.0 [June-2023].  
@@ -67,7 +67,7 @@ height="30" width="40" /></a>
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="450">  
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f3443e7e-0966-4a0d-96f6-cadc0399a0bf" height="450">    
   
-#### 🧑🏻‍🔧 Hardware Setup  
+#### Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  
 The requirement is:  
 -Antenna  
@@ -75,12 +75,12 @@ The requirement is:
 -Battery 18650  
 -Solar panel (Ex: 5V-3W)  
 
-#### 🧑🏼‍💻 Software setup  
+#### Software setup  
 ##### Follow this guide:  
 -[*Install IDE arduino, add RAK3172 to manager board and import Canopus library*](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 -[*Compile an Example with RAK3172_Canopus board*](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Readme_extension.md)  
 
-#### 🏷️RAK3172 I/O Pins
+#### RAK3172 I/O Pins
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 

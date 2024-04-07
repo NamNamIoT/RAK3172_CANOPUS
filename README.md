@@ -81,7 +81,8 @@ $ tree
 🏷️**Version 3 [Jan-2024].**  
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="450">  
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="450">    
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="450">  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f3443e7e-0966-4a0d-96f6-cadc0399a0bf" height="450">    
   
 #### 🧑🏻‍🔧 Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  
@@ -100,7 +101,7 @@ The requirement is:
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
-<img src="https://user-images.githubusercontent.com/49629370/224521329-eb63e943-dd5c-4a59-9920-9f6aa959f3dc.png" height="450" width="500">
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f3443e7e-0966-4a0d-96f6-cadc0399a0bf" height="450">
   
 This is table pin map of Rak3172_Canopus board.    
 

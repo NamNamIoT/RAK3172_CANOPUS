@@ -15,7 +15,7 @@ height="30" width="40" /></a>
 
 * [Quick access table](#Quick-access-panel)
 * [Information board](#Information-board)
-	- [Version hardware log](#🕵🏻‍♀️Version-hardware-log)
+	- [Version hardware log](#Version-hardware-log)
 	- [Hardware Setup](#)
 	- [Software setup](#)
 	- [RAK3172 I/O pinout](#)

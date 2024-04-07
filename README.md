@@ -20,20 +20,25 @@ $ tree
 |      |-- Software setup
 |      |      |-- Add RAK3172_Canopus to IDE arduino
 |      |      |-- Install library RAK3172_Canopus
+|      |
 |      |-- RAK3172 I/O pinout
+|
 |-- Examples
 |      |-- How to Use Digital I/O
 |      |-- How to Use Analog Input
 |      |-- How to Use Modbus RTU
 |      |      |-- Modbus master
 |      |      |-- Modbus slave
+|      |
 |      |-- How to Use I2C
 |      |      |-- Scan I2C
 |      |      |-- Read sensor SHT3X
 |      |      |-- Read sensor BH1750
+|      |
 |      |-- How to use Lora P2P
 |      |      |-- Sender
 |      |      |-- Reciever
+|      |
 |      |-- How to use LoraWan
 |      |-- How to get information System
 |      |      |-- Powersave

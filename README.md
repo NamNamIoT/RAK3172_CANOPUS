@@ -63,9 +63,9 @@ height="30" width="40" /></a>
 🏷️Version 2 [Oct-2023].  
 🏷️**Version 3 [Jan-2024].**  
 
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="400">  
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="400">  
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f3443e7e-0966-4a0d-96f6-cadc0399a0bf" height="400">    
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="370">  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="370">  
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f3443e7e-0966-4a0d-96f6-cadc0399a0bf" height="370">    
   
 #### Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  

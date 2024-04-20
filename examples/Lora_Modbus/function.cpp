@@ -12,7 +12,7 @@ void Modbus_read(uint8_t* buf, uint16_t len) {
   for (int i = 0; i < len; i++) {
     Serial.print("[");
     Serial.print(buf[i], HEX);
-    Serial1.printf("%c", buf[i]);
+    Serial_modbus.printf("%c", buf[i]);
     Serial.print("]");
   }
 }

@@ -36,10 +36,11 @@ height="30" width="40" /></a>
 | Digital I/O       | On/off led on board|[Go!](#blink-led)|
 | Analog Input      | Read 0-10V sensor|[Go!](#read-analog)|
 | Modbus RTU        | RAK3172 is master|[Go!](#modbus-master)|
-|                   | RAK3172 is slave               |[Go!](#modbus-slave)|
+|                   | RAK3172 is slave|[Go!](#modbus-slave)|
+|                   | Modbus tunnel|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/tree/main/examples/Lora_Modbus)|
 | I2C               | SHT3X (Temperature air)|[Go!](#sht3x)|
 |                   | BH1750  (Light)|[Go!](#bh1750)|
-| Lora P2P          | Sender     |[Go!](#sender)|
+| Lora P2P          | Sender|[Go!](#sender)|
 |                   | Reciever|[Go!](#receive)|
 |                   | Lora Ra02 - Lora Rak3172|[Go!](https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Rak2Ra02.md)|
 | LoraWan           | Class B, Info, Multicast, ABP  |[Go!]|

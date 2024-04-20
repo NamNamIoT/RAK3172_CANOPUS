@@ -13,7 +13,6 @@ void setup() {
   Serial_modbus.println("RAK3172_Canopus LoRa_Modbus tunnel Example");
 }
 
-
 void loop() {
   uint8_t frame_input[100];
   int size_input = 0;

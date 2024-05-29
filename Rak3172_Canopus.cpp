@@ -7,7 +7,7 @@ void init_io()
 	pinMode(LED_SYNC, OUTPUT);
 	digitalWrite(LED_RECV, LOW);
 	digitalWrite(LED_SEND, LOW);
-	digitalWrite(LED_SYNC, HIGH);
+	digitalWrite(LED_SYNC, HIGH); //ON led
 
 	pinMode(V_SS3, OUTPUT);
 	pinMode(V_SS5, OUTPUT);

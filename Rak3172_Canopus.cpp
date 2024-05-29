@@ -1,5 +1,5 @@
 #include <Rak3172_Canopus.h>
-
+#include <Arduino.h>
 void init_io()
 {
 	pinMode(LED_YELLOW, OUTPUT);

@@ -9,6 +9,7 @@ modbusSlave slave;
 void setup()
 {
   init_io();
+  enable_Vrs485();
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
 

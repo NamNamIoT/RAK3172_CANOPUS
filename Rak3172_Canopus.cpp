@@ -2,15 +2,12 @@
 #include <Arduino.h>
 void init_io()
 {
-	pinMode(LED_YELLOW, OUTPUT);
-	pinMode(LED_BLUE, OUTPUT);
-	pinMode(LED_RED, OUTPUT);
-	// pinMode(LED_SEND, OUTPUT);
-	// pinMode(LED_RECV, OUTPUT);
-	// pinMode(LED_SYNC, OUTPUT);
-	digitalWrite(LED_YELLOW, HIGH);
-	digitalWrite(LED_BLUE, LOW);
-	digitalWrite(LED_RED, LOW);
+	pinMode(LED_RECV, OUTPUT);
+	pinMode(LED_SEND, OUTPUT);
+	pinMode(LED_SYNC, OUTPUT);
+	digitalWrite(LED_RECV, LOW);
+	digitalWrite(LED_SEND, LOW);
+	digitalWrite(LED_SYNC, HIGH);
 
 	pinMode(V_SS3, OUTPUT);
 	pinMode(V_SS5, OUTPUT);

@@ -9,6 +9,7 @@ void setup()
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
   Serial_Canopus.begin(9600, SERIAL_8N1);
   init_io();
+  enable_Vrs485();
 }
 void loop()
 {

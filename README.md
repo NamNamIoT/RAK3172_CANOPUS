@@ -154,14 +154,13 @@ Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/
 
 ```c
 #include <Rak3172_Canopus.h>  // Include the Rak3172_Canopus library header file.
-#define V3  // Define macro V3.
 
 void setup() {
   Serial.begin(115200);  // Initialize serial communication at 115200 baud rate.
   Serial.println("Canopus Analog Example");  // Print a message indicating the start of the program.
   Serial.println("------------------------------------------------------");  // Print a separator line.
-  pinMode(V_SS5, OUTPUT);  // Set pin V_SS5 as an output.
-  digitalWrite(V_SS5, PWR_ON);  // Turn on the V_SS5 pin.
+  init_io();
+  enable_Vss5();
   analogReadResolution(12);  // Set analog read resolution to 12 bits.
 }
 
@@ -199,12 +198,12 @@ Modbus RTU use Serial1 on RAK3172_Canopus board
 #include "Canopus_Modbus.h"
 ModbusMaster node;
 #include <Rak3172_Canopus.h>
-#define V3
+
 uint8_t result;
 void setup()
 {
-  pinMode(V_SS5, PWR_ON);
-  pinMode(LED_YELLOW, OUTPUT);
+  init_io();
+  enable_Vrs485();
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
   Serial_Canopus.begin(9600, SERIAL_8N1);
@@ -255,7 +254,7 @@ Value 40009: 10
 
 ```c
 #include <Rak3172_Canopus.h>
-#define V3
+
 #include "modbus.h"
 #include "modbusDevice.h"
 #include "modbusRegBank.h"
@@ -263,14 +262,11 @@ Value 40009: 10
 modbusDevice regBank;
 modbusSlave slave;
 
-
 void setup()
 {
-  pinMode(LED_YELLOW, OUTPUT);
-  pinMode(V_SS5, OUTPUT);
-  digitalWrite(V_SS5, PWR_ON);  //On power Vrs485
-  pinMode(V_SS3, OUTPUT);
-  digitalWrite(V_SS3, PWR_ON);  //On power Vsensor
+  init_io();
+  enable_Vrs485();
+  enable_Vss3();
   
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");
@@ -316,12 +312,11 @@ Make sure you have an I2C device connected to specified I2C pins to run the I2C 
 ```c
 #include <Wire.h>
 #include <Rak3172_Canopus.h>
-#define V3  // Define macro V3.
 
 void setup()
 {
-  pinMode(V_SS3, OUTPUT);
-  digitalWrite(VSS_PIN, PWR_ON); //enable power sensor
+  init_io();
+  enable_Vss3();
   Wire.begin();
   Serial.begin(115200);
   while (!Serial);
@@ -387,14 +382,14 @@ The Arduino Serial Monitor shows the I2C device found.
 #include <Wire.h>  // Include the Wire library for I2C communication.
 #include <ArtronShop_SHT3x.h>  // Include the SHT3x library.
 #include <Rak3172_Canopus.h>  // Include the Rak3172_Canopus library header file.
-#define V3  // Define macro V3.
+
 ArtronShop_SHT3x sht3x(0x44, &Wire);  // ADDR: 0 => 0x44, ADDR: 1 => 0x45
 
 void setup() {
   Serial.begin(115200);  // Initialize serial communication at 115200 baud rate.
   Serial.print("\r\n************RAK3172_CANOPUS**************");  // Print a message indicating the start of the program.
-  pinMode(V_SS3, OUTPUT);  // Set pin V_SS3 as an output.
-  digitalWrite(V_SS3, PWR_ON);  // Turn on the V_SS3 pin.
+  init_io();
+  enable_Vss3();
   delay(100);  // Wait for 100 milliseconds.
   Wire.begin();  // Initialize the I2C communication.
   while (!sht3x.begin()) {  // Check if SHT3x sensor is detected.
@@ -436,14 +431,14 @@ The Arduino Serial Monitor shows value.
 #include <Wire.h>  // Include the Wire library for I2C communication.
 #include <ArtronShop_BH1750.h>  // Include the BH1750 library.
 #include <Rak3172_Canopus.h>  // Include the Rak3172_Canopus library header file.
-#define V3  // Define macro V3.
+
 ArtronShop_BH1750 bh1750(0x23, &Wire); // Non Jump ADDR: 0x23, Jump ADDR: 0x5C
 
 void setup() {
   Serial.begin(115200);  // Initialize serial communication at 115200 baud rate.
   Serial.print("\r\n************RAK3172_CANOPUS**************");  // Print a message indicating the start of the program.
-  pinMode(V_SS3, OUTPUT);  // Set pin V_SS3 as an output.
-  digitalWrite(V_SS3, PWR_ON);  // Turn on the V_SS3 pin.
+  init_io();
+  enable_Vss3();
   Wire.begin();  // Initialize the I2C communication.
   while (!bh1750.begin()) {  // Check if BH1750 sensor is detected.
     Serial.println("BH1750 not found !");  // Print a message if BH1750 sensor is not detected.
@@ -474,7 +469,6 @@ The Arduino Serial Monitor shows value.
 ##### Sender
 ```c
 #include <Rak3172_Canopus.h>
-#define V3
 
 long startTime;
 bool rx_done = false;
@@ -519,10 +513,7 @@ void send_cb(void) {
 }
 
 void setup() {
-  pinMode(LED_SEND, OUTPUT);
-  digitalWrite(LED_SEND, LOW);
-  pinMode(LED_SYNC, OUTPUT);
-  digitalWrite(LED_SYNC, HIGH);
+  init_io();
   Serial.begin(115200);
   Serial.println("RAK3172_Canopus LoRaWan P2P Example");
   Serial.println("------------------------------------------------------");
@@ -582,7 +573,6 @@ void loop() {
 ##### Receive
 ```c
 #include <Rak3172_Canopus.h>
-#define V3
 
 long startTime;
 bool rx_done = false;
@@ -609,9 +599,7 @@ void send_cb(void) {
 }
 
 void setup() {
-  pinMode(LED_SEND, OUTPUT);
-  pinMode(LED_RECV, OUTPUT);
-  pinMode(LED_SYNC, OUTPUT);
+  init_io();
   Serial.begin(115200);
   Serial.println("RAK3172_Canopus LoRaWan P2P Example");
   Serial.println("------------------------------------------------------");
@@ -681,7 +669,6 @@ void setup()
     Serial.begin(115200);
     Serial.println("RAKwireless System Powersave Example");
     Serial.println("------------------------------------------------------");
-
 }
 
 void loop()

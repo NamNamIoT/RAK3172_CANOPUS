@@ -34,3 +34,18 @@ void enable_Vss5()
 {
 	digitalWrite(V_SS5, HIGH); // Enable 5V
 }
+
+void disable_Vrs485()
+{
+	digitalWrite(V_SS5, LOW); // OFF power module rs485
+}
+
+void disable_Vss3()
+{
+	digitalWrite(V_SS3, HIGH); // OFF 3.3V
+}
+
+void disable_Vss5()
+{
+	digitalWrite(V_SS5, LOW); // OFF 5V
+}

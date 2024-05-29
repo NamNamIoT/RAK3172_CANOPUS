@@ -266,7 +266,6 @@ void setup()
 {
   init_io();
   enable_Vrs485();
-  enable_Vss3();
   
   Serial.begin(115200);
   Serial.print("\r\n*****************RAK3172_CANOPUS*******************");

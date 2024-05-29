@@ -1,14 +1,15 @@
 #include <Rak3172_Canopus.h>
-#define V3
 
 long startTime;
 bool rx_done = false;
 double myFreq = 868000000;
 uint16_t sf = 12, bw = 0, cr = 0, preamble = 8, txPower = 22;
 
-void recv_cb(rui_lora_p2p_recv_t data) {
+void recv_cb(rui_lora_p2p_recv_t data)
+{
   rx_done = true;
-  if (data.BufferSize == 0) {
+  if (data.BufferSize == 0)
+  {
     Serial.println("Empty buffer.");
     return;
   }
@@ -20,22 +21,22 @@ void recv_cb(rui_lora_p2p_recv_t data) {
   digitalWrite(LED_RECV, LOW);
 }
 
-void send_cb(void) {
+void send_cb(void)
+{
   Serial.printf("P2P set Rx mode %s\r\n",
                 api.lorawan.precv(65534) ? "Success" : "Fail");
 }
 
-void setup() {
-  pinMode(LED_SEND, OUTPUT);
-  pinMode(LED_RECV, OUTPUT);
-  pinMode(LED_SYNC, OUTPUT);
+void setup()
+{
   Serial.begin(115200);
   Serial.println("RAK3172_Canopus LoRaWan P2P Example");
   Serial.println("------------------------------------------------------");
-  delay(2000);
+  init_io();
   startTime = millis();
 
-  if (api.lorawan.nwm.get() != 0) {
+  if (api.lorawan.nwm.get() != 0)
+  {
     Serial.printf("Set Node device work mode %s\r\n",
                   api.lorawan.nwm.set(0) ? "Success" : "Fail");
     api.system.reboot();
@@ -68,16 +69,20 @@ void setup() {
                 api.lorawan.precv(65534) ? "Success" : "Fail");
 }
 
-void loop() {
+void loop()
+{
   uint8_t payload[] = "payload_B";
   bool send_result = false;
-  if (rx_done) {
+  if (rx_done)
+  {
     rx_done = false;
-    while (!send_result) {
+    while (!send_result)
+    {
       digitalWrite(LED_SEND, HIGH);
       send_result = api.lorawan.psend(sizeof(payload), payload);
       Serial.printf("P2P send %s\r\n", send_result ? "Success" : "Fail");
-      if (!send_result) {
+      if (!send_result)
+      {
         Serial.printf("P2P finish Rx mode %s\r\n", api.lorawan.precv(0) ? "Success" : "Fail");
         delay(1000);
       }

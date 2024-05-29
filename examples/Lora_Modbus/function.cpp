@@ -1,15 +1,16 @@
 #include <Rak3172_Canopus.h>
 #include <Arduino.h>
 #include "function.h"
-#define V3
 
 long startTime;
 bool rx_done = false;
 uint16_t sf = 12, bw = 0, cr = 0, preamble = 8, txPower = 22;
 
-void Modbus_read(uint8_t* buf, uint16_t len) {
+void Modbus_read(uint8_t *buf, uint16_t len)
+{
   Serial.print("\r\n[Lora]Read/Write: ");
-  for (int i = 0; i < len; i++) {
+  for (int i = 0; i < len; i++)
+  {
     Serial.print("[");
     Serial.print(buf[i], HEX);
     Serial_modbus.printf("%c", buf[i]);
@@ -17,9 +18,11 @@ void Modbus_read(uint8_t* buf, uint16_t len) {
   }
 }
 
-void recv_cb(rui_lora_p2p_recv_t data) {
+void recv_cb(rui_lora_p2p_recv_t data)
+{
   rx_done = true;
-  if (data.BufferSize == 0) {
+  if (data.BufferSize == 0)
+  {
     Serial.println("Empty buffer.");
     return;
   }
@@ -32,24 +35,17 @@ void recv_cb(rui_lora_p2p_recv_t data) {
   digitalWrite(LED_RECV, LOW);
 }
 
-void send_cb(void) {
+void send_cb(void)
+{
   Serial.printf("\r\n[Lora]Back to Rx mode %s",
                 api.lorawan.precv(65534) ? "Success" : "Fail");
 }
-void init_io() {
-  pinMode(LED_SEND, OUTPUT);
-  digitalWrite(LED_SEND, LOW);
-  pinMode(LED_SYNC, OUTPUT);
-  digitalWrite(LED_SYNC, HIGH);
-  pinMode(V_SS5, OUTPUT);
-  digitalWrite(V_SS5, HIGH);  //On power Vrs485
-  pinMode(V_SS3, OUTPUT);
-  digitalWrite(V_SS3, PWR_ON);  //On power Vsensor
-  delay(1000);
-}
-bool init_lora(double freq) {
 
-  if (api.lorawan.nwm.get() != 0) {
+bool init_lora(double freq)
+{
+
+  if (api.lorawan.nwm.get() != 0)
+  {
     Serial.printf("Set Node device work mode %s\r\n",
                   api.lorawan.nwm.set(0) ? "Success" : "Fail");
     api.system.reboot();
@@ -84,16 +80,19 @@ bool init_lora(double freq) {
   return true;
 }
 
-bool lora_send(int size_msg, uint8_t* msg) {
+bool lora_send(int size_msg, uint8_t *msg)
+{
   Serial.printf("\r\n[Lora]P2P sending...");
   bool send_result = false;
   int count = 0;
   api.lorawan.precv(0);
-  while (!send_result) {
+  while (!send_result)
+  {
     send_result = api.lorawan.psend(size_msg, msg);
     delay(1);
     count++;
-    if (count > 2000) {
+    if (count > 2000)
+    {
       Serial.printf("\r\n[Lora]P2P send Fail");
       return false;
     }

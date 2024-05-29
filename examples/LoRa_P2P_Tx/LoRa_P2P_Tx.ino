@@ -1,17 +1,20 @@
 #include <Rak3172_Canopus.h>
-#define V3
 
 long startTime;
 bool rx_done = false;
 double myFreq = 868000000;
 uint16_t sf = 12, bw = 0, cr = 0, preamble = 8, txPower = 22;
 
-void hexDump(uint8_t* buf, uint16_t len) {
-  for (uint16_t i = 0; i < len; i += 16) {
+void hexDump(uint8_t *buf, uint16_t len)
+{
+  for (uint16_t i = 0; i < len; i += 16)
+  {
     char s[len];
     uint8_t iy = 0;
-    for (uint8_t j = 0; j < 16; j++) {
-      if (i + j < len) {
+    for (uint8_t j = 0; j < 16; j++)
+    {
+      if (i + j < len)
+      {
         uint8_t c = buf[i + j];
         if (c > 31 && c < 128)
           s[iy++] = c;
@@ -23,9 +26,11 @@ void hexDump(uint8_t* buf, uint16_t len) {
   }
 }
 
-void recv_cb(rui_lora_p2p_recv_t data) {
+void recv_cb(rui_lora_p2p_recv_t data)
+{
   rx_done = true;
-  if (data.BufferSize == 0) {
+  if (data.BufferSize == 0)
+  {
     Serial.println("Empty buffer.");
     return;
   }
@@ -38,23 +43,22 @@ void recv_cb(rui_lora_p2p_recv_t data) {
   digitalWrite(LED_RECV, LOW);
 }
 
-void send_cb(void) {
+void send_cb(void)
+{
   Serial.printf("P2P set Rx mode %s\r\n",
                 api.lorawan.precv(65534) ? "Success" : "Fail");
 }
 
-void setup() {
-  pinMode(LED_SEND, OUTPUT);
-  digitalWrite(LED_SEND, LOW);
-  pinMode(LED_SYNC, OUTPUT);
-  digitalWrite(LED_SYNC, HIGH);
+void setup()
+{
   Serial.begin(115200);
   Serial.println("RAK3172_Canopus LoRaWan P2P Example");
   Serial.println("------------------------------------------------------");
-  delay(2000);
+  init_io();
   startTime = millis();
 
-  if (api.lorawan.nwm.get() != 0) {
+  if (api.lorawan.nwm.get() != 0)
+  {
     Serial.printf("Set Node device work mode %s\r\n",
                   api.lorawan.nwm.set(0) ? "Success" : "Fail");
     api.system.reboot();
@@ -87,12 +91,15 @@ void setup() {
                 api.lorawan.precv(65534) ? "Success" : "Fail");
 }
 
-void loop() {
+void loop()
+{
   uint8_t payload[] = "payload";
   bool send_result = false;
-  while (!send_result) {
+  while (!send_result)
+  {
     send_result = api.lorawan.psend(sizeof(payload), payload);
-    if (!send_result) {
+    if (!send_result)
+    {
       api.lorawan.precv(0);
       delay(1000);
     }

@@ -43,4 +43,7 @@ void init_io();
 void enable_Vrs485();
 void enable_Vss3();
 void enable_Vss5();
+void disable_Vrs485();
+void disable_Vss3();
+void disable_Vss5();
 #endif

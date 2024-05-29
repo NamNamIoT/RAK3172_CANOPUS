@@ -27,6 +27,6 @@ void loop()
 
   regBank.set(40001, analog_In);                      // Update value for 40001 is analog_In
   slave.run();                                        // Run service modbus RTU slave
-  digitalWrite(LED_YELLOW, !digitalRead(LED_YELLOW)); // blink led
+  digitalWrite(LED_SYNC, !digitalRead(LED_SYNC)); // blink led
   delay(200);
 }

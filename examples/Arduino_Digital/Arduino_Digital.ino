@@ -2,10 +2,10 @@
 
 void setup()
 {
-    Serial.begin(115200);                                                     // Initialize serial communication at 115200 baud rate.
-    Serial.println("Canopus Digital Example");                                // Print a message indicating the start of the program.
-    Serial.println("------------------------------------------------------"); // Print a separator line.
-    init_io();                                              // Set pin LED_SEND as an output.
+    Serial.begin(115200);                      // Initialize serial communication at 115200 baud rate.
+    Serial.println("Canopus Digital Example"); // Print a message indicating the start of the program.
+    Serial.println("-----------------------"); // Print a separator line.
+    init_io();                                 // Set pin LED_SEND as an output.
 }
 
 void loop()

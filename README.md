@@ -48,6 +48,7 @@ height="30" width="40" /></a>
 |                   | Time          |[Go!](#Time)|
 |                   | Timer         |[Go!](#Timer)|
 |                   | General       |[Go!](#General)|
+| GPS               | ATGM 336H     |[Go!](#GPS)|
 
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/NamNamIoT/RAK3172_CANOPUS)
@@ -797,6 +798,32 @@ void loop()
     Serial.printf("Hardware ID: %s\r\n", api.system.chipId.get().c_str());
     Serial.printf("Battery Level: %f\r\n", api.system.bat.get());
     delay(1000);
+}
+```
+
+##### GPS
+```c
+#include <Rak3172_Canopus.h>
+#include <TinyGPSPlus.h>
+TinyGPSPlus gps; //GPS ATGM336H
+void setup() {
+  
+  Serial.begin(115200);
+  Serial1.begin(9600);
+  init_io();
+  enable_Vss3();
+  while (Serial1.available()) {
+    Serial1.read();
+  }
+}
+
+void loop() {
+  while (Serial1.available() > 0) {
+    gps.encode(Serial1.read());
+  }
+  float gps_lat = gps.location.lat();
+  float gps_lng = gps.location.lng();
+  float gps_speed = gps.speed.mps();
 }
 ```
 <p align="center">  <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Docs/Job1-ezgif.com-speed.gif"/><br><b>PCB Render</b></p>  

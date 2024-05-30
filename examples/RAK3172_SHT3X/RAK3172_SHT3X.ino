@@ -10,6 +10,7 @@ void setup()
   Serial.begin(115200);
   Serial.print("\r\n************RAK3172_CANOPUS**************");
   init_io();
+  enable_Vss3();
   Wire.begin();
   while (!sht3x.begin())
   {

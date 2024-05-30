@@ -10,6 +10,7 @@ void setup()
   Serial.begin(115200);                                          // Initialize serial communication at 115200 baud rate.
   Serial.print("\r\n************RAK3172_CANOPUS**************"); // Print a message indicating the start of the program.
   init_io();
+  enable_Vss3();
   Wire.begin(); // Initialize the I2C communication.
   while (!bh1750.begin())
   {                                       // Check if BH1750 sensor is detected.

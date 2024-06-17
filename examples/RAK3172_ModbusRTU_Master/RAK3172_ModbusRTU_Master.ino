@@ -28,7 +28,7 @@ void loop()
     }
   }
   else
-    Serial.print("Read Fail node 1");                 // read fail
+    Serial.printf("\nRead Fail node 1");                 // read fail
   digitalWrite(LED_SYNC, !digitalRead(LED_SYNC)); // blink led
   delay(500);
 }

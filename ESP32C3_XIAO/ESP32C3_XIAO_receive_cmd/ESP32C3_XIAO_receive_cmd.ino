@@ -2,7 +2,6 @@
 #define LED_PIN 10
 
 void setup() {
-  // Khởi động UART0 với tốc độ 9600 baud
   Serial.begin(115200);
   Serial1.begin(115200);
   delay(3000);

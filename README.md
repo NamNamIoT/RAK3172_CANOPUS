@@ -60,8 +60,8 @@ height="30" width="40" /></a>
 🏷️Version 0.98 [March-2023] (Prototype).  
 🏷️Version 0.99 [April-2023] (Prototype).  
 🏷️Version 1.0 [June-2023].  
-🏷️Version 2 [Oct-2023].  
-🏷️Version 3 [Jan-2024].  
+🏷️Version 2.0 [Oct-2023].  
+🏷️Version 3.0 [Jan-2024].  
 🏷️Version 3.1 [June-2024].   
 🏷️**Version 3.2 [July-2024].**  
 

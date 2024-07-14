@@ -62,7 +62,7 @@ height="30" width="40" /></a>
 🏷️Version 1.0 [June-2023].  
 🏷️Version 2 [Oct-2023].  
 🏷️Version 3 [Jan-2024].  
-🏷️Version 3.1 [June-2024]. 
+🏷️Version 3.1 [June-2024].   
 🏷️**Version 3.2 [July-2024].**  
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="370">  

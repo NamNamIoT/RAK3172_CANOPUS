@@ -6,11 +6,9 @@ long startTime;
 bool rx_done = false;
 uint16_t sf = 12, bw = 0, cr = 0, preamble = 8, txPower = 22;
 
-void Modbus_read(uint8_t *buf, uint16_t len)
-{
+void Modbus_read(uint8_t *buf, uint16_t len) {
   Serial.print("\r\n[Lora]Read/Write: ");
-  for (int i = 0; i < len; i++)
-  {
+  for (int i = 0; i < len; i++) {
     Serial.print("[");
     Serial.print(buf[i], HEX);
     Serial_modbus.printf("%c", buf[i]);
@@ -18,11 +16,9 @@ void Modbus_read(uint8_t *buf, uint16_t len)
   }
 }
 
-void recv_cb(rui_lora_p2p_recv_t data)
-{
+void recv_cb(rui_lora_p2p_recv_t data) {
   rx_done = true;
-  if (data.BufferSize == 0)
-  {
+  if (data.BufferSize == 0) {
     Serial.println("Empty buffer.");
     return;
   }
@@ -35,19 +31,16 @@ void recv_cb(rui_lora_p2p_recv_t data)
   digitalWrite(LED_RECV, LOW);
 }
 
-void send_cb(void)
-{
+void send_cb(void) {
   Serial.printf("\r\n[Lora]Back to Rx mode %s",
-                api.lorawan.precv(65534) ? "Success" : "Fail");
+                api.lora.precv(65534) ? "Success" : "Fail");
 }
 
-bool init_lora(double freq)
-{
+bool init_lora(double freq) {
 
-  if (api.lorawan.nwm.get() != 0)
-  {
+  if (api.lora.nwm.get() != 0) {
     Serial.printf("Set Node device work mode %s\r\n",
-                  api.lorawan.nwm.set(0) ? "Success" : "Fail");
+                  api.lora.nwm.set() ? "Success" : "Fail");
     api.system.reboot();
   }
 
@@ -61,38 +54,35 @@ bool init_lora(double freq)
   Serial.printf("AT Command Version: %s\r\n",
                 api.system.cliVersion.get().c_str());
   Serial.printf("Set P2P mode frequency %3.3f: %s\r\n", (freq / 1e6),
-                api.lorawan.pfreq.set(freq) ? "Success" : "Fail");
+                api.lora.pfreq.set(freq) ? "Success" : "Fail");
   Serial.printf("Set P2P mode spreading factor %d: %s\r\n", sf,
-                api.lorawan.psf.set(sf) ? "Success" : "Fail");
+                api.lora.psf.set(sf) ? "Success" : "Fail");
   Serial.printf("Set P2P mode bandwidth %d: %s\r\n", bw,
-                api.lorawan.pbw.set(bw) ? "Success" : "Fail");
+                api.lora.pbw.set(bw) ? "Success" : "Fail");
   Serial.printf("Set P2P mode code rate 4/%d: %s\r\n", (cr + 5),
-                api.lorawan.pcr.set(cr) ? "Success" : "Fail");
+                api.lora.pcr.set(cr) ? "Success" : "Fail");
   Serial.printf("Set P2P mode preamble length %d: %s\r\n", preamble,
-                api.lorawan.ppl.set(preamble) ? "Success" : "Fail");
+                api.lora.ppl.set(preamble) ? "Success" : "Fail");
   Serial.printf("Set P2P mode tx power %ddB: %s\r\n", txPower,
-                api.lorawan.ptp.set(txPower) ? "Success" : "Fail");
-  api.lorawan.registerPRecvCallback(recv_cb);
-  api.lorawan.registerPSendCallback(send_cb);
+                api.lora.ptp.set(txPower) ? "Success" : "Fail");
+  api.lora.registerPRecvCallback(recv_cb);
+  api.lora.registerPSendCallback(send_cb);
   Serial.printf("P2P set Rx mode %s\r\n",
-                api.lorawan.precv(65534) ? "Success" : "Fail");
+                api.lora.precv(65534) ? "Success" : "Fail");
   delay(1000);
   return true;
 }
 
-bool lora_send(int size_msg, uint8_t *msg)
-{
+bool lora_send(int size_msg, uint8_t *msg) {
   Serial.printf("\r\n[Lora]P2P sending...");
   bool send_result = false;
   int count = 0;
-  api.lorawan.precv(0);
-  while (!send_result)
-  {
-    send_result = api.lorawan.psend(size_msg, msg);
+  api.lora.precv(0);
+  while (!send_result) {
+    send_result = api.lora.psend(size_msg, msg);
     delay(1);
     count++;
-    if (count > 2000)
-    {
+    if (count > 2000) {
       Serial.printf("\r\n[Lora]P2P send Fail");
       return false;
     }

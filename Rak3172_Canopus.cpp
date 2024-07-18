@@ -17,11 +17,6 @@ void init_io()
 	delay(1000);			   // do not remove this delay, it use for detect baud upload code UART mode
 }
 
-void enable_Vrs485()
-{
-	digitalWrite(V_SS5, HIGH); // On power module rs485
-}
-
 void enable_Vss3()
 {
 	digitalWrite(V_SS3, LOW); // Enable 3.3V
@@ -30,6 +25,12 @@ void enable_Vss3()
 void enable_Vss5()
 {
 	digitalWrite(V_SS5, HIGH); // Enable 5V
+}
+
+void enable_Vrs485()
+{
+	//enable_Vss5(); // v3.1 On power module rs485
+	enable_Vss3(); // V3.2 and upper On power module rs485
 }
 
 void disable_Vrs485()

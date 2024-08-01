@@ -143,8 +143,8 @@ You can use any of the pins below as Analog Input.
 
 | **Analog Port** | **Pin Name** | **Onboard** |
 | --------------- | ------------ | ----------- |
-| ADC4 (0-10V)    |  PA15        | AI1          |
-| ADC5 (0-10V)    |  PA10        | AI2          |
+| ADC4 (0-10V)    |  PA10        | AI1          |
+| ADC5 (0-10V)    |  PA15        | AI2          |
 
 
 Use Arduino [analogRead](https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/) to read the value from the specified Analog Input pin.

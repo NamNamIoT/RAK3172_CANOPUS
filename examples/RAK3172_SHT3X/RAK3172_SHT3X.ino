@@ -11,8 +11,11 @@ void setup()
   Serial.print("\r\n************RAK3172_CANOPUS**************");
   init_io();
   enable_Vss3();
+  disable_Vss5();
+  disable_Vss12();
+
   Wire.begin();
-  while (!sht3x.begin())
+  if (!sht3x.begin())
   {
     Serial.println("SHT3x not found !");
     delay(1000);
@@ -32,6 +35,7 @@ void loop()
   }
   else
   {
+    sht3x.begin();
     Serial.println("SHT3x read error");
   }
   delay(1000);

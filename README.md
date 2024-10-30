@@ -62,8 +62,11 @@ height="30" width="40" /></a>
 🏷️Version 1.0 [June-2023].  
 🏷️Version 2.0 [Oct-2023].  
 🏷️Version 3.0 [Jan-2024].  
-🏷️Version 3.1 [June-2024].   
-🏷️**Version 3.2 [July-2024].**  
+🏷️Version 3.1 [June-2024].  
+🏷️Version 3.2 [July-2024].  
+🏷️Version 3.3 [August-2024].  
+🏷️**Version 3.4 [Oct-2024].** 
+
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="370">  
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="370">  
@@ -90,7 +93,7 @@ This section discusses how to use and access RAK3172 pins using the RUI3 API. It
   
 This is table pin map of Rak3172_Canopus board.    
 
-| **Alternative Pin Usage** | **Pin Name (V1)** | **Pin Name (V2)** | **Pin Name (V3)** | **Note** |  
+| **Alternative Pin Usage** | **Pin Name (V1)** | **Pin Name (V2)** | **Pin Name (V3.x)** | **Note** |  
 | :---: | :---: | :---: | :---: | :---: |    
 |LED_SEND | PA8 | PA8 | PA8 |   BLUE color   |  
 |LED_SYNC | PA0 | **PA10** | PA9 |   RED color   |  
@@ -102,6 +105,7 @@ This is table pin map of Rak3172_Canopus board.
 |AI1_PIN  | PB4 | PB4 | PB4 | 0-10V |  
 |AI2_PIN  |  -  |  -  | **PA10** | 0-10V |  
 |V_RS485  | PB12 | **PA1** | PA1 | Enable power RS485 |  
+|V_12V  |  -  |  -  | PA0 | Enable power 12V from V3.4 |  
 |UART1_TX | PB6 | PB6 | PB6 | RS485 ModbusRTU |  
 |UART1_RX | PB7 | PB7 | PB7 | RS485 ModbusRTU |  
 |ABAT     | PA15 | **---** | **PB3** | ADC Battery   |  

@@ -57,20 +57,12 @@ height="30" width="40" /></a>
   
 ## Information board   
 #### Version hardware log   
-🏷️Version 0.98 [March-2023] (Prototype).  
-🏷️Version 0.99 [April-2023] (Prototype).  
-🏷️Version 1.0 [June-2023].  
-🏷️Version 2.0 [Oct-2023].  
-🏷️Version 3.0 [Jan-2024].  
-🏷️Version 3.1 [June-2024].  
-🏷️Version 3.2 [July-2024].  
-🏷️Version 3.3 [August-2024].  
-🏷️**Version 3.4 [Oct-2024].** 
+🏷️**Latest version: 3.5 [Nov-2024].** 
 
 
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/7da1e890-1e2c-4b1b-82d6-35317b26b6f7" height="370">  
 <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f26dc802-9b8b-4454-9a64-da986ab88c23" height="370">  
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/0420816b-3a1d-45d2-a9db-7be06b75d864" height="370">   
+<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/0420816b-3a1d-45d2-a9db-7be06b75d864" height="370">     
   
 #### Hardware Setup  
 The RAK3172_Canopus requires a few hardware connections before you can make it work.  
@@ -89,26 +81,25 @@ The requirement is:
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
-<img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/assets/49629370/f3443e7e-0966-4a0d-96f6-cadc0399a0bf" height="450">
+<img src="https://github.com/user-attachments/assets/12407218-5480-403e-a21f-820889438b41" height="605">  
   
 This is table pin map of Rak3172_Canopus board.    
 
-| **Alternative Pin Usage** | **Pin Name (V1)** | **Pin Name (V2)** | **Pin Name (V3.x)** | **Note** |  
-| :---: | :---: | :---: | :---: | :---: |    
-|LED_SEND | PA8 | PA8 | PA8 |   BLUE color   |  
-|LED_SYNC | PA0 | **PA10** | PA9 |   RED color   |  
-|LED_RECV | PB2 | PB2 | PB2 | YELLOW color |  
-|VSS_PIN  | PB5 | PB5 | PB5 | Enable power sensor |  
-|I2C_SDA | PA11 | PA11 | PA11 | I2C pin |  
-|I2C_SCL | PA12 | PA12 | PA12 | I2C pin |  
-|mA_PIN | PB3 | PB3 | **---** |    -    |  
-|AI1_PIN  | PB4 | PB4 | PB4 | 0-10V |  
-|AI2_PIN  |  -  |  -  | **PA10** | 0-10V |  
-|V_RS485  | PB12 | **PA1** | PA1 | Enable power RS485 |  
-|V_12V  |  -  |  -  | PA0 | Enable power 12V from V3.4 |  
-|UART1_TX | PB6 | PB6 | PB6 | RS485 ModbusRTU |  
-|UART1_RX | PB7 | PB7 | PB7 | RS485 ModbusRTU |  
-|ABAT     | PA15 | **---** | **PB3** | ADC Battery   |  
+| **Alternative Pin Usage** | **Pin Name (V3.5)** | **Note** |  
+| :---: | :---: | :---: |    
+|LED_SEND | PA8 | YELLOW color |  
+|LED_SYNC | PA9 | RED color |  
+|LED_RECV | PB2 | BLUE color |  
+|VSS_PIN  | PB5 | Enable power sensor |  
+|I2C_SDA | PA11 | I2C pin |  
+|I2C_SCL | PA12 | I2C pin |  
+|AI1_PIN  | PB4 | 0-10V |  
+|AI2_PIN  | PA10 | 0-10V |  
+|V_RS485  | PA1 | Enable power RS485 |  
+|V_12V  | PA0 | Enable power 12V|  
+|UART1_TX | PB6 | RS485 ModbusRTU |  
+|UART1_RX | PB7 | RS485 ModbusRTU |  
+|ABAT | PB3 | ADC Battery |  
 
   
 ## Examples
@@ -830,7 +821,7 @@ void loop() {
   float gps_speed = gps.speed.mps();
 }
 ```
-<p align="center">  <img src="https://github.com/NamNamIoT/RAK3172_CANOPUS/blob/main/Docs/Job1-ezgif.com-speed.gif"/><br><b>PCB Render</b></p>  
+
   
 ### Continue update  
 [Click go top](#Quick-access-panel)  

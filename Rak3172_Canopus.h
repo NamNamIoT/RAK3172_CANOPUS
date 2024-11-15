@@ -7,8 +7,8 @@
 #ifdef RAK3172_CANOPUS_H
 
 /* COMMON */
-#define LED_RECV PB2 //LED_YELLOW
-#define LED_SEND PA8 //LED_BLUE
+#define LED_RECV PB2 //LED_BLUE
+#define LED_SEND PA8 //LED_YELLOW
 #define I2C_SDA PA11
 #define I2C_SCL PA12
 #define Volt_PIN PB4

@@ -6,6 +6,9 @@ void setup()
   Serial.println("Canopus Analog Example");                                 // Print a message indicating the start of the program.
   Serial.println("------------------------------------------------------"); // Print a separator line.
   init_io();
+  #ifdef V3_4
+  enable_Vss5();
+  #endif
   analogReadResolution(12); // Set analog read resolution to 12 bits.
 }
 

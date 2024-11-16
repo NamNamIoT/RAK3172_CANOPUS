@@ -81,7 +81,7 @@ The requirement is:
 
 This section discusses how to use and access RAK3172 pins using the RUI3 API. It shows basic code on using digital I/O, analog input, UART, and I2C.
 
-<img src="https://github.com/user-attachments/assets/12407218-5480-403e-a21f-820889438b41" height="605">  
+<img src="https://github.com/user-attachments/assets/12407218-5480-403e-a21f-820889438b41" height="605" width="780">  
   
 This is table pin map of Rak3172_Canopus board.    
 
